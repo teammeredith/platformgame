@@ -1,0 +1,14 @@
+{
+    "tiles": [["BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ],
+              ["BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"FENCE"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ],
+              ["BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BRICK"      ,"P_GRASS_C"  ,"BLANK"      ,"BLANK"      ,"BRICK"      ],
+              ["BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"FENCE"      ,"BRICK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ],
+              ["BLANK"      ,"BLANK"      ,"BLANK"      ,"P_GRASS_L"  ,"P_GRASS_R"  ,"BRICK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BRICK"      ],
+              ["BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BRICK"      ,"P_GRASS_C"  ,"BLANK"      ,"BLANK"      ,"P_GRASS_C"  ,"BRICK"      ],
+              ["P_GRASS_L"  ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BRICK"      ],
+              ["BLANK"      ,"BLANK"      ,"BLANK"      ,"P_GRASS_L"  ,"BRICK"      ,"DIRT_SL_R"  ,"BLANK"      ,"BLANK"      ,"BLANK"      ,"BRICK"      ],
+              ["BLANK"      ,"SPRING_UP"  ,"BLANK"      ,"BLANK"      ,"BRICK"      ,"BRICK"      ,"DIRT_SL_R"  ,"BLANK"      ,"BLANK"      ,"EXIT"       ],
+              ["P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ,"P_GRASS_C"  ]],
+    "player_start": [1,1]
+}
+
