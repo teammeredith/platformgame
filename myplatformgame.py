@@ -24,6 +24,8 @@ img_folder = os.path.join(game_folder, "images")
 scene_folder = os.path.join(game_folder, "scenes")
 tile_folder = os.path.join(img_folder, "Tiles")
 
+LOCK_TIMER_EVENT_ID = pygame.USEREVENT + 1
+
 # initialize pygame and create window
 pygame.init()
 pygame.mixer.init()
@@ -168,6 +170,11 @@ class Character(pygame.sprite.Sprite):
                     self.rect.top -= 30
                     self.y_speed = -40
                     break
+                elif self.y_speed > 5 and collided.tile_id == "BUTTON_YELLOW":
+                    log.info("Hit BUTTON_YELLOW.  y_speed = {}".format(self.y_speed))
+                    scenes[current_scene].hit_button(collided)
+                    self.y_speed = min(self.y_speed, 10)
+                    break
                 elif move_dir == 1 and self.x_speed == 0:
                     orig_left = self.rect.left
                     # Check if we can slip off whatever we've hit
@@ -243,6 +250,8 @@ class Player(Character):
             self.falling = True
             self.y_speed = -self.jump_speed
 
+    def die(self):
+        self.reset(scenes[current_scene].player_start)
 
 class Spider(Character):
     # sprite for the Player
@@ -272,6 +281,7 @@ class Scene():
         with open(scene_file_path, "r") as scene_file:
             self.scene_data = json.load(scene_file)
             self.player_start = (self.scene_data["player_start"][0], self.scene_data["player_start"][1]) 
+            self.open_locks = []
 
             # Create the platform sprites
             self.platform_sprites = pygame.sprite.Group()
@@ -312,8 +322,33 @@ class Scene():
             tile.image = tiles["SPRING_UP"].image
             tile.tile_id = "SPRING_UP"
 
+    def hit_button(self, tile):
+        if tile.tile_id == "BUTTON_YELLOW":
+            tile.image = tiles["BUTTON_YELLOW_DN"].image
+            tile.tile_id = "BUTTON_YELLOW_DN"
+        for sprite in self.platform_sprites:
+            if sprite.tile_id == "LOCK_YELLOW":
+                sprite.remove(self.platform_sprites)
+                self.open_locks.append(sprite)
+                pygame.time.set_timer(LOCK_TIMER_EVENT_ID, 4000)
+
     def draw(self, screen):
         self.platform_sprites.draw(screen)
+
+    def timer_pop(self):
+        log.info("Timer pop")
+        for sprite in self.open_locks:
+            self.platform_sprites.add(sprite)
+            if pygame.sprite.collide_mask(sprite, player):
+                player.die()
+
+        for tile in self.platform_sprites:
+            if tile.tile_id == "BUTTON_YELLOW_DN":
+                tile.image = tiles["BUTTON_YELLOW"].image
+                tile.tile_id = "BUTTON_YELLOW"
+                if pygame.sprite.collide_mask(tile, player):
+                    self.hit_button(tile)
+
 
 with os.scandir(scene_folder) as it:
     for entry in it:
@@ -337,6 +372,7 @@ def next_scene():
 player = Player()
 player_group = pygame.sprite.Group()
 player_group.add(player)
+player.reset(scenes[current_scene].player_start)
 
 # Game loop
 running = True
@@ -348,6 +384,8 @@ while running:
         # check for closing window
         if event.type == pygame.QUIT:
             running = False
+        if event.type == LOCK_TIMER_EVENT_ID:
+            scenes[current_scene].timer_pop()
 
     # Update
     player_group.update()
