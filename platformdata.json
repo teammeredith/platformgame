@@ -1,0 +1,72 @@
+{
+    "tiles":[
+        {
+            "id": "P_GRASS_L",
+            "filename": "grassCliffLeft.png"
+        },
+        {
+            "id": "P_GRASS_C",
+            "filename": "grassMid.png"
+        },
+        {
+            "id": "P_GRASS_R",
+            "filename": "grassCliffRight.png"
+        },
+        {
+            "id": "CASTLE_CLIFF_LT",
+            "filename": "castleCliffLeftAlt.png"
+        },
+        {
+            "id": "CASTLE_CLIFF",
+            "filename": "castleMid.png"
+        },
+        {
+            "id": "CASTLE_CLIFF_RT",
+            "filename": "castleCliffRightAlt.png"
+        },
+        {
+            "id": "FENCE",
+            "filename": "ladder_top.png"
+        },
+        {
+            "id": "BRICK",
+            "filename": "brickWall.png"
+        },
+        {
+            "id": "EXIT",
+            "filename": "signExit.png"
+        },
+        {
+            "id": "DIRT_SL_R",
+            "filename": "grassHillRight.png"
+        },
+        {
+            "id": "DIRT_SL_L",
+            "filename": "grassHillLeft.png"
+        },    
+        {
+            "id": "BUSH",
+            "filename": "bush.png"
+        },    
+        {
+            "id": "SPRING_UP",
+            "filename": "springboardUp.png"
+        },    
+        {
+            "id": "SPRING_DN",
+            "filename": "springboardDown.png"
+        },
+        {
+            "id": "BUTTON_YELLOW",
+            "filename": "buttonYellow.png"
+        },
+        {
+            "id": "BUTTON_YELLOW_DN",
+            "filename": "buttonYellow_pressed.png"
+        },
+        {
+            "id": "LOCK_YELLOW",
+            "filename": "lock_yellow.png"
+        }             
+    ]
+} 

@@ -7,7 +7,7 @@ import logging
 import sys
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
 
@@ -22,6 +22,7 @@ FPS = 30
 game_folder = os.path.dirname(__file__)
 img_folder = os.path.join(game_folder, "images")
 scene_folder = os.path.join(game_folder, "scenes")
+tile_folder = os.path.join(img_folder, "Tiles")
 
 # initialize pygame and create window
 pygame.init()
@@ -30,17 +31,17 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
-IMAGES={}
-IMAGES["P_GRASS_L"] = pygame.image.load(os.path.join(img_folder, "Tiles\grassCliffLeft.png")).convert_alpha()
-IMAGES["P_GRASS_R"] = pygame.image.load(os.path.join(img_folder, "Tiles\grassCliffRight.png")).convert_alpha()
-IMAGES["P_GRASS_C"] = pygame.image.load(os.path.join(img_folder, "Tiles\grassMid.png")).convert_alpha()
-IMAGES["FENCE"] = pygame.image.load(os.path.join(img_folder, "Tiles\\ladder_top.png")).convert_alpha()
-IMAGES["BRICK"] = pygame.image.load(os.path.join(img_folder, "Tiles\\brickWall.png")).convert_alpha()
-IMAGES["EXIT"] = pygame.image.load(os.path.join(img_folder, "Tiles\\signExit.png")).convert_alpha()
-IMAGES["DIRT_SL_R"] = pygame.image.load(os.path.join(img_folder, "Tiles\\grassHillRight.png")).convert_alpha()
-IMAGES["SPRING_UP"] = pygame.image.load(os.path.join(img_folder, "Items\\springboardUp.png")).convert_alpha()
-IMAGES["SPRING_DN"] = pygame.image.load(os.path.join(img_folder, "Items\\springboardDown.png")).convert_alpha()
-IMAGES["SNAIL"] = pygame.image.load(os.path.join(img_folder, "Enemies\\snailWalk1.png")).convert_alpha()
+class Tile():
+    def __init__(self, tile_data):
+        self.image = pygame.image.load(os.path.join(tile_folder, tile_data["filename"])).convert_alpha()
+        self.id = tile_data["id"]
+
+tiles = {}
+with open("platformdata.json") as data_file:
+    data = json.load(data_file)
+    for tile_data in data["tiles"]:
+        print("tile_data = {}".format(tile_data))
+        tiles[tile_data["id"]] = Tile(tile_data)
 
 current_scene = 0
 scenes = []
@@ -243,7 +244,6 @@ class Player(Character):
             self.y_speed = -self.jump_speed
 
 
-
 class Spider(Character):
     # sprite for the Player
     def __init__(self):
@@ -285,7 +285,7 @@ class Scene():
                         self.platform_sprites.add(spider)
                     elif tile_id != "BLANK":
                         tile = pygame.sprite.Sprite()
-                        tile.image = IMAGES[tile_id]
+                        tile.image = tiles[tile_id].image
                         tile.tile_id = tile_id
                         tile.rect = tile.image.get_rect()
                         tile.rect.top = TILE_SIZE*y
@@ -306,10 +306,10 @@ class Scene():
 
     def animate_spring(self, tile):
         if tile.tile_id == "SPRING_UP":
-            tile.image = IMAGES["SPRING_DN"]
+            tile.image = tiles["SPRING_DN"].image
             tile.tile_id = "SPRING_DN"
         else:
-            tile.image = IMAGES["SPRING_UP"]
+            tile.image = tiles["SPRING_UP"].image
             tile.tile_id = "SPRING_UP"
 
     def draw(self, screen):
