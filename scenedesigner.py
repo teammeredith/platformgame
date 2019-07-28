@@ -50,24 +50,22 @@ player = None
 tile_options = pygame.sprite.Group()
 current_option = None
 
-with open("platformdata.json") as data_file:
-    data = json.load(data_file)
-    idx = 0
-    for tile_id, tile_data in data["tiles"].items():
-        print("Load tile {}".format(tile_id))
-        tile = pygame.sprite.Sprite()
-        tile.unselected_image = pygame.image.load(os.path.join(config.tile_folder, tile_data["filename"])).convert_alpha()
-        selected_image = pygame.image.load(os.path.join(config.tile_folder, tile_data["filename"]))
-        pygame.draw.rect(selected_image, (255, 0, 0), (0,0,config.TILE_SIZE_PX,config.TILE_SIZE_PX), 2)
-        tile.selected_image = selected_image
-        tile.image = tile.unselected_image
-        tile.tile_id = tile_id
-        tile.rect = tile.image.get_rect()
-        tile.rect.top = TILE_OPTIONS_Y_OFFSET + int(idx / TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
-        tile.rect.left = TILE_OPTIONS_X_OFFSET + (idx % TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
-        print("Placed tile at {}, {}, {}, {}".format(tile.rect.left, tile.rect.top, tile.rect.right, tile.rect.bottom))
-        tile_options.add(tile)
-        idx += 1
+idx = 0
+for tile_id, tile_data in config.tiles.items():
+    print("Load tile {}".format(tile_id))
+    tile = pygame.sprite.Sprite()
+    tile.unselected_image = pygame.image.load(os.path.join(config.tile_folder, tile_data.filename)).convert_alpha()
+    selected_image = pygame.image.load(os.path.join(config.tile_folder, tile_data.filename))
+    pygame.draw.rect(selected_image, (255, 0, 0), (0,0,config.TILE_SIZE_PX,config.TILE_SIZE_PX), 2)
+    tile.selected_image = selected_image
+    tile.image = tile.unselected_image
+    tile.tile_id = tile_id
+    tile.rect = tile.image.get_rect()
+    tile.rect.top = TILE_OPTIONS_Y_OFFSET + int(idx / TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
+    tile.rect.left = TILE_OPTIONS_X_OFFSET + (idx % TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
+    print("Placed tile at {}, {}, {}, {}".format(tile.rect.left, tile.rect.top, tile.rect.right, tile.rect.bottom))
+    tile_options.add(tile)
+    idx += 1
 
 class Point(pygame.sprite.Sprite):
     def __init__(self, pos):

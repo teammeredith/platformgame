@@ -33,20 +33,23 @@ with os.scandir(config.scene_folder) as it:
         if entry.name.endswith(".json") and entry.is_file():
             scenes.append(Scene(entry.path))
 
-def next_scene():
+def next_scene(new_scene):
     global current_scene
-    current_scene += 1
-    print ("Moving to scene {}".format(current_scene))
-    if current_scene >= len(scenes):
+    print ("Moving to scene {}".format(new_scene))
+    if new_scene >= len(scenes):
         # Game over
         exit()
-    player.start_scene(scenes[current_scene])
+    player.start_scene(scenes[new_scene])
+    scenes[current_scene].add_player(None)
+    scenes[new_scene].add_player(player)
+    current_scene = new_scene
 
 # Create the player
 player = Player()
 player_group = pygame.sprite.Group()
 player_group.add(player)
 player.start_scene(scenes[current_scene])
+scenes[current_scene].add_player(player)
 
 # Game loop
 running = True
@@ -56,7 +59,7 @@ while running:
     
     # Check whether we have any exit events and deal with them first
     if pygame.event.get(eventtype=config.REACHED_EXIT_EVENT_ID):
-        next_scene()
+        next_scene(current_scene+1)
 
     for event in pygame.event.get():
         # check for closing window

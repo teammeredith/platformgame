@@ -16,6 +16,7 @@ class Scene():
             self.scene_data = json.load(scene_file)
             self.player_start = (self.scene_data["player_start"][0], self.scene_data["player_start"][1]) 
             self.open_locks = []
+            self.player = None
 
             # Create the platform sprites
             self.platform_sprites = pygame.sprite.Group()
@@ -47,6 +48,9 @@ class Scene():
     def update(self):
         self.platform_sprites.update()
 
+    def add_player(self, player):
+        self.player = player
+
     def animate_spring(self, tile):
         if tile.tile_id == "SPRING_UP":
             tile.image = config.tiles["SPRING_DN"].image
@@ -63,7 +67,7 @@ class Scene():
             if sprite.tile_id == "LOCK_YELLOW":
                 sprite.remove(self.platform_sprites)
                 self.open_locks.append(sprite)
-                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 4000)
+                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 3500)
 
     def draw(self, screen):
         self.platform_sprites.draw(screen)
@@ -72,13 +76,13 @@ class Scene():
         log.info("Timer pop")
         for sprite in self.open_locks:
             self.platform_sprites.add(sprite)
-            if pygame.sprite.collide_mask(sprite, player):
-                player.die()
+            if pygame.sprite.collide_mask(sprite, self.player):
+                self.player.die()
 
         for tile in self.platform_sprites:
             if tile.tile_id == "BUTTON_YELLOW_DN":
                 tile.image = config.tiles["BUTTON_YELLOW"].image
                 tile.tile_id = "BUTTON_YELLOW"
-                if pygame.sprite.collide_mask(tile, player):
+                if pygame.sprite.collide_mask(tile, self.player):
                     self.hit_button(tile)
 

@@ -228,7 +228,7 @@ class Player(Character):
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
             
     def die(self):
-        self.reset(self.scene.player_start)
+        self.start_scene(self.scene)
 """
 class Spider(Character):
     # sprite for the Player
