@@ -38,11 +38,11 @@ class Tile():
         self.image = pygame.image.load(os.path.join(tile_folder, tile_data["filename"])).convert_alpha()
         self.id = tile_data["id"]
 
+game_data = {}
 tiles = {}
 with open("platformdata.json") as data_file:
-    data = json.load(data_file)
-    for tile_data in data["tiles"]:
-        print("tile_data = {}".format(tile_data))
+    game_data = json.load(data_file)
+    for tile_data in game_data["tiles"]:
         tiles[tile_data["id"]] = Tile(tile_data)
 
 current_scene = 0
@@ -218,11 +218,22 @@ class Character(pygame.sprite.Sprite):
 class Player(Character):
     # sprite for the Player
     def __init__(self):
-        standing_image = pygame.transform.smoothscale(pygame.image.load(os.path.join(img_folder, "Player\p3_front.png")).convert_alpha(), (70,70))
+        player_data = game_data["characters"]["PLAYER"]
+        standing_image = pygame.transform.smoothscale(
+                            pygame.image.load(
+                                os.path.join(img_folder, 
+                                             player_data["image_path"],
+                                             player_data["standing_image"])).convert_alpha(), 
+                            (70,70))
         walk_left_images = []
         walk_right_images = []
-        for i in range(11):
-            image = pygame.transform.smoothscale(pygame.image.load(os.path.join(img_folder, "Player\p3_walk\PNG\p3_walk{0:02d}.png".format(i+1))).convert_alpha(), (70,70))
+        for frame_image in player_data["walk_images"]:
+            image = pygame.transform.smoothscale(
+                        pygame.image.load(
+                            os.path.join(img_folder, 
+                                        player_data["image_path"],
+                                        frame_image)).convert_alpha(), 
+                        (70,70))
             walk_right_images.append(image)
             walk_left_images.append(pygame.transform.flip(image, True, False))
 
@@ -252,7 +263,7 @@ class Player(Character):
 
     def die(self):
         self.reset(scenes[current_scene].player_start)
-
+"""
 class Spider(Character):
     # sprite for the Player
     def __init__(self):
@@ -274,7 +285,7 @@ class Spider(Character):
     def on_hit_x(self):
         self.x_speed = -self.x_speed
         print("Hit overridden on hit")
-
+"""
 
 class Scene():
     def __init__(self, scene_file_path):
@@ -287,13 +298,14 @@ class Scene():
             self.platform_sprites = pygame.sprite.Group()
             for y in range(HEIGHT):
                 for x in range(WIDTH):
-                    tile_id = self.scene_data["tiles"][y][x]
-                    if tile_id == "SPIDER":
+                    tile_id = self.scene_data["tiles"][y][x]                    
+                    """if tile_id == "SPIDER":
                         spider = Spider()
                         spider.tile_id = "SPIDER"
                         spider.reset((x, y))
                         self.platform_sprites.add(spider)
-                    elif tile_id != "BLANK":
+                    elif """
+                    if tile_id != "BLANK":
                         tile = pygame.sprite.Sprite()
                         tile.image = tiles[tile_id].image
                         tile.tile_id = tile_id

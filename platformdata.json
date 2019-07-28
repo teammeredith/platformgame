@@ -68,5 +68,26 @@
             "id": "LOCK_YELLOW",
             "filename": "lock_yellow.png"
         }             
-    ]
+    ],
+    "characters":{
+        "PLAYER": {
+            "image_path": "Player",
+            "standing_image": "p3_front.png",
+            "walk_images": [
+                "p3_walk01.png",
+                "p3_walk02.png",
+                "p3_walk03.png",
+                "p3_walk04.png",
+                "p3_walk05.png",
+                "p3_walk06.png",
+                "p3_walk07.png",
+                "p3_walk08.png",
+                "p3_walk09.png",
+                "p3_walk10.png",
+                "p3_walk11.png"
+            ] 
+        }
+    }
+
+
 } 
