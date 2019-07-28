@@ -77,9 +77,11 @@ class Character(pygame.sprite.Sprite):
                 if self.rect.right > config.SCREEN_WIDTH_PX:
                     self.rect.right = config.SCREEN_WIDTH_PX
                     self.on_hit_x()
+                    break
                 elif self.rect.left < 0:
                     self.rect.left = 0                    
                     self.on_hit_x()
+                    break
 
                 collided = self.collide_with_any_tile()
                 if collided:
@@ -207,7 +209,7 @@ class Player(Character):
 
     def check_for_key_press(self):    
         pressed = pygame.key.get_pressed()
-        if pressed[pygame.K_RIGHT]:
+        """if pressed[pygame.K_RIGHT]:
             self.x_speed = self.move_speed
             self.walking = True
         elif pressed[pygame.K_LEFT]:
@@ -215,7 +217,7 @@ class Player(Character):
             self.walking = True
         else:
             self.x_speed = 0
-            self.walking = False
+            self.walking = False"""
 
         if pressed[pygame.K_SPACE] and not self.falling:
             self.falling = True
@@ -229,6 +231,16 @@ class Player(Character):
             
     def die(self):
         self.start_scene(self.scene)
+
+
+    def start_scene(self, scene):
+        Character.start_scene(self, scene)
+        self.x_speed = 8
+
+    def on_hit_x(self):
+        self.x_speed = -self.x_speed
+
+
 """
 class Spider(Character):
     # sprite for the Player

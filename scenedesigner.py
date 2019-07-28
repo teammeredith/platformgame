@@ -116,27 +116,30 @@ while running:
         # check for closing window
         if event.type == pygame.QUIT:
             running = False
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            print("{}".format(event.button))
-            point = Point(event.pos)
-            option_selected = pygame.sprite.spritecollideany(Point(event.pos), tile_options, False)
-            if option_selected:
-                print("Hit option: {}".format(option_selected.tile_id))
-                if current_option:
-                    current_option.image = current_option.unselected_image
-                current_option = option_selected
-                option_selected.image = option_selected.selected_image
-                 
-            scene_tile_selected = pygame.sprite.spritecollideany(Point(event.pos), scene_tiles, False)
-            if scene_tile_selected and event.button == 1 and current_option != None:
-                update_screen_tile(scene_tile_selected, current_option.tile_id)
-            elif scene_tile_selected and event.button == 3:
-                update_screen_tile(scene_tile_selected, "BLANK")
-            
-            if pygame.sprite.spritecollide(Point(event.pos), done_group, False):
-                with open(scene_file_path, "w") as scene_file:
-                    json.dump(scene_data, scene_file)
-                exit()
+
+    buttons = pygame.mouse.get_pressed()
+    if buttons != (0,0,0):
+        print("Buttons = {}".format(buttons))
+        point = Point(pygame.mouse.get_pos())
+        option_selected = pygame.sprite.spritecollideany(point, tile_options, False)
+        if option_selected:
+            print("Hit option: {}".format(option_selected.tile_id))
+            if current_option:
+                current_option.image = current_option.unselected_image
+            current_option = option_selected
+            option_selected.image = option_selected.selected_image
+                
+        scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
+        if scene_tile_selected and buttons[0] and current_option != None:
+            update_screen_tile(scene_tile_selected, current_option.tile_id)
+        elif scene_tile_selected and buttons[2] == 1:
+            update_screen_tile(scene_tile_selected, "BLANK")
+        
+        if pygame.sprite.spritecollide(point, done_group, False):
+            with open(scene_file_path, "w") as scene_file:
+                json.dump(scene_data, scene_file)
+            exit()
+
     # Update
     tile_options.update()
 
