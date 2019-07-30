@@ -17,6 +17,7 @@ class Scene():
             self.player_start = (self.scene_data["player_start"][0], self.scene_data["player_start"][1]) 
             self.open_locks = []
             self.player = None
+            self.exited = False
 
             # Create the platform sprites
             self.platform_sprites = pygame.sprite.Group()
@@ -37,7 +38,10 @@ class Scene():
                         tile.rect.top = config.TILE_SIZE_PX*y
                         tile.rect.left = config.TILE_SIZE_PX*x
                         self.platform_sprites.add(tile)
-    
+
+    def exit_scene(self):
+        self.exited = True
+
     def test_collision(self, sprite):
         for test_sprite in self.platform_sprites:
             if sprite != test_sprite and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
