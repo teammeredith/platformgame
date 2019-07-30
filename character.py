@@ -47,7 +47,9 @@ class Character(pygame.sprite.Sprite):
     def collide_with_any_tile(self):
         # Check whether the player has collided with any tile.  If they have, return the Tile.  
         # Otherwise return None
-        return self.scene.test_collision(self)
+        if self.scene:
+            return self.scene.test_collision(self)
+        return False
 
     def check_for_key_press(self):    
         pass
@@ -59,6 +61,10 @@ class Character(pygame.sprite.Sprite):
         pass
 
     def update(self):
+
+        if not self.scene:
+            return
+            
         # Called every frame
         self.check_for_key_press()
 
@@ -225,6 +231,7 @@ class Player(Character):
         log.debug("Collided with {}".format(tile.tile_id))
         if tile.tile_id == "EXIT":
             print("Posting exit event")
+            self.scene = None
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
             
     def die(self):
