@@ -117,7 +117,7 @@ class Character(pygame.sprite.Sprite):
         if self.y_speed == 0:
             self.y_speed = 1
         else:
-            self.y_speed += 2
+            self.y_speed += config.GRAVITY_EFFECT
 
         move_dir = (1 if self.y_speed > 0 else -1)
         slip_remaining = self.slip_distance
@@ -126,7 +126,7 @@ class Character(pygame.sprite.Sprite):
             collided = self.collide_with_any_tile()
             if collided:
                 self.collided(collided)
-                if self.y_speed > 5 and collided.tile_id == "SPRING_UP":
+                if self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "SPRING_UP":
                     log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
                     self.scene.animate_spring(collided)
                     self.y_speed = min(self.y_speed, 10)
@@ -134,10 +134,10 @@ class Character(pygame.sprite.Sprite):
                 elif collided.tile_id == "SPRING_DN":
                     log.info("Hit SPRING_DOWN")
                     self.scene.animate_spring(collided)
-                    self.rect.top -= 30
-                    self.y_speed = -40
+                    self.rect.top -= config.TILE_SIZE/2
+                    self.y_speed = -1 * config.SPRING_JUMP_SPEED
                     break
-                elif self.y_speed > 5 and collided.tile_id == "BUTTON_YELLOW":
+                elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "BUTTON_YELLOW":
                     log.info("Hit BUTTON_YELLOW.  y_speed = {}".format(self.y_speed))
                     self.scene.hit_button(collided)
                     self.y_speed = min(self.y_speed, 10)
@@ -192,7 +192,7 @@ class Player(Character):
                                 os.path.join(config.img_folder, 
                                              player_data.image_path,
                                              player_data.standing_image)).convert_alpha(), 
-                            (70,70))
+                            (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
         walk_left_images = []
         walk_right_images = []
         for frame_image in player_data.walk_images:
@@ -201,15 +201,15 @@ class Player(Character):
                             os.path.join(config.img_folder, 
                                         player_data.image_path,
                                         frame_image)).convert_alpha(), 
-                        (70,70))
+                            (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
             walk_right_images.append(image)
             walk_left_images.append(pygame.transform.flip(image, True, False))
 
         Character.__init__(self, standing_image, walk_left_images, walk_right_images)
-        self.max_step_height = 15
-        self.slip_distance = 15
-        self.move_speed = 10
-        self.jump_speed = 25
+        self.max_step_height = config.MAX_STEP_HEIGHT
+        self.slip_distance = config.SLIP_DISTANCE
+        self.move_speed = config.MOVE_SPEED
+        self.jump_speed = config.JUMP_SPEED
         self.is_player = True
         self.tile_id = ""
 
@@ -242,7 +242,7 @@ class Player(Character):
 
     def start_scene(self, scene):
         Character.start_scene(self, scene)
-        self.x_speed = 8
+        self.x_speed = config.CONSTANT_MOVE_SPEED
 
     def on_hit_x(self):
         self.x_speed = -self.x_speed

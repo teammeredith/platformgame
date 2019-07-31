@@ -23,7 +23,7 @@ clock = pygame.time.Clock()
 
 # Load the tile data.  This doesn't feel like the right place, but hey...
 for tile_id, tile in config.tiles.items():
-    tile.image = pygame.image.load(os.path.join(config.tile_folder, tile.filename)).convert_alpha()
+    tile.image = pygame.transform.smoothscale(pygame.image.load(os.path.join(config.tile_folder, tile.filename)).convert_alpha(), (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
 
 # Load the scenes
 scenes = []
