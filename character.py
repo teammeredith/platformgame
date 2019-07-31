@@ -134,7 +134,7 @@ class Character(pygame.sprite.Sprite):
                 elif collided.tile_id == "SPRING_DN":
                     log.info("Hit SPRING_DOWN")
                     self.scene.animate_spring(collided)
-                    self.rect.top -= config.TILE_SIZE/2
+                    self.rect.top -= int(config.TILE_SIZE_PX)/2
                     self.y_speed = -1 * config.SPRING_JUMP_SPEED
                     break
                 elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "BUTTON_YELLOW":
@@ -215,7 +215,7 @@ class Player(Character):
 
     def check_for_key_press(self):    
         pressed = pygame.key.get_pressed()
-        """if pressed[pygame.K_RIGHT]:
+        if pressed[pygame.K_RIGHT]:
             self.x_speed = self.move_speed
             self.walking = True
         elif pressed[pygame.K_LEFT]:
@@ -223,7 +223,7 @@ class Player(Character):
             self.walking = True
         else:
             self.x_speed = 0
-            self.walking = False"""
+            self.walking = False
 
         if pressed[pygame.K_SPACE] and not self.falling:
             self.falling = True
@@ -242,11 +242,6 @@ class Player(Character):
 
     def start_scene(self, scene):
         Character.start_scene(self, scene)
-        self.x_speed = config.CONSTANT_MOVE_SPEED
-
-    def on_hit_x(self):
-        self.x_speed = -self.x_speed
-
 
 """
 class Spider(Character):
