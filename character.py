@@ -63,6 +63,16 @@ class Character(pygame.sprite.Sprite):
     def board_rotate(self):
         self.rect.left, self.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - self.rect.top, self.rect.left 
 
+    def change_x(self, increment):
+        self.rect.left += increment
+        if self.rect.right > config.SCREEN_WIDTH_PX:
+            self.rect.right = config.SCREEN_WIDTH_PX
+            return False
+        elif self.rect.left < 0:
+            self.rect.left = 0                    
+            return False
+        return True
+
     def update(self):
 
         if not self.scene:
@@ -82,13 +92,7 @@ class Character(pygame.sprite.Sprite):
             # Try and move in the x direction
             for i in range(abs(self.x_speed)):
                 log.debug("Current pos = {}, {}".format(self.rect.left, self.rect.top))
-                self.rect.left += move_dir
-                if self.rect.right > config.SCREEN_WIDTH_PX:
-                    self.rect.right = config.SCREEN_WIDTH_PX
-                    self.on_hit_x()
-                    break
-                elif self.rect.left < 0:
-                    self.rect.left = 0                    
+                if not self.change_x(move_dir):
                     self.on_hit_x()
                     break
 
@@ -121,6 +125,7 @@ class Character(pygame.sprite.Sprite):
             self.y_speed = 1
         else:
             self.y_speed += config.GRAVITY_EFFECT
+            self.y_speed = min(config.TERMINAL_VELOCITY, self.y_speed)
 
         move_dir = (1 if self.y_speed > 0 else -1)
         slip_remaining = self.slip_distance
@@ -161,7 +166,7 @@ class Character(pygame.sprite.Sprite):
                     # Check if we can slip off whatever we've hit
                     slipped = False
                     for slip in range(slip_remaining):
-                        for try_pos in (orig_left - slip, orig_left + slip):                        
+                        for try_pos in (max(0, orig_left - slip), min(config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX, orig_left + slip)):                        
                             self.rect.left = try_pos
                             if not self.collide_with_any_tile():
                                 log.info("Slipped off")
