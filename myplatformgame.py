@@ -67,6 +67,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_n:
+                next_scene(current_scene+1)
+                continue
             scenes[current_scene].key_down(event)
         elif event.type == config.LOCK_TIMER_EVENT_ID:
             scenes[current_scene].timer_pop()

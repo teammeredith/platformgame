@@ -21,6 +21,7 @@ class Character(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.scene = None
         self.is_player = False
+        self.rotating = True
 
     def start_scene(self, scene):
         self.scene = scene
@@ -54,7 +55,7 @@ class Character(pygame.sprite.Sprite):
     def check_for_key_press(self):    
         pass
 
-    def on_hit_x(self):
+    def on_stopped_x(self):
         self.x_speed = 0
 
     def collided(self, tile):
@@ -62,6 +63,8 @@ class Character(pygame.sprite.Sprite):
 
     def board_rotate(self):
         self.rect.left, self.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - self.rect.top, self.rect.left 
+        self.x_speed = 0
+        self.rotating = True
 
     def change_x(self, increment):
         self.rect.left += increment
@@ -93,12 +96,18 @@ class Character(pygame.sprite.Sprite):
             for i in range(abs(self.x_speed)):
                 log.debug("Current pos = {}, {}".format(self.rect.left, self.rect.top))
                 if not self.change_x(move_dir):
-                    self.on_hit_x()
+                    self.on_stopped_x()
                     break
 
                 collided = self.collide_with_any_tile()
                 if collided:
                     self.collided(collided)
+                    if not self.scene:
+                        return 
+
+                    if self.scene.try_to_move_tile(collided, move_dir):
+                        continue
+
                     # Is this something that we can go over?
                     if self.y_speed == 0:
                         over = False
@@ -116,7 +125,7 @@ class Character(pygame.sprite.Sprite):
                         self.rect.top = old_top
                     # We've moved as far as we can
                     self.rect.left -= move_dir
-                    self.on_hit_x()
+                    self.on_stopped_x()
                     break
                     # if we went over something?  self.y_speed = -1
 
@@ -136,6 +145,7 @@ class Character(pygame.sprite.Sprite):
                 self.rect.bottom = config.SCREEN_HEIGHT_PX
                 self.y_speed = 0
                 self.falling = False
+                self.rotating = False
                 break
             elif self.rect.top < 0:
                 self.rect.top = 0                    
@@ -181,6 +191,7 @@ class Character(pygame.sprite.Sprite):
                         self.rect.left = orig_left       
                 if move_dir == 1:
                     self.falling = False
+                    self.rotating = False
                 self.y_speed = 0
                 self.rect.bottom -= move_dir                
 
@@ -232,7 +243,9 @@ class Player(Character):
         self.is_player = True
         self.tile_id = ""
 
-    def check_for_key_press(self):    
+    def check_for_key_press(self):
+        if self.rotating:
+            return    
         pressed = pygame.key.get_pressed()
         if pressed[pygame.K_RIGHT]:
             self.x_speed = self.move_speed

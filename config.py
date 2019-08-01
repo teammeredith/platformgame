@@ -30,7 +30,7 @@ scene_folder = os.path.join(game_folder, "scenes")
 tile_folder = os.path.join(img_folder, "Tiles")
 
 class Tile():
-    def __init__(self, filename):
+    def __init__(self, filename, movable=False):
         self.filename = filename
 
 tiles = {
@@ -50,7 +50,8 @@ tiles = {
     "SPRING_DN":  Tile("springboardDown.png"),
     "BUTTON_YELLOW": Tile("buttonYellow.png"),
     "BUTTON_YELLOW_DN": Tile("buttonYellow_pressed.png"),
-    "LOCK_YELLOW": Tile("lock_yellow.png")
+    "LOCK_YELLOW": Tile("lock_yellow.png"),
+    "BOX": Tile("box.png", movable=True)
 }             
 
 class CharacterData():

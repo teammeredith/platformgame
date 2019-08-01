@@ -39,23 +39,21 @@ class Scene():
                         tile.rect = tile.image.get_rect()
                         tile.rect.top = config.TILE_SIZE_PX*y
                         tile.rect.left = config.TILE_SIZE_PX*x
+                        tile.movable = False
                         self.platform_sprites.add(tile)
                     if tile_id == "BUTTON_YELLOW":
                         tile.images = [config.tiles["BUTTON_YELLOW"].image,
                                        config.tiles["BUTTON_YELLOW_DN"].image]
                         tile.state = 0
+                    if tile_id == "BOX":
+                        tile.movable = True
+                        tile.target_left = None
+                        tile.y_speed = 0
 
     """
     Rotate the board clockwise
     """
     def rotate(self):
-        """
-        # Rotate the scene_data
-        step1 = self.scene_data["tiles"][::-1]
-        step2 = zip(*step1)
-        self.scene_data["tiles"] = [list(elem) for elem in step2]
-        """
-
         # Rotate the sprites
         for tile in itertools.chain(self.platform_sprites, self.open_locks):
             tile.image = pygame.transform.rotate(tile.image, -90)
@@ -69,7 +67,7 @@ class Scene():
         self.exited = True
 
     def test_collision(self, sprite):
-        for test_sprite in self.platform_sprites:
+        for test_sprite in itertools.chain(self.platform_sprites, [self.player]):
             if sprite != test_sprite and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
                 return test_sprite
 
@@ -80,8 +78,35 @@ class Scene():
             self.rotate()
             self.rotate()
 
+    def update_movable_tiles(self):
+        # Check whether any movable tiles should be falling
+
+        for sprite in itertools.filterfalse(lambda x: not x.movable, self.platform_sprites):        
+            # Check whether it should be moving sideways?
+            """
+            if sprite.target_left:
+                self.try_to_move_tile(sprite, 1 if sprite.target_left > sprite.rect.left else -1)
+            """
+
+            # Apply gravity.  We start slow 'cos that makes it more efficient when we're just standing on something...
+            if sprite.y_speed == 0:
+                sprite.y_speed = 1
+            else:
+                sprite.y_speed += config.GRAVITY_EFFECT
+                sprite.y_speed = min(config.TERMINAL_VELOCITY, sprite.y_speed)
+
+            move_dir = (1 if sprite.y_speed > 0 else -1)
+            for i in range(abs(sprite.y_speed)):
+                sprite.rect.bottom += move_dir
+
+                if sprite.rect.bottom > config.SCREEN_HEIGHT_PX or self.test_collision(sprite):
+                    sprite.rect.bottom -= move_dir
+                    sprite.y_speed = 0
+                    break        
+
     def update(self):
         self.platform_sprites.update()
+        self.update_movable_tiles()
 
     def add_player(self, player):
         self.player = player
@@ -99,11 +124,41 @@ class Scene():
             if tile.state == 0:
                 tile.image = tile.images[1]
                 tile.state = 1
+                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 8000)
             for sprite in self.platform_sprites:
                 if sprite.tile_id == "LOCK_YELLOW":
                     sprite.remove(self.platform_sprites)
                     self.open_locks.append(sprite)
-                    pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 3500)
+
+    def try_to_move_tile(self, tile, direction):
+        if tile.tile_id != "BOX":
+            return False
+        # It's a box.  Can we move it?
+        tile.rect.left += direction
+        if tile.rect.left < 0:
+            tile.rect.left = 0
+            return False
+        if tile.rect.right > config.SCREEN_WIDTH_PX:
+            tile.rect.right = config.SCREEN_WIDTH_PX
+            return False
+        if self.test_collision(tile):
+            #  Hit something
+            tile.rect.left -= direction
+            tile.target_left = None
+            return False
+        
+        # Managed to move it.  Encourage the box to continue moving to the next aligned space
+        if tile.target_left:
+            # We already had a target.  Have we reached it?
+            if tile.target_left == tile.rect.left:
+                tile.target_left = None
+          
+        elif direction == 1:
+            tile.target_left = (int(tile.rect.left / config.TILE_SIZE_PX) + 1) * config.TILE_SIZE_PX
+        else:
+            tile.target_left = int(tile.rect.left-1 / config.TILE_SIZE_PX) * config.TILE_SIZE_PX
+
+        return True  
 
     def draw(self, screen):
         self.platform_sprites.draw(screen)
