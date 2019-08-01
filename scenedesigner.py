@@ -54,8 +54,8 @@ idx = 0
 for tile_id, tile_data in config.tiles.items():
     print("Load tile {}".format(tile_id))
     tile = pygame.sprite.Sprite()
-    tile.unselected_image = pygame.image.load(os.path.join(config.tile_folder, tile_data.filename)).convert_alpha()
-    selected_image = pygame.image.load(os.path.join(config.tile_folder, tile_data.filename))
+    tile.unselected_image = pygame.transform.smoothscale(pygame.image.load(os.path.join(config.tile_folder, tile_data.filename)).convert_alpha(), (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+    selected_image = pygame.transform.smoothscale(pygame.image.load(os.path.join(config.tile_folder, tile_data.filename)), (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
     pygame.draw.rect(selected_image, (255, 0, 0), (0,0,config.TILE_SIZE_PX,config.TILE_SIZE_PX), 2)
     tile.selected_image = selected_image
     tile.image = tile.unselected_image
@@ -101,7 +101,7 @@ textsurface = myfont.render('Done', False, (255, 255, 255))
 done_tile = pygame.sprite.Sprite()
 done_tile.image = textsurface
 done_tile.rect = tile.image.get_rect()
-done_tile.rect.top = config.SCREEN_HEIGHT_PX - 100
+done_tile.rect.top = config.SCREEN_HEIGHT_PX - 50
 done_tile.rect.left = TILE_OPTIONS_X_OFFSET
 done_group = pygame.sprite.Group()
 done_group.add(done_tile)

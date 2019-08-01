@@ -4,6 +4,7 @@ import os
 import json
 import logging
 import sys
+import itertools
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -33,11 +34,36 @@ class Scene():
                     if tile_id != "BLANK":
                         tile = pygame.sprite.Sprite()
                         tile.image = config.tiles[tile_id].image
+                        tile.images = []
                         tile.tile_id = tile_id
                         tile.rect = tile.image.get_rect()
                         tile.rect.top = config.TILE_SIZE_PX*y
                         tile.rect.left = config.TILE_SIZE_PX*x
                         self.platform_sprites.add(tile)
+                    if tile_id == "BUTTON_YELLOW":
+                        tile.images = [config.tiles["BUTTON_YELLOW"].image,
+                                       config.tiles["BUTTON_YELLOW_DN"].image]
+                        tile.state = 0
+
+    """
+    Rotate the board clockwise
+    """
+    def rotate(self):
+        """
+        # Rotate the scene_data
+        step1 = self.scene_data["tiles"][::-1]
+        step2 = zip(*step1)
+        self.scene_data["tiles"] = [list(elem) for elem in step2]
+        """
+
+        # Rotate the sprites
+        for tile in itertools.chain(self.platform_sprites, self.open_locks):
+            tile.image = pygame.transform.rotate(tile.image, -90)
+            for i in range(len(tile.images)):
+                tile.images[i] = pygame.transform.rotate(tile.images[i], -90)
+            tile.rect.left, tile.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - tile.rect.top, tile.rect.left 
+
+        self.player.board_rotate()
 
     def exit_scene(self):
         self.exited = True
@@ -48,6 +74,11 @@ class Scene():
                 return test_sprite
 
         return None
+
+    def key_down(self, event):    
+        if event.key == pygame.K_r:
+            self.rotate()
+            self.rotate()
 
     def update(self):
         self.platform_sprites.update()
@@ -65,13 +96,14 @@ class Scene():
 
     def hit_button(self, tile):
         if tile.tile_id == "BUTTON_YELLOW":
-            tile.image = config.tiles["BUTTON_YELLOW_DN"].image
-            tile.tile_id = "BUTTON_YELLOW_DN"
-        for sprite in self.platform_sprites:
-            if sprite.tile_id == "LOCK_YELLOW":
-                sprite.remove(self.platform_sprites)
-                self.open_locks.append(sprite)
-                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 3500)
+            if tile.state == 0:
+                tile.image = tile.images[1]
+                tile.state = 1
+            for sprite in self.platform_sprites:
+                if sprite.tile_id == "LOCK_YELLOW":
+                    sprite.remove(self.platform_sprites)
+                    self.open_locks.append(sprite)
+                    pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 3500)
 
     def draw(self, screen):
         self.platform_sprites.draw(screen)
@@ -82,11 +114,12 @@ class Scene():
             self.platform_sprites.add(sprite)
             if pygame.sprite.collide_mask(sprite, self.player):
                 self.player.die()
+        self.open_locks = []
 
         for tile in self.platform_sprites:
-            if tile.tile_id == "BUTTON_YELLOW_DN":
-                tile.image = config.tiles["BUTTON_YELLOW"].image
-                tile.tile_id = "BUTTON_YELLOW"
+            if tile.tile_id == "BUTTON_YELLOW":
+                if tile.state == 1:
+                    tile.image = tile.images[0]
+                    tile.state = 0
                 if pygame.sprite.collide_mask(tile, self.player):
                     self.hit_button(tile)
-

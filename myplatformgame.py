@@ -36,6 +36,7 @@ with os.scandir(config.scene_folder) as it:
 def next_scene(new_scene):
     global current_scene
     print ("Moving to scene {}".format(new_scene))
+    pygame.time.wait(1000)
     if new_scene >= len(scenes):
         # Game over
         exit()
@@ -65,6 +66,8 @@ while running:
         # check for closing window
         if event.type == pygame.QUIT:
             running = False
+        elif event.type == pygame.KEYDOWN:
+            scenes[current_scene].key_down(event)
         elif event.type == config.LOCK_TIMER_EVENT_ID:
             scenes[current_scene].timer_pop()
 

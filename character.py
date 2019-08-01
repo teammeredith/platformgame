@@ -60,6 +60,9 @@ class Character(pygame.sprite.Sprite):
     def collided(self, tile):
         pass
 
+    def board_rotate(self):
+        self.rect.left, self.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - self.rect.top, self.rect.left 
+
     def update(self):
 
         if not self.scene:
@@ -123,6 +126,17 @@ class Character(pygame.sprite.Sprite):
         slip_remaining = self.slip_distance
         for i in range(abs(self.y_speed)):
             self.rect.bottom += move_dir
+
+            if self.rect.bottom > config.SCREEN_HEIGHT_PX:
+                self.rect.bottom = config.SCREEN_HEIGHT_PX
+                self.y_speed = 0
+                self.falling = False
+                break
+            elif self.rect.top < 0:
+                self.rect.top = 0                    
+                self.y_speed = 0
+                break
+
             collided = self.collide_with_any_tile()
             if collided:
                 self.collided(collided)
@@ -141,7 +155,7 @@ class Character(pygame.sprite.Sprite):
                     log.info("Hit BUTTON_YELLOW.  y_speed = {}".format(self.y_speed))
                     self.scene.hit_button(collided)
                     self.y_speed = min(self.y_speed, 10)
-                    break
+                    #break
                 elif move_dir == 1 and self.x_speed == 0:
                     orig_left = self.rect.left
                     # Check if we can slip off whatever we've hit
