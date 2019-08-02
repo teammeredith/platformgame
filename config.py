@@ -57,8 +57,12 @@ tiles = {
     "LOCK_YELLOW": Tile("lock_yellow.png"),
     "BOX": Tile("box.png", movable=True),
     "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
-    "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180)
-}             
+    "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
+    "ROCK": Tile("rock.png"),
+    "LAVA": Tile("liquidLava.png"),
+    "LAVA_TOP": Tile("liquidLavaTop.png"),
+    "TORCH": Tile("tochLit.png")
+}        
 
 class CharacterData():
     def __init__(self, image_path, standing_image, walk_images, dead_image):
