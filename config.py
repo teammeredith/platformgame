@@ -27,11 +27,14 @@ game_data = {}
 game_folder = os.path.dirname(__file__)
 img_folder = os.path.join(game_folder, "images")
 scene_folder = os.path.join(game_folder, "scenes")
-tile_folder = os.path.join(img_folder, "Tiles")
 
 class Tile():
-    def __init__(self, filename, movable=False):
+    def __init__(self, filename, path=["Tiles"], movable=False, rotate=0, kill=False):
         self.filename = filename
+        self.path = path
+        self.movable = movable
+        self.rotate = rotate
+        self.kill = kill
 
 tiles = {
     "P_GRASS_L": Tile("grassCliffLeft.png"),
@@ -51,7 +54,9 @@ tiles = {
     "BUTTON_YELLOW": Tile("buttonYellow.png"),
     "BUTTON_YELLOW_DN": Tile("buttonYellow_pressed.png"),
     "LOCK_YELLOW": Tile("lock_yellow.png"),
-    "BOX": Tile("box.png", movable=True)
+    "BOX": Tile("box.png", movable=True),
+    "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
+    "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180)
 }             
 
 class CharacterData():

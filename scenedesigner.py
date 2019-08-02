@@ -7,6 +7,7 @@ import logging
 import sys
 import argparse
 import config
+import utils 
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -54,8 +55,9 @@ idx = 0
 for tile_id, tile_data in config.tiles.items():
     print("Load tile {}".format(tile_id))
     tile = pygame.sprite.Sprite()
-    tile.unselected_image = pygame.transform.smoothscale(pygame.image.load(os.path.join(config.tile_folder, tile_data.filename)).convert_alpha(), (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
-    selected_image = pygame.transform.smoothscale(pygame.image.load(os.path.join(config.tile_folder, tile_data.filename)), (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+    
+    tile.unselected_image = utils.load_tile_image(tile_data)
+    selected_image = utils.load_tile_image(tile_data)
     pygame.draw.rect(selected_image, (255, 0, 0), (0,0,config.TILE_SIZE_PX,config.TILE_SIZE_PX), 2)
     tile.selected_image = selected_image
     tile.image = tile.unselected_image

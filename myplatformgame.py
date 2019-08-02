@@ -8,11 +8,22 @@ import logging
 import sys
 from character import Player
 from scene import Scene
+import utils
+import argparse
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
+
+parser = argparse.ArgumentParser(description='Platformgame')
+parser.add_argument('initial_scene',
+                    nargs='?', 
+                    default=0,
+                    type=int, 
+                    help='scene to start on')
+args = parser.parse_args()
+print("Start on scene {}".format(args.initial_scene))
 
 # Initialize pygame and create window
 pygame.init()
@@ -23,11 +34,11 @@ clock = pygame.time.Clock()
 
 # Load the tile data.  This doesn't feel like the right place, but hey...
 for tile_id, tile in config.tiles.items():
-    tile.image = pygame.transform.smoothscale(pygame.image.load(os.path.join(config.tile_folder, tile.filename)).convert_alpha(), (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+    tile.image = utils.load_tile_image(tile)
 
 # Load the scenes
 scenes = []
-current_scene = 0
+current_scene = args.initial_scene
 with os.scandir(config.scene_folder) as it:
     for entry in it:
         if entry.name.endswith(".json") and entry.is_file():

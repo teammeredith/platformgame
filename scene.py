@@ -15,40 +15,43 @@ class Scene():
     def __init__(self, scene_file_path):
         with open(scene_file_path, "r") as scene_file:
             self.scene_data = json.load(scene_file)
-            self.player_start = (self.scene_data["player_start"][0], self.scene_data["player_start"][1]) 
-            self.open_locks = []
-            self.player = None
-            self.exited = False
+            self.reset()
+        self.player = None
+    
+    def reset(self):
+        self.player_start = (self.scene_data["player_start"][0], self.scene_data["player_start"][1]) 
+        self.open_locks = []
+        self.exited = False
 
-            # Create the platform sprites
-            self.platform_sprites = pygame.sprite.Group()
-            for y in range(config.SCREEN_HEIGHT_TILES):
-                for x in range(config.SCREEN_WIDTH_TILES):
-                    tile_id = self.scene_data["tiles"][y][x]                    
-                    """if tile_id == "SPIDER":
-                        spider = Spider()
-                        spider.tile_id = "SPIDER"
-                        spider.reset((x, y))
-                        self.platform_sprites.add(spider)
-                    elif """
-                    if tile_id != "BLANK":
-                        tile = pygame.sprite.Sprite()
-                        tile.image = config.tiles[tile_id].image
-                        tile.images = []
-                        tile.tile_id = tile_id
-                        tile.rect = tile.image.get_rect()
-                        tile.rect.top = config.TILE_SIZE_PX*y
-                        tile.rect.left = config.TILE_SIZE_PX*x
-                        tile.movable = False
-                        self.platform_sprites.add(tile)
-                    if tile_id == "BUTTON_YELLOW":
-                        tile.images = [config.tiles["BUTTON_YELLOW"].image,
-                                       config.tiles["BUTTON_YELLOW_DN"].image]
-                        tile.state = 0
-                    if tile_id == "BOX":
-                        tile.movable = True
-                        tile.target_left = None
+        # Create the platform sprites
+        self.platform_sprites = pygame.sprite.Group()
+        for y in range(config.SCREEN_HEIGHT_TILES):
+            for x in range(config.SCREEN_WIDTH_TILES):
+                tile_id = self.scene_data["tiles"][y][x]                    
+                """if tile_id == "SPIDER":
+                    spider = Spider()
+                    spider.tile_id = "SPIDER"
+                    spider.reset((x, y))
+                    self.platform_sprites.add(spider)
+                elif """
+                if tile_id != "BLANK":
+                    tile = pygame.sprite.Sprite()
+                    tile.image = config.tiles[tile_id].image
+                    tile.images = []
+                    tile.tile_id = tile_id
+                    tile.rect = tile.image.get_rect()
+                    tile.rect.top = config.TILE_SIZE_PX*y
+                    tile.rect.left = config.TILE_SIZE_PX*x
+                    tile.movable = config.tiles[tile_id].movable
+                    tile.kill = config.tiles[tile_id].kill
+                    if tile.movable:
                         tile.y_speed = 0
+                    self.platform_sprites.add(tile)
+                if tile_id == "BUTTON_YELLOW":
+                    tile.images = [config.tiles["BUTTON_YELLOW"].image,
+                                    config.tiles["BUTTON_YELLOW_DN"].image]
+                    tile.state = 0
+                        
 
     """
     Rotate the board clockwise
@@ -144,9 +147,10 @@ class Scene():
         if self.test_collision(tile):
             #  Hit something
             tile.rect.left -= direction
-            tile.target_left = None
+            #tile.target_left = None
             return False
         
+        """
         # Managed to move it.  Encourage the box to continue moving to the next aligned space
         if tile.target_left:
             # We already had a target.  Have we reached it?
@@ -157,7 +161,8 @@ class Scene():
             tile.target_left = (int(tile.rect.left / config.TILE_SIZE_PX) + 1) * config.TILE_SIZE_PX
         else:
             tile.target_left = int(tile.rect.left-1 / config.TILE_SIZE_PX) * config.TILE_SIZE_PX
-
+        """
+        
         return True  
 
     def draw(self, screen):

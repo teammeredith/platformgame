@@ -25,6 +25,7 @@ class Character(pygame.sprite.Sprite):
 
     def start_scene(self, scene):
         self.scene = scene
+        self.scene.reset()
         self.walking = False
         self.rect.left = scene.player_start[0] * config.TILE_SIZE_PX
         self.rect.top = scene.player_start[1] * config.TILE_SIZE_PX
@@ -106,6 +107,9 @@ class Character(pygame.sprite.Sprite):
                         return 
 
                     if self.scene.try_to_move_tile(collided, move_dir):
+                        # Undo the move -- it's possible we were colliding with multiple objects
+                        self.rect.left -= move_dir
+                        # But carry on trying to move -- note this will also have the effect of slowing us down (we've used up an iteration of the loop)
                         continue
 
                     # Is this something that we can go over?
@@ -141,11 +145,9 @@ class Character(pygame.sprite.Sprite):
         for i in range(abs(self.y_speed)):
             self.rect.bottom += move_dir
 
-            if self.rect.bottom > config.SCREEN_HEIGHT_PX:
-                self.rect.bottom = config.SCREEN_HEIGHT_PX
-                self.y_speed = 0
-                self.falling = False
-                self.rotating = False
+            # Check if we fall off the bottom or top of the screen
+            if self.rect.top > config.SCREEN_HEIGHT_PX:
+                self.die()
                 break
             elif self.rect.top < 0:
                 self.rect.top = 0                    
@@ -155,6 +157,8 @@ class Character(pygame.sprite.Sprite):
             collided = self.collide_with_any_tile()
             if collided:
                 self.collided(collided)
+                if collided.kill:
+                    self.die()
                 if self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "SPRING_UP":
                     log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
                     self.scene.animate_spring(collided)
