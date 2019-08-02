@@ -5,6 +5,7 @@ import json
 import logging
 import sys
 import itertools
+import utils
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -12,10 +13,11 @@ module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
 
 class Scene():
-    def __init__(self, scene_file_path):
+    def __init__(self, scene_file_path, screen):
         with open(scene_file_path, "r") as scene_file:
             self.scene_data = json.load(scene_file)
             self.reset()
+            self.screen = screen
         self.player = None
     
     def reset(self):
@@ -58,6 +60,8 @@ class Scene():
     """
     def rotate(self):
         # Rotate the sprites
+        utils.screen_spin(self.screen, steps=10, angle=90, time=150)
+        print("Rotate")
         for tile in itertools.chain(self.platform_sprites, self.open_locks):
             tile.image = pygame.transform.rotate(tile.image, -90)
             for i in range(len(tile.images)):

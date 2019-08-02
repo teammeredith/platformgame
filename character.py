@@ -22,6 +22,7 @@ class Character(pygame.sprite.Sprite):
         self.scene = None
         self.is_player = False
         self.rotating = True
+        self.dead = False
 
     def start_scene(self, scene):
         self.scene = scene
@@ -33,6 +34,7 @@ class Character(pygame.sprite.Sprite):
         self.x_speed = 0
         self.falling = True
         self.walk_index = 0
+        self.dead = False
     
     def animate(self):
         # Change the character's image if we need to
@@ -79,9 +81,9 @@ class Character(pygame.sprite.Sprite):
 
     def update(self):
 
-        if not self.scene:
+        if not self.scene or self.dead:
             return
-            
+
         # Called every frame
         self.check_for_key_press()
 
@@ -148,7 +150,7 @@ class Character(pygame.sprite.Sprite):
             # Check if we fall off the bottom or top of the screen
             if self.rect.top > config.SCREEN_HEIGHT_PX:
                 self.die()
-                break
+                return
             elif self.rect.top < 0:
                 self.rect.top = 0                    
                 self.y_speed = 0
@@ -159,6 +161,7 @@ class Character(pygame.sprite.Sprite):
                 self.collided(collided)
                 if collided.kill:
                     self.die()
+                    return
                 if self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "SPRING_UP":
                     log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
                     self.scene.animate_spring(collided)
@@ -247,6 +250,14 @@ class Player(Character):
         self.is_player = True
         self.tile_id = ""
 
+        self.dead_image = pygame.transform.smoothscale(
+                            pygame.image.load(
+                                os.path.join(config.img_folder, 
+                                             player_data.image_path,
+                                             player_data.dead_image)).convert_alpha(), 
+                            (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+
+
     def check_for_key_press(self):
         if self.rotating:
             return    
@@ -273,8 +284,9 @@ class Player(Character):
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
             
     def die(self):
-        self.start_scene(self.scene)
-
+        self.dead = True
+        self.image = self.dead_image
+        pygame.event.post(pygame.event.Event(config.PLAYER_DEAD))
 
     def start_scene(self, scene):
         Character.start_scene(self, scene)

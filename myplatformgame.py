@@ -42,12 +42,11 @@ current_scene = args.initial_scene
 with os.scandir(config.scene_folder) as it:
     for entry in it:
         if entry.name.endswith(".json") and entry.is_file():
-            scenes.append(Scene(entry.path))
+            scenes.append(Scene(entry.path, screen))
 
 def next_scene(new_scene):
     global current_scene
     print ("Moving to scene {}".format(new_scene))
-    pygame.time.wait(1000)
     if new_scene >= len(scenes):
         # Game over
         exit()
@@ -71,7 +70,14 @@ while running:
     
     # Check whether we have any exit events and deal with them first
     if pygame.event.get(eventtype=config.REACHED_EXIT_EVENT_ID):
+        pygame.time.wait(1000)
         next_scene(current_scene+1)
+
+    # Check whether we have any dead events and deal with them first
+    if pygame.event.get(eventtype=config.PLAYER_DEAD):
+        pygame.time.wait(1000)
+        utils.screen_spin(screen, angle=1440, time=2000, steps=180, shrink=True)
+        next_scene(current_scene)
 
     for event in pygame.event.get():
         # check for closing window

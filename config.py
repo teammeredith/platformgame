@@ -21,6 +21,7 @@ FPS = 30
 
 LOCK_TIMER_EVENT_ID = pygame.USEREVENT + 1
 REACHED_EXIT_EVENT_ID = pygame.USEREVENT + 2
+PLAYER_DEAD = pygame.USEREVENT + 3
 
 game_data = {}
 
@@ -60,23 +61,27 @@ tiles = {
 }             
 
 class CharacterData():
-    def __init__(self, image_path, standing_image, walk_images):
+    def __init__(self, image_path, standing_image, walk_images, dead_image):
         self.image_path = image_path
         self.standing_image = standing_image
         self.walk_images = walk_images
+        self.dead_image = dead_image
 
 characters = {
-    "PLAYER": CharacterData("Player", "p3_front.png", ["p3_walk01.png",
-                                                       "p3_walk02.png",
-                                                       "p3_walk03.png",
-                                                       "p3_walk04.png",
-                                                       "p3_walk05.png",
-                                                       "p3_walk06.png",
-                                                       "p3_walk07.png",
-                                                       "p3_walk08.png",
-                                                       "p3_walk09.png",
-                                                       "p3_walk10.png",
-                                                       "p3_walk11.png"])
+    "PLAYER": CharacterData("Player", 
+                            "p3_front.png", 
+                            ["p3_walk01.png",
+                             "p3_walk02.png",
+                             "p3_walk03.png",
+                             "p3_walk04.png",
+                             "p3_walk05.png",
+                             "p3_walk06.png",
+                             "p3_walk07.png",
+                             "p3_walk08.png",
+                             "p3_walk09.png",
+                             "p3_walk10.png",
+                             "p3_walk11.png"],
+                             "p3_hurt.png")
 }
 
  
