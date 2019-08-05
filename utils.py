@@ -19,13 +19,8 @@ def screen_spin(screen, angle=90, time=1000, steps=45, shrink=False):
     for i in range(steps):
         pygame.time.wait(int(time/steps))
         screen.fill((0, 0, 0))
-        #pygame.draw.rect(screen,(0,0,0),pygame.Rect(0,0,config.SCREEN_WIDTH_PX-100, config.SCREEN_HEIGHT_PX))
-        screen.unlock()
         scale = scale*scale_factor
-        if shrink:
-            new_image = pygame.transform.rotozoom(screen_image, int(angle/steps)*i, scale)
-        else:
-            new_image = pygame.transform.rotozoom(screen_image, int(angle/steps)*i, 1)
+        new_image = pygame.transform.rotozoom(screen_image, int(angle/steps)*i, scale)
         width = new_image.get_width()
         height = new_image.get_height()
         x_offset = int((config.SCREEN_WIDTH_PX - width)/2)
@@ -35,5 +30,4 @@ def screen_spin(screen, angle=90, time=1000, steps=45, shrink=False):
         else:
             screen.blit(new_image, pygame.Rect(0, 0, config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), pygame.Rect(-1*x_offset, -1*y_offset, config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))            
         pygame.display.flip()
-        pygame.display.update()
             

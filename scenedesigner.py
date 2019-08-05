@@ -8,6 +8,8 @@ import sys
 import argparse
 import config
 import utils 
+import tkinter as tk
+from tkinter import simpledialog
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -119,28 +121,42 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    buttons = pygame.mouse.get_pressed()
-    if buttons != (0,0,0):
-        print("Buttons = {}".format(buttons))
-        point = Point(pygame.mouse.get_pos())
-        option_selected = pygame.sprite.spritecollideany(point, tile_options, False)
-        if option_selected:
-            print("Hit option: {}".format(option_selected.tile_id))
-            if current_option:
-                current_option.image = current_option.unselected_image
-            current_option = option_selected
-            option_selected.image = option_selected.selected_image
+    if pygame.mouse.get_focused():
+        buttons = pygame.mouse.get_pressed()
+        if buttons != (0,0,0):
+            print("Buttons = {}".format(buttons))
+            point = Point(pygame.mouse.get_pos())
+            print("get_pos = {}".format(pygame.mouse.get_pos()))
+            option_selected = pygame.sprite.spritecollideany(point, tile_options, False)
+            if option_selected:
+                print("Hit option: {}".format(option_selected.tile_id))
+                if current_option:
+                    current_option.image = current_option.unselected_image
+                current_option = option_selected
+                option_selected.image = option_selected.selected_image
+                    
+            scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
+            if scene_tile_selected and buttons[0] and current_option != None:
+                update_screen_tile(scene_tile_selected, current_option.tile_id)
+            elif scene_tile_selected and buttons[2] == 1:
+                update_screen_tile(scene_tile_selected, "BLANK")
+            
+            if pygame.sprite.spritecollide(point, done_group, False):
+                with open(scene_file_path, "w") as scene_file:
+                    json.dump(scene_data, scene_file, indent=4)
+                exit()
                 
-        scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
-        if scene_tile_selected and buttons[0] and current_option != None:
-            update_screen_tile(scene_tile_selected, current_option.tile_id)
-        elif scene_tile_selected and buttons[2] == 1:
-            update_screen_tile(scene_tile_selected, "BLANK")
-        
-        if pygame.sprite.spritecollide(point, done_group, False):
-            with open(scene_file_path, "w") as scene_file:
-                json.dump(scene_data, scene_file)
-            exit()
+                """
+                    print("Open dialog")
+                    app_window = tk.Tk()
+                    #Tk().wm_withdraw() #to hide the main window
+                    answer = simpledialog.askinteger("Input", "What is your age?",
+                                        parent=app_window,
+                                        minvalue=0, maxvalue=100)
+                    app_window.destroy()
+                    print("Answer is {}".format(answer))
+                """
+            
 
     # Update
     tile_options.update()

@@ -10,6 +10,7 @@ from character import Player
 from scene import Scene
 import utils
 import argparse
+import time
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -28,7 +29,7 @@ print("Start on scene {}".format(args.initial_scene))
 # Initialize pygame and create window
 pygame.init()
 pygame.mixer.init()
-screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
+screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.DOUBLEBUF)
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
