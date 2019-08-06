@@ -3,6 +3,7 @@ import pygame
 import logging
 import sys
 import os
+import utils
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -158,6 +159,9 @@ class Character(pygame.sprite.Sprite):
 
             collided = self.collide_with_any_tile()
             if collided:
+                log.debug("Moving y.  Collided with {}".format(collided.tile_id))
+                log.debug("New pos = {}, {}".format(self.rect.left, self.rect.top))
+                log.debug("Current speed = {}, {}".format(self.x_speed, self.y_speed))
                 self.collided(collided)
                 if collided.kill:
                     self.die()
@@ -178,7 +182,7 @@ class Character(pygame.sprite.Sprite):
                     self.scene.hit_button(collided)
                     self.y_speed = min(self.y_speed, 10)
                     #break
-                elif move_dir == 1 and self.x_speed == 0:
+                elif self.x_speed == 0:
                     orig_left = self.rect.left
                     # Check if we can slip off whatever we've hit
                     slipped = False
@@ -197,10 +201,12 @@ class Character(pygame.sprite.Sprite):
                     else:
                         self.rect.left = orig_left       
                 if move_dir == 1:
+                    log.debug("Landed")
                     self.falling = False
                     self.rotating = False
                 self.y_speed = 0
-                self.rect.bottom -= move_dir                
+                self.rect.bottom -= move_dir
+                break                
 
         """
         elif self.y_speed < 0:
@@ -224,21 +230,11 @@ class Player(Character):
     # sprite for the Player
     def __init__(self):
         player_data = config.characters["PLAYER"]
-        standing_image = pygame.transform.smoothscale(
-                            pygame.image.load(
-                                os.path.join(config.img_folder, 
-                                             player_data.image_path,
-                                             player_data.standing_image)).convert_alpha(), 
-                            (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+        standing_image = utils.load_image(player_data.image_path, player_data.standing_image)
         walk_left_images = []
         walk_right_images = []
         for frame_image in player_data.walk_images:
-            image = pygame.transform.smoothscale(
-                        pygame.image.load(
-                            os.path.join(config.img_folder, 
-                                        player_data.image_path,
-                                        frame_image)).convert_alpha(), 
-                            (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+            image = utils.load_image(player_data.image_path, frame_image)
             walk_right_images.append(image)
             walk_left_images.append(pygame.transform.flip(image, True, False))
 
@@ -250,13 +246,7 @@ class Player(Character):
         self.is_player = True
         self.tile_id = ""
 
-        self.dead_image = pygame.transform.smoothscale(
-                            pygame.image.load(
-                                os.path.join(config.img_folder, 
-                                             player_data.image_path,
-                                             player_data.dead_image)).convert_alpha(), 
-                            (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
-
+        self.dead_image = utils.load_image(player_data.image_path, player_data.dead_image)
 
     def check_for_key_press(self):
         if self.rotating:

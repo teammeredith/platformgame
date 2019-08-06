@@ -2,15 +2,18 @@ import pygame
 import config
 import os
 
-def load_tile_image(tile_data):
+def load_image(path, filename, rotation=0):
     return pygame.transform.rotate(
                 pygame.transform.smoothscale(
                     pygame.image.load(
-                        os.path.join(config.img_folder, *tile_data.path, tile_data.filename)
+                        os.path.join(config.img_folder, *path, filename)
                     ).convert_alpha(), 
                     (config.TILE_SIZE_PX, config.TILE_SIZE_PX)
                 ),
-                tile_data.rotate)
+                rotation)
+
+def load_tile_image(tile_data):
+    return load_image(tile_data.path, tile_data.filename, tile_data.rotate)
 
 def screen_spin(screen, angle=90, time=1000, steps=45, shrink=False):
     screen_image = pygame.display.get_surface().copy()

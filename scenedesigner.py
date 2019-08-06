@@ -35,6 +35,8 @@ scene_file_path = os.path.join(config.scene_folder, args.scene_file)
 if os.path.isfile(scene_file_path):
     with open(scene_file_path) as scene_file:
         scene_data = json.load(scene_file)
+    player_start = scene_data["player_start"]
+    scene_data["tiles"][player_start[1]][player_start[0]] = "PLAYER"
 else:   
     scene_data = {}
     scene_data["tiles"] = [ [ "BLANK" for x in range( config.SCREEN_WIDTH_TILES ) ] for y in range( config.SCREEN_HEIGHT_TILES ) ]
@@ -76,6 +78,10 @@ class Point(pygame.sprite.Sprite):
         super(pygame.sprite.Sprite, self).__init__()
         self.rect = pygame.Rect(pos[0], pos[1], 1, 1)
 
+# Tile is a sprite representing a tile on the scene.
+# It has tile.x = the x co-ordinate.  tile.y = the y co-ordinate
+# This function updates the tile.image to be the image for the tile with ID tile_id
+# It also updates tile.id and the relevant entry in scene_data to be the new tile_id 
 def update_screen_tile(tile, tile_id):
     if tile_id == "BLANK":
         print("Blank tile")
@@ -85,9 +91,11 @@ def update_screen_tile(tile, tile_id):
         for tile_option in tile_options:
             if tile_option.tile_id == tile_id:
                 tile.image = tile_option.unselected_image.copy()   
+
     tile.rect = tile.image.get_rect()
     tile.rect.left = tile.x*config.TILE_SIZE_PX        
     tile.rect.top = tile.y*config.TILE_SIZE_PX        
+    tile.tile_id = tile_id
     scene_data["tiles"][tile.y][tile.x] = tile_id
 
 scene_tiles = pygame.sprite.Group()
@@ -104,7 +112,7 @@ myfont = pygame.font.SysFont('Comic Sans MS', 30)
 textsurface = myfont.render('Done', False, (255, 255, 255))
 done_tile = pygame.sprite.Sprite()
 done_tile.image = textsurface
-done_tile.rect = tile.image.get_rect()
+done_tile.rect = done_tile.image.get_rect()
 done_tile.rect.top = config.SCREEN_HEIGHT_PX - 50
 done_tile.rect.left = TILE_OPTIONS_X_OFFSET
 done_group = pygame.sprite.Group()
@@ -141,10 +149,18 @@ while running:
             elif scene_tile_selected and buttons[2] == 1:
                 update_screen_tile(scene_tile_selected, "BLANK")
             
-            if pygame.sprite.spritecollide(point, done_group, False):
+            print("Done rect = {}".format(done_tile.rect))
+            if done_tile.rect.colliderect(pygame.Rect(pygame.mouse.get_pos(), (1,1))):                
+                for x in range(config.SCREEN_WIDTH_TILES):
+                    for y in range(config.SCREEN_HEIGHT_TILES):
+                        if scene_data["tiles"][y][x] == "PLAYER":
+                            scene_data["tiles"][y][x] = "BLANK"                            
+                            scene_data["player_start"] = [x, y]
+
                 with open(scene_file_path, "w") as scene_file:
                     json.dump(scene_data, scene_file, indent=4)
                 exit()
+
                 
                 """
                     print("Open dialog")

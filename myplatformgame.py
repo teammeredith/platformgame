@@ -1,3 +1,15 @@
+""" To do list 
+- TNT block
+- Make torches flicker
+- Commonize the code to move player and movable blocks...
+- (Done) Make it possible to set initial player position
+- (Done) Work out why the box can't fall through a 1x1 hole
+- Fix the issue when a block gets moved on to a lock
+- Add Red buttons that toggle things to flip flop
+- (Done) Think about a mechanism to enable the case where you have to drop multiple blocks into a pile.  One block can push another?
+-   Trial mechanism where you can only see part of the total scene?  
+"""
+
 # Pygame sprite Example
 import config
 import pygame

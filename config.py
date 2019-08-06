@@ -1,21 +1,21 @@
 import pygame
 import os
 
-SCREEN_WIDTH_TILES = 15
-SCREEN_HEIGHT_TILES = 15
-TILE_SIZE_PX = 45
+SCREEN_WIDTH_TILES = 25
+SCREEN_HEIGHT_TILES = 25
+TILE_SIZE_PX = 30
 SCREEN_WIDTH_PX = SCREEN_WIDTH_TILES*TILE_SIZE_PX
 SCREEN_HEIGHT_PX = SCREEN_HEIGHT_TILES*TILE_SIZE_PX
 
 # Character constants
-MAX_STEP_HEIGHT = 8
-SLIP_DISTANCE = 10
-MOVE_SPEED = 6
-JUMP_SPEED = 14
-SPRING_JUMP_SPEED = 23
+MAX_STEP_HEIGHT = 6
+SLIP_DISTANCE = 9
+MOVE_SPEED = 5
+JUMP_SPEED = 12
+SPRING_JUMP_SPEED = 18
 SPRING_ACTIVE_SPEED = 2
 GRAVITY_EFFECT = 1
-TERMINAL_VELOCITY = 40
+TERMINAL_VELOCITY = 30
 
 FPS = 30
 
@@ -59,9 +59,8 @@ tiles = {
     "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
     "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
     "ROCK": Tile("rock.png"),
-    "LAVA": Tile("liquidLava.png"),
-    "LAVA_TOP": Tile("liquidLavaTop.png"),
-    "TORCH": Tile("tochLit.png")
+    "TORCH": Tile("tochLit.png"),
+    "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer
 }        
 
 class CharacterData():
@@ -72,7 +71,7 @@ class CharacterData():
         self.dead_image = dead_image
 
 characters = {
-    "PLAYER": CharacterData("Player", 
+    "PLAYER": CharacterData(["Player"], 
                             "p3_front.png", 
                             ["p3_walk01.png",
                              "p3_walk02.png",

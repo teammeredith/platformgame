@@ -103,13 +103,36 @@ class Scene():
                 sprite.y_speed = min(config.TERMINAL_VELOCITY, sprite.y_speed)
 
             move_dir = (1 if sprite.y_speed > 0 else -1)
+            slip_remaining = config.SLIP_DISTANCE             
             for i in range(abs(sprite.y_speed)):
                 sprite.rect.bottom += move_dir
 
-                if sprite.rect.bottom > config.SCREEN_HEIGHT_PX or self.test_collision(sprite):
+                if sprite.rect.bottom > config.SCREEN_HEIGHT_PX: 
                     sprite.rect.bottom -= move_dir
                     sprite.y_speed = 0
                     break        
+                if self.test_collision(sprite):                    
+                    if move_dir == 1:
+                        orig_left = sprite.rect.left
+                        # Check if we can slip off whatever we've hit
+                        slipped = False
+                        for slip in range(slip_remaining):
+                            for try_pos in (max(0, orig_left - slip), min(config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX, orig_left + slip)):                        
+                                sprite.rect.left = try_pos
+                                if not self.test_collision(sprite):
+                                    log.info("Slipped off")
+                                    slipped = True
+                                    break
+                            if slipped:
+                                slip_remaining -= (slip+1)
+                                break
+                        if slipped:
+                            continue 
+                        else:
+                            sprite.rect.left = orig_left       
+                            sprite.rect.bottom -= move_dir
+                            sprite.y_speed = 0
+                            break        
 
     def update(self):
         self.platform_sprites.update()
@@ -148,12 +171,18 @@ class Scene():
         if tile.rect.right > config.SCREEN_WIDTH_PX:
             tile.rect.right = config.SCREEN_WIDTH_PX
             return False
-        if self.test_collision(tile):
-            #  Hit something
+        collided = self.test_collision(tile) 
+        if collided:
+            #  Hit something.  Check whether we can move whatever we've hit too.
+            if self.try_to_move_tile(collided, direction):
+                # The thing we hit moved.  Check whether we're not collision free.
+                if not self.test_collision(tile):
+                    return True
+
             tile.rect.left -= direction
-            #tile.target_left = None
             return False
-        
+        return True
+
         """
         # Managed to move it.  Encourage the box to continue moving to the next aligned space
         if tile.target_left:
