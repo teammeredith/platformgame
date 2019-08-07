@@ -97,6 +97,7 @@ class Scene():
 
     def update_movable_tiles(self):
         # Check whether any movable tiles should be falling
+        sprites_to_delete = []
 
         for sprite in itertools.filterfalse(lambda x: not x.movable, self.platform_sprites):        
             # Check whether it should be moving sideways?
@@ -117,9 +118,8 @@ class Scene():
             for i in range(abs(sprite.y_speed)):
                 sprite.rect.bottom += move_dir
 
-                if sprite.rect.bottom > config.SCREEN_HEIGHT_PX: 
-                    sprite.rect.bottom -= move_dir
-                    sprite.y_speed = 0
+                if sprite.rect.top > config.SCREEN_HEIGHT_PX:
+                    sprites_to_delete.append(sprite) 
                     break        
                 if self.test_collision(sprite):                    
                     if move_dir == 1:
@@ -142,7 +142,9 @@ class Scene():
                             sprite.rect.left = orig_left       
                             sprite.rect.bottom -= move_dir
                             sprite.y_speed = 0
-                            break        
+                            break      
+
+        self.platform_sprites.remove(sprites_to_delete)
 
     def update(self):
         self.frame_counter = (self.frame_counter+1) % config.FPS
