@@ -41,6 +41,7 @@ else:
     scene_data = {}
     scene_data["tiles"] = [ [ "BLANK" for x in range( config.SCREEN_WIDTH_TILES ) ] for y in range( config.SCREEN_HEIGHT_TILES ) ]
     scene_data["player_start"] = [0,0]
+    scene_data["lock_time"] = 8000
     
 # initialize pygame and create window
 pygame.init()

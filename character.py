@@ -159,6 +159,7 @@ class Character(pygame.sprite.Sprite):
 
             collided = self.collide_with_any_tile()
             if collided:
+                self.rotating = False
                 log.debug("Moving y.  Collided with {}".format(collided.tile_id))
                 log.debug("New pos = {}, {}".format(self.rect.left, self.rect.top))
                 log.debug("Current speed = {}, {}".format(self.x_speed, self.y_speed))
@@ -166,19 +167,21 @@ class Character(pygame.sprite.Sprite):
                 if collided.kill:
                     self.die()
                     return
-                if self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "SPRING_UP":
+                if collided.tile_id == "SPIN":
+                    self.scene.spin_activated(collided)
+                if self.y_speed > config.SPRING_ACTIVE_SPEED and collided.spring and collided.state == 0:
                     log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
                     self.scene.animate_spring(collided)
                     self.y_speed = min(self.y_speed, 10)
                     break
-                elif collided.tile_id == "SPRING_DN":
+                elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.spring and collided.state == 1:
                     log.info("Hit SPRING_DOWN")
                     self.scene.animate_spring(collided)
                     self.rect.top -= int(config.TILE_SIZE_PX)/2
                     self.y_speed = -1 * config.SPRING_JUMP_SPEED
                     break
-                elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.tile_id == "BUTTON_YELLOW":
-                    log.info("Hit BUTTON_YELLOW.  y_speed = {}".format(self.y_speed))
+                elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.button:
+                    log.info("Hit button.  y_speed = {}".format(self.y_speed))
                     self.scene.hit_button(collided)
                     self.y_speed = min(self.y_speed, 10)
                     #break
@@ -203,7 +206,6 @@ class Character(pygame.sprite.Sprite):
                 if move_dir == 1:
                     log.debug("Landed")
                     self.falling = False
-                    self.rotating = False
                 self.y_speed = 0
                 self.rect.bottom -= move_dir
                 break                

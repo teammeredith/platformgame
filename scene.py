@@ -18,6 +18,7 @@ class Scene():
             self.scene_data = json.load(scene_file)
             self.reset()
             self.screen = screen
+            self.frame_counter = 0
         self.player = None
     
     def reset(self):
@@ -46,22 +47,23 @@ class Scene():
                     tile.rect.left = config.TILE_SIZE_PX*x
                     tile.movable = config.tiles[tile_id].movable
                     tile.kill = config.tiles[tile_id].kill
+                    tile.spring = config.tiles[tile_id].spring
+                    tile.button = config.tiles[tile_id].button
+                    tile.frames_per_transition = config.tiles[tile_id].frames_per_transition
+                    if config.tiles[tile_id].animate_images:
+                        tile.images = [tile.image] + config.tiles[tile_id].animate_images
+                        tile.state = 0
                     if tile.movable:
                         tile.y_speed = 0
                     self.platform_sprites.add(tile)
-                if tile_id == "BUTTON_YELLOW":
-                    tile.images = [config.tiles["BUTTON_YELLOW"].image,
-                                    config.tiles["BUTTON_YELLOW_DN"].image]
-                    tile.state = 0
-                        
 
     """
     Rotate the board clockwise
     """
     def rotate(self):
+        
         # Rotate the sprites
         utils.screen_spin(self.screen, steps=10, angle=90, time=150)
-        print("Rotate")
         for tile in itertools.chain(self.platform_sprites, self.open_locks):
             tile.image = pygame.transform.rotate(tile.image, -90)
             for i in range(len(tile.images)):
@@ -80,10 +82,18 @@ class Scene():
 
         return None
 
-    def key_down(self, event):    
+    def key_down(self, event):
+        return    
         if event.key == pygame.K_r:
             self.rotate()
             self.rotate()
+
+    def animate_tiles(self):
+        # Check whether any tiles should be animated
+        for sprite in itertools.filterfalse(lambda x: not x.frames_per_transition, self.platform_sprites):        
+            if not self.frame_counter % sprite.frames_per_transition:
+                sprite.state = (sprite.state+1) % len(sprite.images)
+                sprite.image = sprite.images[sprite.state]
 
     def update_movable_tiles(self):
         # Check whether any movable tiles should be falling
@@ -135,26 +145,29 @@ class Scene():
                             break        
 
     def update(self):
+        self.frame_counter = (self.frame_counter+1) % config.FPS
         self.platform_sprites.update()
+        self.animate_tiles()
         self.update_movable_tiles()
 
     def add_player(self, player):
         self.player = player
 
+    def spin_activated(self, spin_tile):
+        # Can only use each spin once.  Remove the tile now.
+        self.platform_sprites.remove(spin_tile)
+        pygame.event.post(pygame.event.Event(config.ROTATE_BOARD_EVENT_ID))
+
     def animate_spring(self, tile):
-        if tile.tile_id == "SPRING_UP":
-            tile.image = config.tiles["SPRING_DN"].image
-            tile.tile_id = "SPRING_DN"
-        else:
-            tile.image = config.tiles["SPRING_UP"].image
-            tile.tile_id = "SPRING_UP"
+        tile.state = (tile.state+1)%2
+        tile.image = tile.images[tile.state]
 
     def hit_button(self, tile):
-        if tile.tile_id == "BUTTON_YELLOW":
+        if tile.button == "YELLOW":
             if tile.state == 0:
                 tile.image = tile.images[1]
                 tile.state = 1
-                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, 8000)
+                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, self.scene_data["lock_time"])
             for sprite in self.platform_sprites:
                 if sprite.tile_id == "LOCK_YELLOW":
                     sprite.remove(self.platform_sprites)
@@ -210,7 +223,7 @@ class Scene():
         self.open_locks = []
 
         for tile in self.platform_sprites:
-            if tile.tile_id == "BUTTON_YELLOW":
+            if tile.button == "YELLOW":
                 if tile.state == 1:
                     tile.image = tile.images[0]
                     tile.state = 0

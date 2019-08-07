@@ -13,7 +13,7 @@ SLIP_DISTANCE = 9
 MOVE_SPEED = 5
 JUMP_SPEED = 12
 SPRING_JUMP_SPEED = 18
-SPRING_ACTIVE_SPEED = 2
+SPRING_ACTIVE_SPEED = 4
 GRAVITY_EFFECT = 1
 TERMINAL_VELOCITY = 30
 
@@ -22,6 +22,7 @@ FPS = 30
 LOCK_TIMER_EVENT_ID = pygame.USEREVENT + 1
 REACHED_EXIT_EVENT_ID = pygame.USEREVENT + 2
 PLAYER_DEAD = pygame.USEREVENT + 3
+ROTATE_BOARD_EVENT_ID = pygame.USEREVENT + 4
 
 game_data = {}
 
@@ -30,12 +31,25 @@ img_folder = os.path.join(game_folder, "images")
 scene_folder = os.path.join(game_folder, "scenes")
 
 class Tile():
-    def __init__(self, filename, path=["Tiles"], movable=False, rotate=0, kill=False):
+    def __init__(self, 
+                 filename, 
+                 path=["Tiles"], 
+                 animate_image_files=[],
+                 frames_per_transition=0,
+                 movable=False,     
+                 spring=False,
+                 button=False,
+                 rotate=0, 
+                 kill=False):
         self.filename = filename
         self.path = path
         self.movable = movable
         self.rotate = rotate
         self.kill = kill
+        self.spring = spring
+        self.button = button
+        self.animate_image_files = animate_image_files
+        self.frames_per_transition = frames_per_transition
 
 tiles = {
     "P_GRASS_L": Tile("grassCliffLeft.png"),
@@ -50,16 +64,18 @@ tiles = {
     "DIRT_SL_R": Tile("grassHillRight.png"),
     "DIRT_SL_L": Tile("grassHillLeft.png"),
     "BUSH": Tile("bush.png"),
-    "SPRING_UP": Tile("springboardUp.png"),
-    "SPRING_DN":  Tile("springboardDown.png"),
-    "BUTTON_YELLOW": Tile("buttonYellow.png"),
-    "BUTTON_YELLOW_DN": Tile("buttonYellow_pressed.png"),
+    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True),
+    "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotate=180),
+    "SPRING_DN_ROTATED":  Tile("springboardDown.png", rotate=180),
+    "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW"),
+    "BUTTON_YELLOW_ROTATED": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW", rotate=180),
     "LOCK_YELLOW": Tile("lock_yellow.png"),
     "BOX": Tile("box.png", movable=True),
+    "SPIN": Tile("fireball.png", path=["Items"]),
     "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
     "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
     "ROCK": Tile("rock.png"),
-    "TORCH": Tile("tochLit.png"),
+    "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6),
     "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer
 }        
 

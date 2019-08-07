@@ -47,7 +47,10 @@ clock = pygame.time.Clock()
 
 # Load the tile data.  This doesn't feel like the right place, but hey...
 for tile_id, tile in config.tiles.items():
-    tile.image = utils.load_tile_image(tile)
+    tile.image = utils.load_image(tile.path, tile.filename, tile.rotate)
+    tile.animate_images = []
+    for image_file in tile.animate_image_files:
+        tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
 
 # Load the scenes
 scenes = []
@@ -103,6 +106,10 @@ while running:
             scenes[current_scene].key_down(event)
         elif event.type == config.LOCK_TIMER_EVENT_ID:
             scenes[current_scene].timer_pop()
+        elif event.type == config.ROTATE_BOARD_EVENT_ID:
+            scenes[current_scene].rotate()
+            scenes[current_scene].rotate()
+
 
     # Update
     player_group.update()

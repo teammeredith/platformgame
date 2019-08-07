@@ -33,4 +33,5 @@ def screen_spin(screen, angle=90, time=1000, steps=45, shrink=False):
         else:
             screen.blit(new_image, pygame.Rect(0, 0, config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), pygame.Rect(-1*x_offset, -1*y_offset, config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))            
         pygame.display.flip()
+        pygame.event.pump()
             
