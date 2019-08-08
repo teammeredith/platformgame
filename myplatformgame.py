@@ -1,6 +1,8 @@
 """ To do list 
 - TNT block
-- Make torches flicker
+- Add scenery -- moving clouds?  (Tried -- didn't work well)
+- (Done) Make torches flicker
+- (Done) Stop jumping whilst falling
 - Commonize the code to move player and movable blocks...
 - (Done) Make it possible to set initial player position
 - (Done) Work out why the box can't fall through a 1x1 hole
@@ -52,6 +54,8 @@ for tile_id, tile in config.tiles.items():
     for image_file in tile.animate_image_files:
         tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
 
+#background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
+
 # Load the scenes
 scenes = []
 current_scene = args.initial_scene
@@ -75,6 +79,8 @@ def next_scene(new_scene):
 player = Player()
 player_group = pygame.sprite.Group()
 player_group.add(player)
+
+# Associate the player and the first scene
 player.start_scene(scenes[current_scene])
 scenes[current_scene].add_player(player)
 
@@ -92,7 +98,7 @@ while running:
     # Check whether we have any dead events and deal with them first
     if pygame.event.get(eventtype=config.PLAYER_DEAD):
         pygame.time.wait(1000)
-        utils.screen_spin(screen, angle=1440, time=2000, steps=180, shrink=True)
+        utils.screen_spin(screen, angle=1440, time=1000, steps=135, shrink=True)
         next_scene(current_scene)
 
     for event in pygame.event.get():
@@ -116,7 +122,8 @@ while running:
     scenes[current_scene].update()
 
     # Draw / render
-    screen.fill((0, 0, 0))
+    #screen.blit(background_image, (0,0))
+    screen.fill((0,0,0))
     scenes[current_scene].draw(screen)
     player_group.draw(screen)
 

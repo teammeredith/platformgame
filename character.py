@@ -4,11 +4,16 @@ import logging
 import sys
 import os
 import utils
+from enum import Enum
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
+
+class CollideRC(Enum):
+    CONTINUE = 1
+    STOP = 2 
 
 class Character(pygame.sprite.Sprite):
     # sprite for the Player
@@ -59,11 +64,17 @@ class Character(pygame.sprite.Sprite):
     def check_for_key_press(self):    
         pass
 
+    # Override this function to e.g. make a character that walks back and forth bouncing when it hits an object
     def on_stopped_x(self):
         self.x_speed = 0
 
+    # Called every time the character makes contact with a tile -- even if e.g. they are going to slip off it / walk over it
+    # Override to check for e.g. contact with spikes or the exit.
+    # Returns one of CollideRC
+    # - CONTINUE: We will continue as normal, including stopping, stepping over or slipping off the thing we've hit as appropriate
+    # - STOP: The player will be halted in their tracks.  E.g. they've hit the exit or they've died.
     def collided(self, tile):
-        pass
+        return CollideRC.CONTINUE
 
     def board_rotate(self):
         self.rect.left, self.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - self.rect.top, self.rect.left 
@@ -93,56 +104,67 @@ class Character(pygame.sprite.Sprite):
 
         old_center = self.rect.center
 
+        # Logic here is:
+        # - Try to move in the x-direction.  If we hit something, can we go over it?
+        # - Apply gravity
+        # - Try to move in the y-direction.  If we hit something, should we slip off it?
+        # - Animate the character image
         if self.x_speed != 0:
             move_dir = (1 if self.x_speed > 0 else -1)
             step_height_remaining = self.max_step_height
+            
             # Try and move in the x direction
             for i in range(abs(self.x_speed)):
                 log.debug("Current pos = {}, {}".format(self.rect.left, self.rect.top))
+
+                # Update our x-position enforcing screen bounds
                 if not self.change_x(move_dir):
+                    # We hit the edge of the screen
                     self.on_stopped_x()
                     break
 
                 collided = self.collide_with_any_tile()
-                if collided:
-                    self.collided(collided)
-                    if not self.scene:
-                        return 
+                if not collided:
+                    # We're good.  Try to move again.
+                    continue
 
-                    if self.scene.try_to_move_tile(collided, move_dir):
-                        # Undo the move -- it's possible we were colliding with multiple objects
-                        self.rect.left -= move_dir
-                        # But carry on trying to move -- note this will also have the effect of slowing us down (we've used up an iteration of the loop)
-                        continue
-
-                    # Is this something that we can go over?
-                    if self.y_speed == 0:
-                        over = False
-                        old_top = self.rect.top
-                        for step in range(step_height_remaining):
-                            log.debug("Step up")
-                            self.rect.top -= 1
-                            if not self.collide_with_any_tile():
-                                log.info("Made it over")
-                                over = True
-                                break
-                        if over:
-                            step_height_remaining -= (step+1)
-                            continue
-                        self.rect.top = old_top
-                    # We've moved as far as we can
+                if self.collided(collided) == CollideRC.STOP:
+                    # Immediate stop.  Undo the move and return.  Don't try and move any further.
                     self.rect.left -= move_dir
-                    self.on_stopped_x()
-                    break
-                    # if we went over something?  self.y_speed = -1
+                    return 
 
-        # Apply gravity.  We start slow 'cos that makes it more efficient when we're just standing on something...
-        if self.y_speed == 0:
-            self.y_speed = 1
-        else:
-            self.y_speed += config.GRAVITY_EFFECT
-            self.y_speed = min(config.TERMINAL_VELOCITY, self.y_speed)
+                if self.scene.try_to_move_tile(collided, move_dir):
+                    # We moved the thing we hit, but it's possible we were colliding with multiple objects.  So undo this move, 
+                    # but keep trying to move further.   This will also have the effect of slowing us down which is nice.
+                    self.rect.left -= move_dir
+                    continue
 
+                # Is this something that we can go over?
+                if self.y_speed == 0:
+                    over = False
+                    old_top = self.rect.top
+                    for step in range(step_height_remaining):
+                        log.debug("Step up")
+                        self.rect.top -= 1
+                        if not self.collide_with_any_tile():
+                            log.info("Made it over")
+                            over = True
+                            break
+                    if over:
+                        step_height_remaining -= (step+1)
+                        continue
+                    self.rect.top = old_top
+
+                # If we get here we must have hit something that we couldn't move or go over.  Undo the move and stop trying to 
+                # change our x position.
+                self.rect.left -= move_dir
+                self.on_stopped_x()
+                break
+
+        # Apply gravity.  
+        self.y_speed = min(config.TERMINAL_VELOCITY, self.y_speed + config.GRAVITY_EFFECT)
+
+        # Try to move in the y-direction.
         move_dir = (1 if self.y_speed > 0 else -1)
         slip_remaining = self.slip_distance
         for i in range(abs(self.y_speed)):
@@ -209,6 +231,9 @@ class Character(pygame.sprite.Sprite):
                 self.y_speed = 0
                 self.rect.bottom -= move_dir
                 break                
+            else:
+                # We didn't hit anything...
+                self.falling = True
 
         """
         elif self.y_speed < 0:
@@ -270,11 +295,16 @@ class Player(Character):
 
     def collided(self, tile):
         log.debug("Collided with {}".format(tile.tile_id))
+        if tile.kill:
+            self.die()
+            return CollideRC.STOP
         if tile.tile_id == "EXIT":
             print("Posting exit event")
             self.scene = None
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
-            
+            return CollideRC.STOP
+        return CollideRC.CONTINUE
+
     def die(self):
         self.dead = True
         self.image = self.dead_image

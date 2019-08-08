@@ -2,13 +2,13 @@ import pygame
 import config
 import os
 
-def load_image(path, filename, rotation=0):
+def load_image(path, filename, rotation=0, size=(config.TILE_SIZE_PX, config.TILE_SIZE_PX)):
     return pygame.transform.rotate(
                 pygame.transform.smoothscale(
                     pygame.image.load(
                         os.path.join(config.img_folder, *path, filename)
                     ).convert_alpha(), 
-                    (config.TILE_SIZE_PX, config.TILE_SIZE_PX)
+                    size
                 ),
                 rotation)
 
