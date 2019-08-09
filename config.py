@@ -40,6 +40,7 @@ class Tile():
                  spring=False,
                  button=False,
                  rotate=0, 
+                 rotation_enabled=True, 
                  kill=False):
         self.filename = filename
         self.path = path
@@ -50,6 +51,7 @@ class Tile():
         self.button = button
         self.animate_image_files = animate_image_files
         self.frames_per_transition = frames_per_transition
+        self.rotation_enabled = rotation_enabled
 
 tiles = {
     "P_GRASS_L": Tile("grassCliffLeft.png"),
@@ -64,8 +66,8 @@ tiles = {
     "DIRT_SL_R": Tile("grassHillRight.png"),
     "DIRT_SL_L": Tile("grassHillLeft.png"),
     "BUSH": Tile("bush.png"),
-    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True),
-    "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotate=180),
+    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotation_enabled=True),
+    "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotate=180, rotation_enabled=False),
     "SPRING_DN_ROTATED":  Tile("springboardDown.png", rotate=180),
     "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW"),
     "BUTTON_YELLOW_ROTATED": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW", rotate=180),

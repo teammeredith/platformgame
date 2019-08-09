@@ -1,4 +1,6 @@
 """ To do list 
+- Can embed yourself in a block by hitting an upsidedown spring
+- Can't push a block when standing on a down button
 - TNT block
 - Add scenery -- moving clouds?  (Tried -- didn't work well)
 - (Done) Make torches flicker
@@ -117,7 +119,6 @@ while running:
         elif event.type == config.LOCK_TIMER_EVENT_ID:
             scenes[current_scene].timer_pop()
         elif event.type == config.ROTATE_BOARD_EVENT_ID:
-            scenes[current_scene].rotate()
             scenes[current_scene].rotate()
 
 

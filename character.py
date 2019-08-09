@@ -7,7 +7,7 @@ import utils
 from enum import Enum
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
 
@@ -84,7 +84,7 @@ class Character(pygame.sprite.Sprite):
         return CollideRC.CONTINUE
 
     def board_rotate(self):
-        self.rect.left, self.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - self.rect.top, self.rect.left 
+        self.rect.right, self.rect.bottom = config.SCREEN_WIDTH_PX - self.rect.left, config.SCREEN_HEIGHT_PX - self.rect.top 
         self.x_speed = 0
         self.rotating = True
 
@@ -137,10 +137,13 @@ class Character(pygame.sprite.Sprite):
 
                 if self.act_on_collision(collided) == CollideRC.STOP:
                     # Immediate stop.  Undo the move and return.  Don't try and move any further.
+                    log.debug("act_on_collision -> stop")
                     self.rect.left -= move_dir
                     return 
+                log.debug("try to move tile {}".format(collided.tile_id))
 
                 if self.scene.try_to_move_tile(collided, move_dir):
+                    log.info("Collided with {}".format(collided.tile_id))
                     # We moved the thing we hit, but it's possible we were colliding with multiple objects.  So undo this move, 
                     # but keep trying to move further.   This will also have the effect of slowing us down which is nice.
                     self.rect.left -= move_dir
@@ -153,10 +156,24 @@ class Character(pygame.sprite.Sprite):
                     for step in range(step_height_remaining):
                         log.debug("Step up")
                         self.rect.top -= 1
-                        if not self.collide_with_any_tile():
+                        collided_on_push = self.collide_with_any_tile() 
+                        if not collided_on_push:
                             log.info("Made it over")
                             over = True
                             break
+                        elif collided_on_push != collided:
+                            log.debug("Now colliding with {}".format(collided_on_push.tile_id))
+
+                            # We're now colliding with something different.  Maybe we can push that?
+                            # ToDo: really ought to iterate through everything that we are colliding with and try to push it 
+                            if self.scene.try_to_move_tile(collided_on_push, move_dir):
+                                log.debug("Moved tile")
+                                # Has that solved the issue?
+                                if not self.collide_with_any_tile():
+                                    log.info("Made it over")
+                                    over = True
+                                    break
+
                     if over:
                         step_height_remaining -= (step+1)
                         continue
@@ -272,15 +289,16 @@ class Player(Character):
             self.y_speed = 0
             self.scene.spin_activated(tile)
             return CollideRC.STOP
-        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 0:
+        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 0 and tile.rotation_enabled:
             log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
             self.scene.animate_spring(tile)
             self.y_speed = min(self.y_speed, 10)
             self.falling = True 
             return CollideRC.STOP
-        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 1:
+        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 1 and tile.rotation_enabled:
             log.info("Hit SPRING_DOWN")
             self.scene.animate_spring(tile)
+            # ToDo.  This is a nasty hack to avoid the tile springing back and overlapping the sprite.
             self.rect.top -= int(config.TILE_SIZE_PX)/2
             self.y_speed = -1 * config.SPRING_JUMP_SPEED
             return CollideRC.STOP

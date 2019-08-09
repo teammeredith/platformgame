@@ -48,6 +48,7 @@ class Scene():
                     tile.movable = config.tiles[tile_id].movable
                     tile.kill = config.tiles[tile_id].kill
                     tile.spring = config.tiles[tile_id].spring
+                    tile.rotation_enabled = config.tiles[tile_id].rotation_enabled
                     tile.button = config.tiles[tile_id].button
                     tile.frames_per_transition = config.tiles[tile_id].frames_per_transition
                     if config.tiles[tile_id].animate_images:
@@ -63,12 +64,13 @@ class Scene():
     def rotate(self):
         
         # Rotate the sprites
-        utils.screen_spin(self.screen, steps=10, angle=90, time=150)
+        utils.screen_spin(self.screen, steps=10, angle=180, time=150)
         for tile in itertools.chain(self.platform_sprites, self.open_locks):
-            tile.image = pygame.transform.rotate(tile.image, -90)
+            tile.image = pygame.transform.rotate(tile.image, -180)
+            tile.rotation_enabled = not tile.rotation_enabled
             for i in range(len(tile.images)):
-                tile.images[i] = pygame.transform.rotate(tile.images[i], -90)
-            tile.rect.left, tile.rect.top = config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX - tile.rect.top, tile.rect.left 
+                tile.images[i] = pygame.transform.rotate(tile.images[i], -180)
+            tile.rect.right, tile.rect.bottom = config.SCREEN_WIDTH_PX - tile.rect.left, config.SCREEN_HEIGHT_PX - tile.rect.top 
 
         self.player.board_rotate()
 
@@ -85,7 +87,6 @@ class Scene():
     def key_down(self, event):
         return    
         if event.key == pygame.K_r:
-            self.rotate()
             self.rotate()
 
     def animate_tiles(self):
