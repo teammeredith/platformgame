@@ -240,6 +240,7 @@ class Player(Character):
         if self.rotating:
             return    
         pressed = pygame.key.get_pressed()
+
         if pressed[pygame.K_RIGHT]:
             self.x_speed = self.move_speed
             self.walking = True

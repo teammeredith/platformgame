@@ -183,20 +183,6 @@ class Scene():
             return False
         return True
 
-        """
-        # Managed to move it.  Encourage the box to continue moving to the next aligned space
-        if tile.target_left:
-            # We already had a target.  Have we reached it?
-            if tile.target_left == tile.rect.left:
-                tile.target_left = None
-          
-        elif direction == 1:
-            tile.target_left = (int(tile.rect.left / config.TILE_SIZE_PX) + 1) * config.TILE_SIZE_PX
-        else:
-            tile.target_left = int(tile.rect.left-1 / config.TILE_SIZE_PX) * config.TILE_SIZE_PX
-        """
-        
-        return True  
 
     def draw(self, screen):
         self.platform_sprites.draw(screen)
