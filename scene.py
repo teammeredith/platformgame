@@ -150,6 +150,7 @@ class Scene():
 
     def hit_button(self, tile):
         if tile.button == "YELLOW":
+            # If the button is up, then change it to down
             if tile.state == 0:
                 tile.image = tile.images[1]
                 tile.state = 1

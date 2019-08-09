@@ -7,7 +7,7 @@ import utils
 from enum import Enum
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
 
@@ -76,8 +76,11 @@ class Character(pygame.sprite.Sprite):
     # Override to check for e.g. contact with spikes or the exit.
     # Returns one of CollideRC
     # - CONTINUE: We will continue as normal, including stopping, stepping over or slipping off the thing we've hit as appropriate
-    # - STOP: The player will be halted in their tracks.  E.g. they've hit the exit or they've died.
+    # - STOP:     The player will be halted in their tracks.  We will undo the move that caused the collision, but won't do any more 
+    #             motion processing for this frame.  act_on_collision can and should update any player attributes that need to be 
+    #             updated as a result of the collision, such as self.rotating, self.falling, or self.y_speed.  
     def act_on_collision(self, tile):
+        self.rotating = False
         return CollideRC.CONTINUE
 
     def board_rotate(self):
@@ -185,11 +188,9 @@ class Character(pygame.sprite.Sprite):
 
             collided = self.collide_with_any_tile()
             if collided:
-                self.rotating = False 
                 if self.act_on_collision(collided) == CollideRC.STOP:
                     # Don't try and move any further.
                     self.rect.bottom -= move_dir
-                    self.falling = False
                     return 
                 elif self.x_speed == 0:
                     # See if we should slip past whatever we've hit
@@ -250,11 +251,14 @@ class Player(Character):
             self.walking = False
 
         if pressed[pygame.K_SPACE] and not self.falling:
+            log.info("Jump")
             self.falling = True
             self.y_speed = -self.jump_speed
 
+    # See comment on parent class
     def act_on_collision(self, tile):
         log.debug("Collided with {}".format(tile.tile_id))
+        self.rotating = False
         if tile.kill:
             self.die()
             return CollideRC.STOP
@@ -264,12 +268,14 @@ class Player(Character):
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
             return CollideRC.STOP
         if tile.tile_id == "SPIN":
+            self.y_speed = 0
             self.scene.spin_activated(tile)
             return CollideRC.STOP
         if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 0:
             log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
             self.scene.animate_spring(tile)
             self.y_speed = min(self.y_speed, 10)
+            self.falling = True 
             return CollideRC.STOP
         elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 1:
             log.info("Hit SPRING_DOWN")
@@ -281,7 +287,7 @@ class Player(Character):
             log.info("Hit button.  y_speed = {}".format(self.y_speed))
             self.scene.hit_button(tile)
             self.y_speed = min(self.y_speed, 10)
-            return CollideRC.STOP
+            return CollideRC.CONTINUE
         return CollideRC.CONTINUE
 
     def die(self):

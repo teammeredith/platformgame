@@ -109,6 +109,10 @@ while running:
             if event.key == pygame.K_n:
                 next_scene(current_scene+1)
                 continue
+            if event.key == pygame.K_ESCAPE:
+                utils.screen_spin(screen, angle=1440, time=1000, steps=135, shrink=True)
+                next_scene(current_scene)
+                break
             scenes[current_scene].key_down(event)
         elif event.type == config.LOCK_TIMER_EVENT_ID:
             scenes[current_scene].timer_pop()
