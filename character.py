@@ -29,6 +29,10 @@ class Character(pygame.sprite.Sprite):
         self.is_player = False
         self.rotating = True
         self.dead = False
+        self.max_step_height = config.MAX_STEP_HEIGHT
+        self.slip_distance = config.SLIP_DISTANCE
+        self.move_speed = config.MOVE_SPEED
+        self.jump_speed = config.JUMP_SPEED
 
     def start_scene(self, scene):
         self.scene = scene
@@ -54,7 +58,7 @@ class Character(pygame.sprite.Sprite):
             self.walk_index = 0
             self.image = self.standing_image
 
-    def collide_with_any_tile(self):
+    def collide_with_any_tile(self, sprite=None):
         # Check whether the player has collided with any tile.  If they have, return the Tile.  
         # Otherwise return None
         if self.scene:
@@ -73,7 +77,7 @@ class Character(pygame.sprite.Sprite):
     # Returns one of CollideRC
     # - CONTINUE: We will continue as normal, including stopping, stepping over or slipping off the thing we've hit as appropriate
     # - STOP: The player will be halted in their tracks.  E.g. they've hit the exit or they've died.
-    def collided(self, tile):
+    def act_on_collision(self, tile):
         return CollideRC.CONTINUE
 
     def board_rotate(self):
@@ -128,7 +132,7 @@ class Character(pygame.sprite.Sprite):
                     # We're good.  Try to move again.
                     continue
 
-                if self.collided(collided) == CollideRC.STOP:
+                if self.act_on_collision(collided) == CollideRC.STOP:
                     # Immediate stop.  Undo the move and return.  Don't try and move any further.
                     self.rect.left -= move_dir
                     return 
@@ -140,7 +144,7 @@ class Character(pygame.sprite.Sprite):
                     continue
 
                 # Is this something that we can go over?
-                if self.y_speed == 0:
+                if True: #self.y_speed == 0:
                     over = False
                     old_top = self.rect.top
                     for step in range(step_height_remaining):
@@ -181,53 +185,24 @@ class Character(pygame.sprite.Sprite):
 
             collided = self.collide_with_any_tile()
             if collided:
-                self.rotating = False
-                log.debug("Moving y.  Collided with {}".format(collided.tile_id))
-                log.debug("New pos = {}, {}".format(self.rect.left, self.rect.top))
-                log.debug("Current speed = {}, {}".format(self.x_speed, self.y_speed))
-                self.collided(collided)
-                if collided.kill:
-                    self.die()
-                    return
-                if collided.tile_id == "SPIN":
-                    self.scene.spin_activated(collided)
-                if self.y_speed > config.SPRING_ACTIVE_SPEED and collided.spring and collided.state == 0:
-                    log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
-                    self.scene.animate_spring(collided)
-                    self.y_speed = min(self.y_speed, 10)
-                    break
-                elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.spring and collided.state == 1:
-                    log.info("Hit SPRING_DOWN")
-                    self.scene.animate_spring(collided)
-                    self.rect.top -= int(config.TILE_SIZE_PX)/2
-                    self.y_speed = -1 * config.SPRING_JUMP_SPEED
-                    break
-                elif self.y_speed > config.SPRING_ACTIVE_SPEED and collided.button:
-                    log.info("Hit button.  y_speed = {}".format(self.y_speed))
-                    self.scene.hit_button(collided)
-                    self.y_speed = min(self.y_speed, 10)
-                    #break
-                elif self.x_speed == 0:
-                    orig_left = self.rect.left
-                    # Check if we can slip off whatever we've hit
-                    slipped = False
-                    for slip in range(slip_remaining):
-                        for try_pos in (max(0, orig_left - slip), min(config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX, orig_left + slip)):                        
-                            self.rect.left = try_pos
-                            if not self.collide_with_any_tile():
-                                log.info("Slipped off")
-                                slipped = True
-                                break
-                        if slipped:
-                            slip_remaining -= (slip+1)
-                            break
-                    if slipped:
-                        continue 
-                    else:
-                        self.rect.left = orig_left       
-                if move_dir == 1:
-                    log.debug("Landed")
+                self.rotating = False 
+                if self.act_on_collision(collided) == CollideRC.STOP:
+                    # Don't try and move any further.
+                    self.rect.bottom -= move_dir
                     self.falling = False
+                    return 
+                elif self.x_speed == 0:
+                    # See if we should slip past whatever we've hit
+                    slip_distance = utils.try_to_slip_sprite(self, slip_remaining, self.collide_with_any_tile)
+                    if slip_distance:
+                        # We successfully slipped off
+                        slip_remaining -= slip_distance
+                        continue 
+                
+                #  We've hit something and not slipped past it
+                if move_dir == 1:
+                    self.falling = False
+                    
                 self.y_speed = 0
                 self.rect.bottom -= move_dir
                 break                
@@ -235,17 +210,6 @@ class Character(pygame.sprite.Sprite):
                 # We didn't hit anything...
                 self.falling = True
 
-        """
-        elif self.y_speed < 0:
-            # We're going up.  Check if we've hit our head.
-            for tile in platform_sprites:
-                if pygame.sprite.collide_rect(self, tile) and pygame.sprite.collide_mask(self, tile):
-                    print("Hit head")
-                    self.rect.bottom = old_bottom
-                    self.y_speed = 0
-        """
-
-            
         if old_center != self.rect.center:
             log.info("New pos = {}, {}".format(self.rect.left, self.rect.top))
             log.info("Current speed = {}, {}".format(self.x_speed, self.y_speed))
@@ -266,10 +230,6 @@ class Player(Character):
             walk_left_images.append(pygame.transform.flip(image, True, False))
 
         Character.__init__(self, standing_image, walk_left_images, walk_right_images)
-        self.max_step_height = config.MAX_STEP_HEIGHT
-        self.slip_distance = config.SLIP_DISTANCE
-        self.move_speed = config.MOVE_SPEED
-        self.jump_speed = config.JUMP_SPEED
         self.is_player = True
         self.tile_id = ""
 
@@ -293,7 +253,7 @@ class Player(Character):
             self.falling = True
             self.y_speed = -self.jump_speed
 
-    def collided(self, tile):
+    def act_on_collision(self, tile):
         log.debug("Collided with {}".format(tile.tile_id))
         if tile.kill:
             self.die()
@@ -302,6 +262,25 @@ class Player(Character):
             print("Posting exit event")
             self.scene = None
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
+            return CollideRC.STOP
+        if tile.tile_id == "SPIN":
+            self.scene.spin_activated(tile)
+            return CollideRC.STOP
+        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 0:
+            log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
+            self.scene.animate_spring(tile)
+            self.y_speed = min(self.y_speed, 10)
+            return CollideRC.STOP
+        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 1:
+            log.info("Hit SPRING_DOWN")
+            self.scene.animate_spring(tile)
+            self.rect.top -= int(config.TILE_SIZE_PX)/2
+            self.y_speed = -1 * config.SPRING_JUMP_SPEED
+            return CollideRC.STOP
+        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.button:
+            log.info("Hit button.  y_speed = {}".format(self.y_speed))
+            self.scene.hit_button(tile)
+            self.y_speed = min(self.y_speed, 10)
             return CollideRC.STOP
         return CollideRC.CONTINUE
 

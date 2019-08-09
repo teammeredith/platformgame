@@ -95,23 +95,15 @@ class Scene():
                 sprite.state = (sprite.state+1) % len(sprite.images)
                 sprite.image = sprite.images[sprite.state]
 
+    # Called to see if any movable tiles should be *autonomously* moving.  This doesn't get involved when
+    # tiles are being pushed.  That's covered by try_to_move_tile.  So at the moment this function 
+    # just has to worry about whether non-fixed tiles should be falling.
     def update_movable_tiles(self):
-        # Check whether any movable tiles should be falling
         sprites_to_delete = []
 
         for sprite in itertools.filterfalse(lambda x: not x.movable, self.platform_sprites):        
-            # Check whether it should be moving sideways?
-            """
-            if sprite.target_left:
-                self.try_to_move_tile(sprite, 1 if sprite.target_left > sprite.rect.left else -1)
-            """
-
-            # Apply gravity.  We start slow 'cos that makes it more efficient when we're just standing on something...
-            if sprite.y_speed == 0:
-                sprite.y_speed = 1
-            else:
-                sprite.y_speed += config.GRAVITY_EFFECT
-                sprite.y_speed = min(config.TERMINAL_VELOCITY, sprite.y_speed)
+            # Apply gravity.  
+            sprite.y_speed = min(config.TERMINAL_VELOCITY, sprite.y_speed + config.GRAVITY_EFFECT)
 
             move_dir = (1 if sprite.y_speed > 0 else -1)
             slip_remaining = config.SLIP_DISTANCE             
@@ -119,30 +111,22 @@ class Scene():
                 sprite.rect.bottom += move_dir
 
                 if sprite.rect.top > config.SCREEN_HEIGHT_PX:
+                    # This sprite just fell off the bottom of the screen
                     sprites_to_delete.append(sprite) 
-                    break        
+                    break
+
                 if self.test_collision(sprite):                    
                     if move_dir == 1:
-                        orig_left = sprite.rect.left
                         # Check if we can slip off whatever we've hit
-                        slipped = False
-                        for slip in range(slip_remaining):
-                            for try_pos in (max(0, orig_left - slip), min(config.SCREEN_WIDTH_PX - config.TILE_SIZE_PX, orig_left + slip)):                        
-                                sprite.rect.left = try_pos
-                                if not self.test_collision(sprite):
-                                    log.info("Slipped off")
-                                    slipped = True
-                                    break
-                            if slipped:
-                                slip_remaining -= (slip+1)
-                                break
-                        if slipped:
-                            continue 
-                        else:
-                            sprite.rect.left = orig_left       
-                            sprite.rect.bottom -= move_dir
-                            sprite.y_speed = 0
-                            break      
+                        slip_distance = utils.try_to_slip_sprite(sprite, slip_remaining, self.test_collision)
+                        if slip_distance:
+                            # We successfully slipped off
+                            slip_remaining -= slip_distance
+                            continue
+                    # We've hit something and not slipped past it 
+                    sprite.rect.bottom -= move_dir
+                    sprite.y_speed = 0
+                    break      
 
         self.platform_sprites.remove(sprites_to_delete)
 

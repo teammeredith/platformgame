@@ -35,3 +35,14 @@ def screen_spin(screen, angle=90, time=1000, steps=45, shrink=False):
         pygame.display.flip()
         pygame.event.pump()
             
+def try_to_slip_sprite(sprite, slip_remaining, collision_fn):
+    orig_left = sprite.rect.left
+    for slip in range(1, slip_remaining+1):
+        for try_pos in (max(0, orig_left - slip), min(config.SCREEN_WIDTH_PX - sprite.rect.width, orig_left + slip)):                        
+            sprite.rect.left = try_pos
+            if not collision_fn(sprite=sprite):
+                # We've successfully slipped
+                return slip
+    # Undo our attempted slip
+    sprite.rect.left = orig_left       
+    return 0
