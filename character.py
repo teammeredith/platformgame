@@ -7,7 +7,7 @@ import utils
 from enum import Enum
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
 
@@ -33,8 +33,9 @@ class Character(pygame.sprite.Sprite):
         self.slip_distance = config.SLIP_DISTANCE
         self.move_speed = config.MOVE_SPEED
         self.jump_speed = config.JUMP_SPEED
+        self.last_collided = None
 
-    def start_scene(self, scene):
+    def start_scene(self, scene): 
         self.scene = scene
         self.scene.reset()
         self.walking = False
@@ -45,6 +46,7 @@ class Character(pygame.sprite.Sprite):
         self.falling = True
         self.walk_index = 0
         self.dead = False
+        self.last_collided = None
     
     def animate(self):
         # Change the character's image if we need to

@@ -40,6 +40,7 @@ class Scene():
                 if tile_id != "BLANK":
                     tile = pygame.sprite.Sprite()
                     tile.image = config.tiles[tile_id].image
+                    tile.mask = pygame.mask.from_surface(tile.image)
                     tile.images = []
                     tile.tile_id = tile_id
                     tile.rect = tile.image.get_rect()
@@ -51,6 +52,7 @@ class Scene():
                     tile.rotation_enabled = config.tiles[tile_id].rotation_enabled
                     tile.button = config.tiles[tile_id].button
                     tile.frames_per_transition = config.tiles[tile_id].frames_per_transition
+                    tile.last_collided = None
                     if config.tiles[tile_id].animate_images:
                         tile.images = [tile.image] + config.tiles[tile_id].animate_images
                         tile.state = 0
@@ -67,6 +69,7 @@ class Scene():
         utils.screen_spin(self.screen, steps=10, angle=180, time=150)
         for tile in itertools.chain(self.platform_sprites, self.open_locks):
             tile.image = pygame.transform.rotate(tile.image, -180)
+            tile.mask = pygame.mask.from_surface(tile.image)
             tile.rotation_enabled = not tile.rotation_enabled
             for i in range(len(tile.images)):
                 tile.images[i] = pygame.transform.rotate(tile.images[i], -180)
@@ -78,8 +81,12 @@ class Scene():
         self.exited = True
 
     def test_collision(self, sprite):
+        # Perf optimization.  In general the thing we're goiong to hit is the last thing we hit.  Test against that first.
+        if sprite.last_collided and pygame.sprite.collide_mask(sprite, sprite.last_collided):
+            return sprite.last_collided
         for test_sprite in itertools.chain(self.platform_sprites, [self.player]):
             if sprite != test_sprite and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
+                sprite.last_collided = test_sprite
                 return test_sprite
 
         return None
@@ -116,7 +123,8 @@ class Scene():
                     sprites_to_delete.append(sprite) 
                     break
 
-                if self.test_collision(sprite):                    
+                collided = self.test_collision(sprite)
+                if collided:                    
                     if move_dir == 1:
                         # Check if we can slip off whatever we've hit
                         slip_distance = utils.try_to_slip_sprite(sprite, slip_remaining, self.test_collision)
