@@ -102,6 +102,7 @@ class Scene():
             if not self.frame_counter % sprite.frames_per_transition:
                 sprite.state = (sprite.state+1) % len(sprite.images)
                 sprite.image = sprite.images[sprite.state]
+                sprite.mask = pygame.mask.from_surface(sprite.image)
 
     # Called to see if any movable tiles should be *autonomously* moving.  This doesn't get involved when
     # tiles are being pushed.  That's covered by try_to_move_tile.  So at the moment this function 
@@ -156,12 +157,14 @@ class Scene():
     def animate_spring(self, tile):
         tile.state = (tile.state+1)%2
         tile.image = tile.images[tile.state]
+        tile.mask = pygame.mask.from_surface(tile.image)
 
     def hit_button(self, tile):
         if tile.button == "YELLOW":
             # If the button is up, then change it to down
             if tile.state == 0:
                 tile.image = tile.images[1]
+                tile.mask = pygame.mask.from_surface(tile.image)
                 tile.state = 1
                 pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, self.scene_data["lock_time"])
             for sprite in self.platform_sprites:
@@ -208,6 +211,7 @@ class Scene():
             if tile.button == "YELLOW":
                 if tile.state == 1:
                     tile.image = tile.images[0]
+                    tile.mask = pygame.mask.from_surface(tile.image)
                     tile.state = 0
                 if pygame.sprite.collide_mask(tile, self.player):
                     self.hit_button(tile)
