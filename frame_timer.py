@@ -25,7 +25,6 @@ class FrameTimer():
     # Must be called every frame of the game
     def tick(self):
         global frame_timers
-        print("Frames left = {}".format(self.frames_left))
         self.frames_left -= 1
         if self.frames_left <= 0:
             frame_timers.remove(self)
