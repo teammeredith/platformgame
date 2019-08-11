@@ -56,7 +56,7 @@ for tile_id, tile in config.tiles.items():
     for image_file in tile.animate_image_files:
         tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
 
-background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
+#background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
 
 # Load the scenes
 scenes = []
