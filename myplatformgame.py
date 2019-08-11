@@ -1,4 +1,5 @@
 """ To do list 
+- Make it so that button timers start again if you press the button whilst down
 - Can embed yourself in a block by hitting an upsidedown spring
 - Can't push a block when standing on a down button
 - TNT block
@@ -27,6 +28,7 @@ from scene import Scene
 import utils
 import argparse
 import time
+import frame_timer
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -45,11 +47,12 @@ print("Start on scene {}".format(args.initial_scene))
 # Initialize pygame and create window
 pygame.init()
 pygame.mixer.init()
-screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.DOUBLEBUF)
+screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.DOUBLEBUF) 
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
 # Load the tile data.  This doesn't feel like the right place, but hey...
+utils.load_default_tiles()
 for tile_id, tile in config.tiles.items():
     tile.image = utils.load_image(tile.path, tile.filename, tile.rotate)
     tile.animate_images = []
@@ -57,6 +60,8 @@ for tile_id, tile in config.tiles.items():
         tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
 
 #background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
+spotlight_mask = utils.load_image([], "spotlight_mask.png", size=(config.SPOTLIGHT_RADIUS*2, config.SPOTLIGHT_RADIUS*2))
+mask = pygame.Surface((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.SRCALPHA)
 
 # Load the scenes
 scenes = []
@@ -68,6 +73,7 @@ with os.scandir(config.scene_folder) as it:
 
 def next_scene(new_scene):
     global current_scene
+    frame_timer.frame_timer_del_all()
     print ("Moving to scene {}".format(new_scene))
     if new_scene >= len(scenes):
         # Game over
@@ -91,6 +97,7 @@ running = True
 while running:
     # Keep loop running at the right speed
     clock.tick(config.FPS)
+    frame_timer.frame_timer_tick()
     
     # Check whether we have any exit events and deal with them first
     if pygame.event.get(eventtype=config.REACHED_EXIT_EVENT_ID):
@@ -135,12 +142,8 @@ while running:
     if scenes[current_scene].dark:
         # Mask everything, except a circle around the player
         # Have the spotlight trail the player by a bit
-        mask = pygame.Surface((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.SRCALPHA)
         mask.fill((0,0,0,255))
-        for i in range(0,10):
-            pygame.draw.circle(mask, (0,0,0,245-i*10), player.rect.center, 130-i*5)
-        for i in range(0,5):
-            pygame.draw.circle(mask, (0,0,0,145-i*35), player.rect.center, 80-i*2)
+        mask.blit(spotlight_mask, (player.rect.centerx - config.SPOTLIGHT_RADIUS, player.rect.centery - config.SPOTLIGHT_RADIUS), special_flags=pygame.BLEND_RGBA_MIN)
         screen.blit(mask, (0,0))
 
     # *after* drawing everything, flip the display

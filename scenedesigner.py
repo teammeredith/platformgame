@@ -24,11 +24,11 @@ print("Scene file = {}".format(args.scene_file))
 
 TILE_OPTIONS_X_OFFSET = (config.SCREEN_WIDTH_TILES+2)*config.TILE_SIZE_PX
 TILE_OPTIONS_Y_OFFSET = 20
-TILE_OPTIONS_PER_ROW = 3
+TILE_OPTIONS_PER_ROW = 22
 TILE_OPTIONS_SIZE = config.TILE_SIZE_PX + 20
 
-config.SCREEN_WIDTH_PX = TILE_OPTIONS_X_OFFSET + TILE_OPTIONS_PER_ROW*TILE_OPTIONS_SIZE
-config.SCREEN_HEIGHT_PX = config.SCREEN_HEIGHT_TILES*config.TILE_SIZE_PX
+#config.SCREEN_WIDTH_PX = TILE_OPTIONS_X_OFFSET + TILE_OPTIONS_PER_ROW*TILE_OPTIONS_SIZE
+#config.SCREEN_HEIGHT_PX = config.SCREEN_HEIGHT_TILES*config.TILE_SIZE_PX
 
 scene_data = {}
 scene_file_path = os.path.join(config.scene_folder, args.scene_file)
@@ -44,11 +44,16 @@ else:
     scene_data["lock_time"] = 8000
     
 # initialize pygame and create window
+os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0,50)
 pygame.init()
 pygame.mixer.init()
+config.SCREEN_WIDTH_PX = pygame.display.Info().current_w
+config.SCREEN_HEIGHT_PX = pygame.display.Info().current_h - 100
+
 screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
-pygame.display.set_caption("My Game")
+pygame.display.set_caption("Scene designer")
 clock = pygame.time.Clock()
+
 
 blank_tile = pygame.Surface((config.TILE_SIZE_PX, config.TILE_SIZE_PX))
 
@@ -56,9 +61,9 @@ player = None
 tile_options = pygame.sprite.Group()
 current_option = None
 
+utils.load_default_tiles()
 idx = 0
 for tile_id, tile_data in config.tiles.items():
-    print("Load tile {}".format(tile_id))
     tile = pygame.sprite.Sprite()
     
     tile.unselected_image = utils.load_tile_image(tile_data)
@@ -70,7 +75,6 @@ for tile_id, tile_data in config.tiles.items():
     tile.rect = tile.image.get_rect()
     tile.rect.top = TILE_OPTIONS_Y_OFFSET + int(idx / TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
     tile.rect.left = TILE_OPTIONS_X_OFFSET + (idx % TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
-    print("Placed tile at {}, {}, {}, {}".format(tile.rect.left, tile.rect.top, tile.rect.right, tile.rect.bottom))
     tile_options.add(tile)
     idx += 1
 
@@ -85,10 +89,8 @@ class Point(pygame.sprite.Sprite):
 # It also updates tile.id and the relevant entry in scene_data to be the new tile_id 
 def update_screen_tile(tile, tile_id):
     if tile_id == "BLANK":
-        print("Blank tile")
         tile.image = blank_tile.copy()
     else:
-        print("not blank: {}".format(tile_id))
         for tile_option in tile_options:
             if tile_option.tile_id == tile_id:
                 tile.image = tile_option.unselected_image.copy()   
@@ -114,7 +116,7 @@ textsurface = myfont.render('Done', False, (255, 255, 255))
 done_tile = pygame.sprite.Sprite()
 done_tile.image = textsurface
 done_tile.rect = done_tile.image.get_rect()
-done_tile.rect.top = config.SCREEN_HEIGHT_PX - 50
+done_tile.rect.top = screen.get_rect().height - 50
 done_tile.rect.left = TILE_OPTIONS_X_OFFSET
 done_group = pygame.sprite.Group()
 done_group.add(done_tile)
@@ -133,12 +135,9 @@ while running:
     if pygame.mouse.get_focused():
         buttons = pygame.mouse.get_pressed()
         if buttons != (0,0,0):
-            print("Buttons = {}".format(buttons))
             point = Point(pygame.mouse.get_pos())
-            print("get_pos = {}".format(pygame.mouse.get_pos()))
             option_selected = pygame.sprite.spritecollideany(point, tile_options, False)
             if option_selected:
-                print("Hit option: {}".format(option_selected.tile_id))
                 if current_option:
                     current_option.image = current_option.unselected_image
                 current_option = option_selected
@@ -150,7 +149,6 @@ while running:
             elif scene_tile_selected and buttons[2] == 1:
                 update_screen_tile(scene_tile_selected, "BLANK")
             
-            print("Done rect = {}".format(done_tile.rect))
             if done_tile.rect.colliderect(pygame.Rect(pygame.mouse.get_pos(), (1,1))):                
                 for x in range(config.SCREEN_WIDTH_TILES):
                     for y in range(config.SCREEN_HEIGHT_TILES):

@@ -6,6 +6,7 @@ import logging
 import sys
 import itertools
 import utils
+import frame_timer
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -169,7 +170,7 @@ class Scene():
                 tile.image = tile.images[1]
                 tile.mask = pygame.mask.from_surface(tile.image)
                 tile.state = 1
-                pygame.time.set_timer(config.LOCK_TIMER_EVENT_ID, self.scene_data["lock_time"])
+            frame_timer.FrameTimer(int(self.scene_data["lock_time"]*config.FPS/1000), self.timer_pop, frame_timer.FRAME_TIMER_ID_YELLOW_BUTTON, unique=True)
             for sprite in self.platform_sprites:
                 if sprite.tile_id == "LOCK_YELLOW":
                     sprite.remove(self.platform_sprites)
