@@ -56,7 +56,7 @@ for tile_id, tile in config.tiles.items():
     for image_file in tile.animate_image_files:
         tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
 
-#background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
+background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
 
 # Load the scenes
 scenes = []
@@ -131,6 +131,17 @@ while running:
     screen.fill((0,0,0))
     scenes[current_scene].draw(screen)
     player_group.draw(screen)
+
+    if scenes[current_scene].dark:
+        # Mask everything, except a circle around the player
+        # Have the spotlight trail the player by a bit
+        mask = pygame.Surface((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.SRCALPHA)
+        mask.fill((0,0,0,255))
+        for i in range(0,10):
+            pygame.draw.circle(mask, (0,0,0,245-i*10), player.rect.center, 130-i*5)
+        for i in range(0,5):
+            pygame.draw.circle(mask, (0,0,0,145-i*35), player.rect.center, 80-i*2)
+        screen.blit(mask, (0,0))
 
     # *after* drawing everything, flip the display
     pygame.display.flip()

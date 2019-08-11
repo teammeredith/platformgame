@@ -16,6 +16,10 @@ class Scene():
     def __init__(self, scene_file_path, screen):
         with open(scene_file_path, "r") as scene_file:
             self.scene_data = json.load(scene_file)
+            if "dark" in self.scene_data:
+                self.dark = self.scene_data["dark"]
+            else:
+                self.dark = False
             self.reset()
             self.screen = screen
             self.frame_counter = 0
@@ -88,7 +92,6 @@ class Scene():
             if sprite != test_sprite and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
                 sprite.last_collided = test_sprite
                 return test_sprite
-
         return None
 
     def key_down(self, event):
