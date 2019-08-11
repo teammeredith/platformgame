@@ -52,12 +52,13 @@ pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
 # Load the tile data.  This doesn't feel like the right place, but hey...
-utils.load_default_tiles()
 for tile_id, tile in config.tiles.items():
     tile.image = utils.load_image(tile.path, tile.filename, tile.rotate)
     tile.animate_images = []
     for image_file in tile.animate_image_files:
         tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
+config.tiles["PLAIN"] = config.Tile("")
+config.tiles["PLAIN"].animate_images = []
 
 #background_image = utils.load_image(["backgrounds"], "background3-720.png", size=(config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
 spotlight_mask = utils.load_image([], "spotlight_mask.png", size=(config.SPOTLIGHT_RADIUS*2, config.SPOTLIGHT_RADIUS*2))

@@ -11,6 +11,15 @@ import utils
 import tkinter as tk
 from tkinter import simpledialog
 
+"""
+We have config.tiles and extend it to include non-special tiles as well.  These have their filename as the index into config.tiles.
+Within this program scene_data["tile"] entries are either 
+- None if the tile is blank
+- a dict containing: 
+    "tile" a reference to a config.tiles entry otherwise
+    "rotate" either 0 or 180 indicating if the tile should be rotated
+"""
+
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
@@ -30,19 +39,6 @@ TILE_OPTIONS_SIZE = config.TILE_SIZE_PX + 20
 #config.SCREEN_WIDTH_PX = TILE_OPTIONS_X_OFFSET + TILE_OPTIONS_PER_ROW*TILE_OPTIONS_SIZE
 #config.SCREEN_HEIGHT_PX = config.SCREEN_HEIGHT_TILES*config.TILE_SIZE_PX
 
-scene_data = {}
-scene_file_path = os.path.join(config.scene_folder, args.scene_file)
-if os.path.isfile(scene_file_path):
-    with open(scene_file_path) as scene_file:
-        scene_data = json.load(scene_file)
-    player_start = scene_data["player_start"]
-    scene_data["tiles"][player_start[1]][player_start[0]] = "PLAYER"
-else:   
-    scene_data = {}
-    scene_data["tiles"] = [ [ "BLANK" for x in range( config.SCREEN_WIDTH_TILES ) ] for y in range( config.SCREEN_HEIGHT_TILES ) ]
-    scene_data["player_start"] = [0,0]
-    scene_data["lock_time"] = 8000
-    
 # initialize pygame and create window
 os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0,50)
 pygame.init()
@@ -53,7 +49,6 @@ config.SCREEN_HEIGHT_PX = pygame.display.Info().current_h - 100
 screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
 pygame.display.set_caption("Scene designer")
 clock = pygame.time.Clock()
-
 
 blank_tile = pygame.Surface((config.TILE_SIZE_PX, config.TILE_SIZE_PX))
 
@@ -66,7 +61,9 @@ idx = 0
 for tile_id, tile_data in config.tiles.items():
     tile = pygame.sprite.Sprite()
     
+    tile_data.image = utils.load_tile_image(tile_data)
     tile.unselected_image = utils.load_tile_image(tile_data)
+    tile.tile_data = tile_data
     selected_image = utils.load_tile_image(tile_data)
     pygame.draw.rect(selected_image, (255, 0, 0), (0,0,config.TILE_SIZE_PX,config.TILE_SIZE_PX), 2)
     tile.selected_image = selected_image
@@ -78,28 +75,43 @@ for tile_id, tile_data in config.tiles.items():
     tile_options.add(tile)
     idx += 1
 
+scene_data = {}
+scene_file_path = os.path.join(config.scene_folder, args.scene_file)
+if os.path.isfile(scene_file_path):
+    with open(scene_file_path) as scene_file:
+        scene_data = json.load(scene_file)
+    player_start = scene_data["player_start"]
+    scene_data["tiles"][player_start[1]][player_start[0]] = {"id": "PLAYER"}
+else:   
+    scene_data = {}
+    scene_data["tiles"] = [ [ {"id": "BLANK"} for x in range( config.SCREEN_WIDTH_TILES ) ] for y in range( config.SCREEN_HEIGHT_TILES ) ]
+    scene_data["player_start"] = [0,0]
+    scene_data["lock_time"] = 8000
+    
 class Point(pygame.sprite.Sprite):
     def __init__(self, pos):
         super(pygame.sprite.Sprite, self).__init__()
         self.rect = pygame.Rect(pos[0], pos[1], 1, 1)
 
-# Tile is a sprite representing a tile on the scene.
+# sprite is the sprite that represents the tile on the scene
+# 
 # It has tile.x = the x co-ordinate.  tile.y = the y co-ordinate
 # This function updates the tile.image to be the image for the tile with ID tile_id
 # It also updates tile.id and the relevant entry in scene_data to be the new tile_id 
-def update_screen_tile(tile, tile_id):
+def update_screen_tile(sprite, tile_id=None, rotate=0):
     if tile_id == "BLANK":
-        tile.image = blank_tile.copy()
+        sprite.image = blank_tile.copy()
+        scene_data["tiles"][sprite.y][sprite.x] = {"id": "BLANK"}
     else:
-        for tile_option in tile_options:
-            if tile_option.tile_id == tile_id:
-                tile.image = tile_option.unselected_image.copy()   
-
-    tile.rect = tile.image.get_rect()
-    tile.rect.left = tile.x*config.TILE_SIZE_PX        
-    tile.rect.top = tile.y*config.TILE_SIZE_PX        
-    tile.tile_id = tile_id
-    scene_data["tiles"][tile.y][tile.x] = tile_id
+        sprite.image = pygame.transform.rotate(config.tiles[tile_id].image.copy(), rotate)
+        scene_data["tiles"][sprite.y][sprite.x] = {"filename": config.tiles[tile_id].filename, "path": config.tiles[tile_id].path, "rotate": rotate}
+        if not "." in tile_id:
+            scene_data["tiles"][sprite.y][sprite.x]["id"] = tile_id
+            
+    sprite.rect = sprite.image.get_rect()
+    sprite.rect.left = sprite.x*config.TILE_SIZE_PX        
+    sprite.rect.top = sprite.y*config.TILE_SIZE_PX        
+    sprite.tile_id = tile_id
 
 scene_tiles = pygame.sprite.Group()
 for x in range(config.SCREEN_WIDTH_TILES):
@@ -107,7 +119,13 @@ for x in range(config.SCREEN_WIDTH_TILES):
         tile = pygame.sprite.Sprite()
         tile.x = x
         tile.y = y
-        update_screen_tile(tile, scene_data["tiles"][y][x])
+        rotate = 0
+        if "rotate" in scene_data["tiles"][y][x]:
+            rotate = scene_data["tiles"][y][x]["rotate"]
+        if "id" in scene_data["tiles"][y][x]:
+            update_screen_tile(tile, scene_data["tiles"][y][x]["id"], rotate=rotate)
+        else:
+            update_screen_tile(tile, scene_data["tiles"][y][x]["filename"], rotate=rotate)
         scene_tiles.add(tile)
 
 pygame.font.init()
@@ -145,15 +163,16 @@ while running:
                     
             scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
             if scene_tile_selected and buttons[0] and current_option != None:
-                update_screen_tile(scene_tile_selected, current_option.tile_id)
+                keys_pressed=pygame.key.get_pressed()  #checking pressed keys
+                update_screen_tile(scene_tile_selected, current_option.tile_id, rotate=180 if keys_pressed[pygame.K_LSHIFT] else 0)
             elif scene_tile_selected and buttons[2] == 1:
                 update_screen_tile(scene_tile_selected, "BLANK")
             
             if done_tile.rect.colliderect(pygame.Rect(pygame.mouse.get_pos(), (1,1))):                
                 for x in range(config.SCREEN_WIDTH_TILES):
                     for y in range(config.SCREEN_HEIGHT_TILES):
-                        if scene_data["tiles"][y][x] == "PLAYER":
-                            scene_data["tiles"][y][x] = "BLANK"                            
+                        if scene_data["tiles"][y][x].get("id", None) == "PLAYER":
+                            scene_data["tiles"][y][x]["id"] = "BLANK"                            
                             scene_data["player_start"] = [x, y]
 
                 with open(scene_file_path, "w") as scene_file:

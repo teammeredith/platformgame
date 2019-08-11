@@ -55,18 +55,7 @@ class Tile():
         self.rotation_enabled = rotation_enabled
 
 tiles = {
-    "P_GRASS_L": Tile("grassCliffLeft.png"),
-    "P_GRASS_C": Tile("grassMid.png"),
-    "P_GRASS_R": Tile("grassCliffRight.png"),
-    "CASTLE_CLIFF_LT": Tile("castleCliffLeftAlt.png"),
-    "CASTLE_CLIFF": Tile("castleMid.png"),
-    "CASTLE_CLIFF_RT": Tile("castleCliffRightAlt.png"),
-    "FENCE": Tile("ladder_top.png"),
-    "BRICK": Tile("brickWall.png"),
     "EXIT": Tile("signExit.png"),
-    "DIRT_SL_R": Tile("grassHillRight.png"),
-    "DIRT_SL_L": Tile("grassHillLeft.png"),
-    "BUSH": Tile("bush.png"),
     "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotation_enabled=True),
     "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotate=180, rotation_enabled=False),
     "SPRING_DN_ROTATED":  Tile("springboardDown.png", rotate=180),
@@ -77,7 +66,6 @@ tiles = {
     "SPIN": Tile("fireball.png", path=["Items"]),
     "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
     "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
-    "ROCK": Tile("rock.png"),
     "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6),
     "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer
 }        

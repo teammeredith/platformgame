@@ -1,679 +1,2807 @@
 {
     "tiles": [
         [
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF"
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            }
         ],
         [
-            "BLANK",
-            "SPRING_ROTATED",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPRING_ROTATED",
+                "filename": "springboardUp.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW",
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "SPIKES_DN",
-            "SPIKES_DN",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "SPIKES_DN",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "SPIKES_DN",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "LOCK_YELLOW",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "LOCK_YELLOW",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "SPIKES_DN",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BUTTON_YELLOW",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "BUTTON_YELLOW",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BUTTON_YELLOW",
+                "filename": "buttonYellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BUTTON_YELLOW",
+                "filename": "buttonYellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "SPIKES_DN",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "SPIN",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIN",
+                "filename": "fireball.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW"
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            }
         ],
         [
-            "CASTLE_CLIFF",
-            "EXIT",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "LOCK_YELLOW"
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "EXIT",
+                "filename": "signExit.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            }
         ],
         [
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIN",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW",
-            "CASTLE_CLIFF"
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIN",
+                "filename": "fireball.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "SPIKES_DN",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPIKES_DN",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 180
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "SPRING",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "SPRING",
+                "filename": "springboardUp.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BUTTON_YELLOW",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BOX",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BUTTON_YELLOW",
+                "filename": "buttonYellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BOX",
+                "filename": "box.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "LOCK_YELLOW",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "LOCK_YELLOW",
+                "filename": "lock_yellow.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ],
         [
-            "SPIN",
-            "BLANK",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "SPIKES",
-            "CASTLE_CLIFF",
-            "CASTLE_CLIFF",
-            "BLANK",
-            "BLANK"
+            {
+                "id": "SPIN",
+                "filename": "fireball.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "SPIKES",
+                "filename": "spikes.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "castleMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
         ]
     ],
     "player_start": [

@@ -35,7 +35,8 @@ class Scene():
         self.platform_sprites = pygame.sprite.Group()
         for y in range(config.SCREEN_HEIGHT_TILES):
             for x in range(config.SCREEN_WIDTH_TILES):
-                tile_id = self.scene_data["tiles"][y][x]                    
+                tile_data = self.scene_data["tiles"][y][x]
+                tile_id = tile_data.get("id", "PLAIN")                    
                 """if tile_id == "SPIDER":
                     spider = Spider()
                     spider.tile_id = "SPIDER"
@@ -44,7 +45,8 @@ class Scene():
                 elif """
                 if tile_id != "BLANK":
                     tile = pygame.sprite.Sprite()
-                    tile.image = config.tiles[tile_id].image
+                    #tile.image = config.tiles[tile_id].image
+                    tile.image = utils.load_image(tile_data["path"], tile_data["filename"], tile_data.get("rotate", 0))
                     tile.mask = pygame.mask.from_surface(tile.image)
                     tile.images = []
                     tile.tile_id = tile_id

@@ -58,4 +58,4 @@ def load_default_tiles():
             if tile_file.is_file() and not tile_file.name in used_files: 
                 filename, file_extension = os.path.splitext(tile_file)
                 if file_extension == ".png":
-                    config.tiles[tile_file.name] = config.Tile(tile_file)
+                    config.tiles[tile_file.name] = config.Tile(tile_file.name)
