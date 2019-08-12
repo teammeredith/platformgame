@@ -200,10 +200,11 @@ class Character(pygame.sprite.Sprite):
             if self.rect.top > config.SCREEN_HEIGHT_PX:
                 self.die()
                 return
-            elif self.rect.top < 0:
+            
+            """elif self.rect.top < 0:
                 self.rect.top = 0                    
                 self.y_speed = 0
-                break
+                break"""
 
             collided = self.collide_with_any_tile()
             if collided:

@@ -17,6 +17,7 @@ SPRING_JUMP_SPEED = 18
 SPRING_ACTIVE_SPEED = 4
 GRAVITY_EFFECT = 1
 TERMINAL_VELOCITY = 30
+LIFT_SPEED = 3
 
 FPS = 30
 
@@ -39,6 +40,7 @@ class Tile():
                  frames_per_transition=0,
                  movable=False,     
                  spring=False,
+                 lift=False,
                  button=False,
                  rotate=0, 
                  rotation_enabled=True, 
@@ -46,6 +48,7 @@ class Tile():
         self.filename = filename
         self.path = path
         self.movable = movable
+        self.lift = lift
         self.rotate = rotate
         self.kill = kill
         self.spring = spring
@@ -67,6 +70,7 @@ tiles = {
     "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
     "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
     "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6),
+    "LIFT": Tile("bridge.png", lift=True),
     "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer
 }        
 

@@ -52,8 +52,9 @@ class Scene():
                     tile.tile_id = tile_id
                     tile.rect = tile.image.get_rect()
                     tile.rect.top = config.TILE_SIZE_PX*y
-                    tile.rect.left = config.TILE_SIZE_PX*x
+                    tile.rect.left = config.TILE_SIZE_PX*x                
                     tile.movable = config.tiles[tile_id].movable
+                    tile.lift = config.tiles[tile_id].lift
                     tile.kill = config.tiles[tile_id].kill
                     tile.spring = config.tiles[tile_id].spring
                     tile.rotation_enabled = config.tiles[tile_id].rotation_enabled
@@ -110,11 +111,31 @@ class Scene():
                 sprite.image = sprite.images[sprite.state]
                 sprite.mask = pygame.mask.from_surface(sprite.image)
 
+    def unconditional_move_any_collisions(self, initial_sprite, y_move = 0):
+        next_sprite = self.test_collision(initial_sprite)
+        while next_sprite != None:
+            if next_sprite.tile_id == "PLAIN":
+                return False
+            next_sprite.rect.bottom += y_move
+            if hasattr(next_sprite, "y_speed"):
+                next_sprite.y_speed = y_move
+            if not self.unconditional_move_any_collisions(next_sprite, y_move):
+                next_sprite.rect.bottom -= y_move
+                return False
+            next_sprite = self.test_collision(initial_sprite)
+        return True
+
     # Called to see if any movable tiles should be *autonomously* moving.  This doesn't get involved when
     # tiles are being pushed.  That's covered by try_to_move_tile.  So at the moment this function 
     # just has to worry about whether non-fixed tiles should be falling.
     def update_movable_tiles(self):
         sprites_to_delete = []
+        for lift in itertools.filterfalse(lambda x: not x.lift, self.platform_sprites):        
+            lift.rect.top -= config.LIFT_SPEED
+            if lift.rect.bottom < 0:
+                lift.rect.bottom = config.SCREEN_HEIGHT_PX
+            if not self.unconditional_move_any_collisions(lift, y_move = -1*config.LIFT_SPEED):
+                lift.rect.bottom += config.LIFT_SPEED
 
         for sprite in itertools.filterfalse(lambda x: not x.movable, self.platform_sprites):        
             # Apply gravity.  
