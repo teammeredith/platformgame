@@ -81,6 +81,7 @@ def next_scene(new_scene):
         exit()
     player.start_scene(scenes[new_scene])
     scenes[current_scene].add_player(None)
+    scenes[new_scene].reset()
     scenes[new_scene].add_player(player)
     current_scene = new_scene
 
