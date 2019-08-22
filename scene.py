@@ -1,3 +1,8 @@
+
+# - Define lift class that inherits from Movable?  So that it handles hitting things and trying to move them?
+# - Move try_to_push to be part of Movable
+# - Never move anything without checking for collisions!  
+
 import pygame
 import config
 import os
@@ -7,11 +12,26 @@ import sys
 import itertools
 import utils
 import frame_timer
+import movable
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
+
+class Lift(movable.Movable):
+    # sprite for the Player
+    def __init__(self, image):
+        movable.Movable.__init__(self, image)
+        self.slip_distance = 0
+        self.move_speed = 0
+        self.jump_speed = 0
+        self.gravity_effect = 0
+
+    def start_scene(self, scene, initial_left, initial_top): 
+        movable.Movable.start_scene(self, scene, initial_left, initial_top)
+        self.y_speed = -config.LIFT_SPEED
+    
 
 class Scene():
     def __init__(self, scene_file_path, screen):
@@ -43,16 +63,24 @@ class Scene():
                     spider.reset((x, y))
                     self.platform_sprites.add(spider)
                 elif """
+
                 if tile_id != "BLANK":
-                    tile = pygame.sprite.Sprite()
-                    #tile.image = config.tiles[tile_id].image
-                    tile.image = utils.load_image(tile_data["path"], tile_data["filename"], tile_data.get("rotate", 0))
-                    tile.mask = pygame.mask.from_surface(tile.image)
+                    image = utils.load_image(tile_data["path"], tile_data["filename"], tile_data.get("rotate", 0))
+                    if config.tiles[tile_id].movable:
+                        tile = movable.Movable(image)
+                        tile.start_scene(self, x * config.TILE_SIZE_PX, y * config.TILE_SIZE_PX)
+                    elif config.tiles[tile_id].lift:
+                        tile = Lift(image)
+                        tile.start_scene(self, x * config.TILE_SIZE_PX, y * config.TILE_SIZE_PX)
+                    else:
+                        tile = pygame.sprite.Sprite()
+                        tile.image = image
+                        tile.mask = pygame.mask.from_surface(tile.image)
+                        tile.rect = tile.image.get_rect()
+                        tile.rect.top = config.TILE_SIZE_PX*y
+                        tile.rect.left = config.TILE_SIZE_PX*x                
                     tile.images = []
                     tile.tile_id = tile_id
-                    tile.rect = tile.image.get_rect()
-                    tile.rect.top = config.TILE_SIZE_PX*y
-                    tile.rect.left = config.TILE_SIZE_PX*x                
                     tile.movable = config.tiles[tile_id].movable
                     tile.lift = config.tiles[tile_id].lift
                     tile.kill = config.tiles[tile_id].kill
@@ -64,8 +92,6 @@ class Scene():
                     if config.tiles[tile_id].animate_images:
                         tile.images = [tile.image] + config.tiles[tile_id].animate_images
                         tile.state = 0
-                    if tile.movable:
-                        tile.y_speed = 0
                     self.platform_sprites.add(tile)
 
     """
@@ -76,12 +102,15 @@ class Scene():
         # Rotate the sprites
         utils.screen_spin(self.screen, steps=10, angle=180, time=150)
         for tile in itertools.chain(self.platform_sprites, self.open_locks):
-            tile.image = pygame.transform.rotate(tile.image, -180)
-            tile.mask = pygame.mask.from_surface(tile.image)
+            if isinstance(tile, movable.Movable):
+                tile.board_rotate()
+            else:
+                tile.image = pygame.transform.rotate(tile.image, -180)
+                tile.mask = pygame.mask.from_surface(tile.image)
+                for i in range(len(tile.images)):
+                    tile.images[i] = pygame.transform.rotate(tile.images[i], -180)
+                tile.rect.right, tile.rect.bottom = config.SCREEN_WIDTH_PX - tile.rect.left, config.SCREEN_HEIGHT_PX - tile.rect.top 
             tile.rotation_enabled = not tile.rotation_enabled
-            for i in range(len(tile.images)):
-                tile.images[i] = pygame.transform.rotate(tile.images[i], -180)
-            tile.rect.right, tile.rect.bottom = config.SCREEN_WIDTH_PX - tile.rect.left, config.SCREEN_HEIGHT_PX - tile.rect.top 
 
         self.player.board_rotate()
 
@@ -125,53 +154,10 @@ class Scene():
             next_sprite = self.test_collision(initial_sprite)
         return True
 
-    # Called to see if any movable tiles should be *autonomously* moving.  This doesn't get involved when
-    # tiles are being pushed.  That's covered by try_to_move_tile.  So at the moment this function 
-    # just has to worry about whether non-fixed tiles should be falling.
-    def update_movable_tiles(self):
-        sprites_to_delete = []
-        for lift in itertools.filterfalse(lambda x: not x.lift, self.platform_sprites):        
-            lift.rect.top -= config.LIFT_SPEED
-            if lift.rect.bottom < 0:
-                lift.rect.bottom = config.SCREEN_HEIGHT_PX
-            if not self.unconditional_move_any_collisions(lift, y_move = -1*config.LIFT_SPEED):
-                lift.rect.bottom += config.LIFT_SPEED
-
-        for sprite in itertools.filterfalse(lambda x: not x.movable, self.platform_sprites):        
-            # Apply gravity.  
-            sprite.y_speed = min(config.TERMINAL_VELOCITY, sprite.y_speed + config.GRAVITY_EFFECT)
-
-            move_dir = (1 if sprite.y_speed > 0 else -1)
-            slip_remaining = config.SLIP_DISTANCE             
-            for i in range(abs(sprite.y_speed)):
-                sprite.rect.bottom += move_dir
-
-                if sprite.rect.top > config.SCREEN_HEIGHT_PX:
-                    # This sprite just fell off the bottom of the screen
-                    sprites_to_delete.append(sprite) 
-                    break
-
-                collided = self.test_collision(sprite)
-                if collided:                    
-                    if move_dir == 1:
-                        # Check if we can slip off whatever we've hit
-                        slip_distance = utils.try_to_slip_sprite(sprite, slip_remaining, self.test_collision)
-                        if slip_distance:
-                            # We successfully slipped off
-                            slip_remaining -= slip_distance
-                            continue
-                    # We've hit something and not slipped past it 
-                    sprite.rect.bottom -= move_dir
-                    sprite.y_speed = 0
-                    break      
-
-        self.platform_sprites.remove(sprites_to_delete)
-
     def update(self):
         self.frame_counter = (self.frame_counter+1) % config.FPS
         self.platform_sprites.update()
         self.animate_tiles()
-        self.update_movable_tiles()
 
     def add_player(self, player):
         self.player = player
@@ -199,26 +185,31 @@ class Scene():
                     sprite.remove(self.platform_sprites)
                     self.open_locks.append(sprite)
 
-    def try_to_move_tile(self, tile, direction):
+    def try_to_move_tile(self, tile, x_speed = 0, y_speed = 0):
         if tile.tile_id != "BOX":
             return False
         # It's a box.  Can we move it?
-        tile.rect.left += direction
-        if tile.rect.left < 0:
-            tile.rect.left = 0
-            return False
-        if tile.rect.right > config.SCREEN_WIDTH_PX:
-            tile.rect.right = config.SCREEN_WIDTH_PX
-            return False
+        initial_center = tile.rect.center
+        if x_speed:
+            tile.rect.left += x_speed
+            if tile.rect.left < 0:
+                tile.rect.left = 0
+                return False
+            if tile.rect.right > config.SCREEN_WIDTH_PX:
+                tile.rect.right = config.SCREEN_WIDTH_PX
+                return False
+        else:
+            tile.rect.top += y_speed
+            
         collided = self.test_collision(tile) 
         if collided:
             #  Hit something.  Check whether we can move whatever we've hit too.
-            if self.try_to_move_tile(collided, direction):
+            if self.try_to_move_tile(collided, x_speed = x_speed, y_speed = y_speed):
                 # The thing we hit moved.  Check whether we're not collision free.
                 if not self.test_collision(tile):
                     return True
 
-            tile.rect.left -= direction
+            tile.rect.center = initial_center
             return False
         return True
 

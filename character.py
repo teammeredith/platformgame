@@ -52,7 +52,10 @@ class Character(Movable):
         # Called every frame
         self.check_for_key_press()
 
-        if not Movable.update(self) == MovableRC.STOP:
+        rc = Movable.update(self)
+        if rc == MovableRC.FELL_OFF_SCREEN:
+            self.die()
+        elif not rc == MovableRC.STOP:
             self.animate()
 
 

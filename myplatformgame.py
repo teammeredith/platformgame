@@ -1,4 +1,5 @@
 """ To do list 
+- Think we're loading images here and in scenes.  Shouldn't do that.  Just load them in scenes?
 - Make it so that button timers start again if you press the button whilst down
 - Can embed yourself in a block by hitting an upsidedown spring
 - Can't push a block when standing on a down button
