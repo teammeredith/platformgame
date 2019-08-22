@@ -185,35 +185,6 @@ class Scene():
                     sprite.remove(self.platform_sprites)
                     self.open_locks.append(sprite)
 
-    def try_to_move_tile(self, tile, x_speed = 0, y_speed = 0):
-        if tile.tile_id != "BOX":
-            return False
-        # It's a box.  Can we move it?
-        initial_center = tile.rect.center
-        if x_speed:
-            tile.rect.left += x_speed
-            if tile.rect.left < 0:
-                tile.rect.left = 0
-                return False
-            if tile.rect.right > config.SCREEN_WIDTH_PX:
-                tile.rect.right = config.SCREEN_WIDTH_PX
-                return False
-        else:
-            tile.rect.top += y_speed
-            
-        collided = self.test_collision(tile) 
-        if collided:
-            #  Hit something.  Check whether we can move whatever we've hit too.
-            if self.try_to_move_tile(collided, x_speed = x_speed, y_speed = y_speed):
-                # The thing we hit moved.  Check whether we're not collision free.
-                if not self.test_collision(tile):
-                    return True
-
-            tile.rect.center = initial_center
-            return False
-        return True
-
-
     def draw(self, screen):
         self.platform_sprites.draw(screen)
 

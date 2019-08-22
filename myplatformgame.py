@@ -125,6 +125,8 @@ while running:
                 utils.screen_spin(screen, angle=1440, time=1000, steps=135, shrink=True)
                 next_scene(current_scene)
                 break
+            if event.key == pygame.K_q:
+                exit()
             scenes[current_scene].key_down(event)
         elif event.type == config.LOCK_TIMER_EVENT_ID:
             scenes[current_scene].timer_pop()

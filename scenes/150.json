@@ -2,6 +2,11 @@
     "tiles": [
         [
             {
+                "filename": "p3_front.png",
+                "path": [
+                    "Player"
+                ],
+                "rotate": 0,
                 "id": "BLANK"
             },
             {
@@ -835,12 +840,12 @@
                 "id": "BLANK"
             },
             {
-                "id": "BUTTON_YELLOW",
                 "filename": "buttonYellow.png",
                 "path": [
                     "Tiles"
                 ],
-                "rotate": 0
+                "rotate": 0,
+                "id": "BUTTON_YELLOW"
             },
             {
                 "id": "BLANK"
@@ -1241,36 +1246,40 @@
                 "id": "BLANK"
             },
             {
-                "id": "SPRING",
                 "filename": "springboardUp.png",
                 "path": [
                     "Tiles"
                 ],
+                "rotate": 0,
+                "id": "SPRING"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "brickWall.png",
+                "path": [
+                    "Tiles"
+                ],
                 "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -1512,12 +1521,12 @@
                 "id": "BLANK"
             },
             {
-                "id": "BOX",
                 "filename": "box.png",
                 "path": [
                     "Tiles"
                 ],
-                "rotate": 0
+                "rotate": 0,
+                "id": "BOX"
             },
             {
                 "id": "BLANK"
@@ -1745,12 +1754,12 @@
                 "id": "BLANK"
             },
             {
-                "id": "EXIT",                
                 "filename": "signExit.png",
                 "path": [
                     "Tiles"
                 ],
-                "rotate": 0
+                "rotate": 0,
+                "id": "EXIT"
             }
         ],
         [
@@ -1936,12 +1945,12 @@
                 "id": "BLANK"
             },
             {
-                "id": "SPRING",
                 "filename": "springboardUp.png",
                 "path": [
                     "Tiles"
                 ],
-                "rotate": 0
+                "rotate": 0,
+                "id": "SPRING"
             },
             {
                 "id": "BLANK"
@@ -1977,12 +1986,12 @@
                 "id": "BLANK"
             },
             {
-                "id": "LOCK_YELLOW",
                 "filename": "lock_yellow.png",
                 "path": [
                     "Tiles"
                 ],
-                "rotate": 0
+                "rotate": 0,
+                "id": "LOCK_YELLOW"
             },
             {
                 "id": "BLANK"
