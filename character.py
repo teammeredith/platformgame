@@ -7,10 +7,7 @@ import utils
 from enum import Enum
 from movable import Movable, MovableRC
 
-#logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
-module = sys.modules['__main__'].__file__
-log = logging.getLogger(module)
+log = logging.getLogger()
 
 
 class Character(Movable):

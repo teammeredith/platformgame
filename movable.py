@@ -7,9 +7,8 @@ import utils
 from enum import Enum
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
-module = sys.modules['__main__'].__file__
-log = logging.getLogger(module)
+#logging.basicConfig(level=logging.DEBUG, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+log = logging.getLogger()
 
 class MovableRC(Enum):
     CONTINUE = 1
@@ -71,8 +70,18 @@ class Movable(pygame.sprite.Sprite):
         self.x_speed = 0
         self.rotating = True
 
-    def try_to_move(self, x_speed = 0, y_speed = 0):
-        log.debug("Try to move {}".format(self.tile_id))
+    def try_to_move(self, x_speed = 0, y_speed = 0, already_moved=None):
+        log.debug("Try to move {} {}. x_s = {} y_s = {} pos = {}".format(self.tile_id, self, x_speed, y_speed, self.rect.center))
+    
+        if not already_moved:
+            already_moved = []
+
+        if self in already_moved:
+            # We're trying to move a sprite that has already been moved.  Return.
+            log.debug("We've already moved this sprite")
+            return MovableRC.STOP, None
+        already_moved.append(self)
+
         initial_center = self.rect.center
         if x_speed:
             self.rect.left += x_speed
@@ -87,7 +96,7 @@ class Movable(pygame.sprite.Sprite):
             
         collided = self.collide_with_any_tile() 
         if collided:
-            log.debug("{} hit {}".format(self.tile_id, collided.tile_id))
+            log.debug("{} hit {} {}".format(self.tile_id, collided.tile_id, collided))
             if self.act_on_collision(collided) == MovableRC.STOP:
                 # Immediate stop.  Undo the move and return.  Don't try and move any further.
                 log.debug("act_on_collision -> stop")
@@ -95,7 +104,7 @@ class Movable(pygame.sprite.Sprite):
                 return MovableRC.STOP, collided
 
             #  Hit something.  Check whether we can move whatever we've hit too.
-            if isinstance(collided, Movable) and collided.try_to_move(x_speed = x_speed, y_speed = y_speed)[0] == MovableRC.CONTINUE:
+            if isinstance(collided, Movable) and collided.try_to_move(x_speed = x_speed, y_speed = y_speed, already_moved = already_moved)[0] == MovableRC.CONTINUE:
                 log.debug("{} moved {}".format(self.tile_id, collided.tile_id))
                 # The thing we hit moved.  Check whether we're now collision free.
                 collided = self.collide_with_any_tile()
@@ -121,7 +130,7 @@ class Movable(pygame.sprite.Sprite):
 
                         # We're now colliding with something different.  Maybe we can push that?
                         # ToDo: really ought to iterate through everything that we are colliding with and try to push it
-                        if isinstance(collided_on_step, Movable) and collided_on_step.try_to_move(x_speed = move_dir)[0] == MovableRC.CONTINUE:
+                        if isinstance(collided_on_step, Movable) and collided_on_step.try_to_move(x_speed = x_speed, already_moved = already_moved)[0] == MovableRC.CONTINUE:
                             log.debug("Moved tile")
                             # Has that solved the issue?
                             if not self.collide_with_any_tile():
@@ -143,7 +152,7 @@ class Movable(pygame.sprite.Sprite):
     def update(self):
 
         if not self.scene:
-            return Nonennnnnnnn
+            return None
 
         old_center = self.rect.center
 
@@ -181,6 +190,7 @@ class Movable(pygame.sprite.Sprite):
         move_dir = (1 if self.y_speed > 0 else -1)
         slip_remaining = self.slip_distance
         for i in range(abs(self.y_speed)):
+            log.debug("{} {} Move Y.  Bottom = {}".format(self.tile_id, self, self.rect.bottom))
             self.rect.bottom += move_dir
 
             # Check if we fall off the screen
@@ -199,12 +209,14 @@ class Movable(pygame.sprite.Sprite):
                     self.rect.bottom -= move_dir
                     return MovableRC.STOP
                 elif isinstance(collided, Movable) and collided.try_to_move(y_speed = move_dir)[0] == MovableRC.CONTINUE:
+                    log.debug("{} {} Moved {}".format(self.tile_id, self, collided.tile_id))
                     self.rect.bottom -= move_dir
                     continue
                 elif self.x_speed == 0:
                     # See if we should slip past whatever we've hit
                     slip_distance = utils.try_to_slip_sprite(self, slip_remaining, self.collide_with_any_tile)
                     if slip_distance:
+                        log.debug("{} {} slipped {}".format(self.tile_id, self, slip_distance))
                         # We successfully slipped off
                         slip_remaining -= slip_distance
                         continue 
@@ -221,7 +233,7 @@ class Movable(pygame.sprite.Sprite):
                 self.falling = True
 
         if old_center != self.rect.center:
-            log.info("New pos = {}, {}".format(self.rect.left, self.rect.top))
-            log.info("Current speed = {}, {}".format(self.x_speed, self.y_speed))
+            log.info("{} New pos = {}, {}".format(self.tile_id, self.rect.left, self.rect.top))
+            log.info("{} Current speed = {}, {}".format(self.tile_id, self.x_speed, self.y_speed))
 
         return None

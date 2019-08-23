@@ -23,6 +23,7 @@ import random
 import os
 import json
 import logging
+from logging.handlers import RotatingFileHandler
 import sys
 from character import Player
 from scene import Scene
@@ -32,9 +33,14 @@ import time
 import frame_timer
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
-module = sys.modules['__main__'].__file__
-log = logging.getLogger(module)
+# logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+log = logging.getLogger()
+log.setLevel(logging.DEBUG)
+handler = RotatingFileHandler("platform.log", maxBytes=200000, backupCount=10)
+handler.doRollover()
+formatter = logging.Formatter('%(asctime)s - %(filename)10.10s:%(lineno)4.4s - %(funcName)10.10s() - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+log.addHandler(handler)
 
 parser = argparse.ArgumentParser(description='Platformgame')
 parser.add_argument('initial_scene',
@@ -98,6 +104,7 @@ scenes[current_scene].add_player(player)
 # Game loop
 running = True
 while running:
+    log.debug("Main game loop")
     # Keep loop running at the right speed
     clock.tick(config.FPS)
     frame_timer.frame_timer_tick()

@@ -14,10 +14,7 @@ import utils
 import frame_timer
 import movable
 
-#logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
-module = sys.modules['__main__'].__file__
-log = logging.getLogger(module)
+log = logging.getLogger()
 
 class Lift(movable.Movable):
     # sprite for the Player
