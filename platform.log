@@ -1,1025 +1,481 @@
-2019-08-23 07:56:04,262 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,287 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,295 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,295 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,296 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,296 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,296 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,299 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,300 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,308 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,329 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,329 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,329 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,329 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,330 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,331 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,338 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,362 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,362 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,362 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,363 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,363 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,364 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,373 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,396 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,396 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,396 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,396 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,397 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,398 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,405 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,430 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,430 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,430 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,431 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,431 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,432 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,439 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,463 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,463 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,463 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,464 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,464 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,465 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,472 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,498 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,498 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,498 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,499 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,499 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,500 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,507 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,532 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,532 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,532 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,533 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,533 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,534 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,542 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,567 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,568 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,569 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,569 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,570 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,578 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,599 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,601 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,601 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,602 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,602 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,602 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,605 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,617 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,635 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,635 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,636 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (408, 705)
-2019-08-23 07:56:04,636 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,636 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,639 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,651 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,668 - movable.py: 170 -     update() - DEBUG - Current pos = 420, 667
-2019-08-23 07:56:04,669 - movable.py:  74 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (435, 682)
-2019-08-23 07:56:04,670 - movable.py:  99 - try_to_mov() - DEBUG -  hit BOX <Movable sprite(in 1 groups)>
-2019-08-23 07:56:04,671 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,672 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (408, 705)
-2019-08-23 07:56:04,673 - movable.py: 108 - try_to_mov() - DEBUG -  moved BOX
-2019-08-23 07:56:04,674 - movable.py: 170 -     update() - DEBUG - Current pos = 420, 667
-2019-08-23 07:56:04,674 - movable.py:  74 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (435, 682)
-2019-08-23 07:56:04,675 - movable.py: 170 -     update() - DEBUG - Current pos = 419, 667
-2019-08-23 07:56:04,676 - movable.py:  74 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (434, 682)
-2019-08-23 07:56:04,677 - movable.py:  99 - try_to_mov() - DEBUG -  hit BOX <Movable sprite(in 1 groups)>
-2019-08-23 07:56:04,678 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,678 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (407, 705)
-2019-08-23 07:56:04,679 - movable.py: 108 - try_to_mov() - DEBUG -  moved BOX
-2019-08-23 07:56:04,680 - movable.py: 170 -     update() - DEBUG - Current pos = 419, 667
-2019-08-23 07:56:04,681 - movable.py:  74 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (434, 682)
-2019-08-23 07:56:04,682 - movable.py: 170 -     update() - DEBUG - Current pos = 418, 667
-2019-08-23 07:56:04,682 - movable.py:  74 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (433, 682)
-2019-08-23 07:56:04,683 - movable.py:  99 - try_to_mov() - DEBUG -  hit BOX <Movable sprite(in 1 groups)>
-2019-08-23 07:56:04,684 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,684 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = -1 y_s = 0 pos = (406, 705)
-2019-08-23 07:56:04,685 - movable.py: 108 - try_to_mov() - DEBUG -  moved BOX
-2019-08-23 07:56:04,686 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 697
-2019-08-23 07:56:04,687 - movable.py: 236 -     update() - INFO -  New pos = 418, 668
-2019-08-23 07:56:04,688 - movable.py: 237 -     update() - INFO -  Current speed = -5, 1
-2019-08-23 07:56:04,689 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,715 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,715 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 698
-2019-08-23 07:56:04,716 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:04,716 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (405, 705)
-2019-08-23 07:56:04,716 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
-2019-08-23 07:56:04,716 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move PLAIN
-2019-08-23 07:56:04,717 - movable.py: 219 -     update() - DEBUG -  <Player sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:04,717 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 699
-2019-08-23 07:56:04,717 - movable.py: 236 -     update() - INFO -  New pos = 419, 670
-2019-08-23 07:56:04,718 - movable.py: 237 -     update() - INFO -  Current speed = 0, 2
-2019-08-23 07:56:04,718 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,729 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,749 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 700
-2019-08-23 07:56:04,749 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 701
-2019-08-23 07:56:04,750 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 702
-2019-08-23 07:56:04,750 - movable.py: 236 -     update() - INFO -  New pos = 419, 673
-2019-08-23 07:56:04,750 - movable.py: 237 -     update() - INFO -  Current speed = 0, 3
-2019-08-23 07:56:04,751 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,762 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:04,783 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 703
-2019-08-23 07:56:04,784 - character.:  99 - act_on_col() - DEBUG - Collided with SPIN
-2019-08-23 07:56:04,785 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:04,809 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,132 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 77
-2019-08-23 07:56:05,133 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:05,133 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (345, 45)
-2019-08-23 07:56:05,133 - movable.py:  99 - try_to_mov() - DEBUG - BOX hit  <Player sprite(in 1 groups)>
-2019-08-23 07:56:05,133 - movable.py:  74 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (316, 63)
-2019-08-23 07:56:05,134 - movable.py:  99 - try_to_mov() - DEBUG -  hit BOX <Movable sprite(in 1 groups)>
-2019-08-23 07:56:05,134 - character.:  99 - act_on_col() - DEBUG - Collided with BOX
-2019-08-23 07:56:05,134 - movable.py:  74 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1 pos = (345, 46)
-2019-08-23 07:56:05,134 - movable.py:  81 - try_to_mov() - DEBUG - We've already moved this sprite
-2019-08-23 07:56:05,134 - movable.py: 116 - try_to_mov() - DEBUG -  didn't move BOX
-2019-08-23 07:56:05,134 - movable.py: 116 - try_to_mov() - DEBUG - BOX didn't move 
-2019-08-23 07:56:05,134 - movable.py: 219 -     update() - DEBUG -  <Player sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,135 - movable.py: 236 -     update() - INFO -  New pos = 300, 48
-2019-08-23 07:56:05,135 - movable.py: 237 -     update() - INFO -  Current speed = 0, 1
-2019-08-23 07:56:05,135 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 60
-2019-08-23 07:56:05,135 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 31
-2019-08-23 07:56:05,135 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 1
-2019-08-23 07:56:05,143 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,144 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 78
-2019-08-23 07:56:05,144 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 79
-2019-08-23 07:56:05,144 - movable.py: 236 -     update() - INFO -  New pos = 300, 50
-2019-08-23 07:56:05,144 - movable.py: 237 -     update() - INFO -  Current speed = 0, 2
-2019-08-23 07:56:05,145 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 61
-2019-08-23 07:56:05,145 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 62
-2019-08-23 07:56:05,145 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 33
-2019-08-23 07:56:05,145 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 2
-2019-08-23 07:56:05,153 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,178 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 80
-2019-08-23 07:56:05,178 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 81
-2019-08-23 07:56:05,178 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 82
-2019-08-23 07:56:05,179 - movable.py: 236 -     update() - INFO -  New pos = 300, 53
-2019-08-23 07:56:05,179 - movable.py: 237 -     update() - INFO -  Current speed = 0, 3
-2019-08-23 07:56:05,179 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 63
-2019-08-23 07:56:05,179 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 64
-2019-08-23 07:56:05,180 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 65
-2019-08-23 07:56:05,180 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 36
-2019-08-23 07:56:05,180 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 3
-2019-08-23 07:56:05,189 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,212 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 83
-2019-08-23 07:56:05,213 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 84
-2019-08-23 07:56:05,213 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 85
-2019-08-23 07:56:05,213 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 86
-2019-08-23 07:56:05,214 - movable.py: 236 -     update() - INFO -  New pos = 300, 57
-2019-08-23 07:56:05,214 - movable.py: 237 -     update() - INFO -  Current speed = 0, 4
-2019-08-23 07:56:05,214 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 66
-2019-08-23 07:56:05,214 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 67
-2019-08-23 07:56:05,215 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 68
-2019-08-23 07:56:05,215 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 69
-2019-08-23 07:56:05,215 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 40
-2019-08-23 07:56:05,215 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 4
-2019-08-23 07:56:05,224 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,246 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 87
-2019-08-23 07:56:05,246 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 88
-2019-08-23 07:56:05,247 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 89
-2019-08-23 07:56:05,247 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 90
-2019-08-23 07:56:05,247 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 91
-2019-08-23 07:56:05,247 - movable.py: 236 -     update() - INFO -  New pos = 300, 62
-2019-08-23 07:56:05,248 - movable.py: 237 -     update() - INFO -  Current speed = 0, 5
-2019-08-23 07:56:05,248 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 70
-2019-08-23 07:56:05,248 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 71
-2019-08-23 07:56:05,248 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 72
-2019-08-23 07:56:05,248 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 73
-2019-08-23 07:56:05,249 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 74
-2019-08-23 07:56:05,249 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 45
-2019-08-23 07:56:05,249 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 5
-2019-08-23 07:56:05,257 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,280 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 92
-2019-08-23 07:56:05,280 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 93
-2019-08-23 07:56:05,280 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 94
-2019-08-23 07:56:05,280 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 95
-2019-08-23 07:56:05,281 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 96
-2019-08-23 07:56:05,281 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 97
-2019-08-23 07:56:05,281 - movable.py: 236 -     update() - INFO -  New pos = 300, 68
-2019-08-23 07:56:05,282 - movable.py: 237 -     update() - INFO -  Current speed = 0, 6
-2019-08-23 07:56:05,282 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 75
-2019-08-23 07:56:05,282 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 76
-2019-08-23 07:56:05,282 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 77
-2019-08-23 07:56:05,282 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 78
-2019-08-23 07:56:05,283 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 79
-2019-08-23 07:56:05,283 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 80
-2019-08-23 07:56:05,283 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 51
-2019-08-23 07:56:05,283 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 6
-2019-08-23 07:56:05,291 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,313 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 98
-2019-08-23 07:56:05,313 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 99
-2019-08-23 07:56:05,313 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 100
-2019-08-23 07:56:05,314 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 101
-2019-08-23 07:56:05,314 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 102
-2019-08-23 07:56:05,314 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 103
-2019-08-23 07:56:05,314 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 104
-2019-08-23 07:56:05,315 - movable.py: 236 -     update() - INFO -  New pos = 300, 75
-2019-08-23 07:56:05,315 - movable.py: 237 -     update() - INFO -  Current speed = 0, 7
-2019-08-23 07:56:05,315 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 81
-2019-08-23 07:56:05,315 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 82
-2019-08-23 07:56:05,315 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 83
-2019-08-23 07:56:05,316 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 84
-2019-08-23 07:56:05,316 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 85
-2019-08-23 07:56:05,316 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 86
-2019-08-23 07:56:05,316 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 87
-2019-08-23 07:56:05,317 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 58
-2019-08-23 07:56:05,317 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 7
-2019-08-23 07:56:05,326 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,347 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 105
-2019-08-23 07:56:05,347 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 106
-2019-08-23 07:56:05,347 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 107
-2019-08-23 07:56:05,347 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 108
-2019-08-23 07:56:05,348 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 109
-2019-08-23 07:56:05,348 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 110
-2019-08-23 07:56:05,348 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 111
-2019-08-23 07:56:05,348 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 112
-2019-08-23 07:56:05,349 - movable.py: 236 -     update() - INFO -  New pos = 300, 83
-2019-08-23 07:56:05,349 - movable.py: 237 -     update() - INFO -  Current speed = 0, 8
-2019-08-23 07:56:05,349 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 88
-2019-08-23 07:56:05,349 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 89
-2019-08-23 07:56:05,349 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 90
-2019-08-23 07:56:05,350 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 91
-2019-08-23 07:56:05,350 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 92
-2019-08-23 07:56:05,350 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 93
-2019-08-23 07:56:05,350 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 94
-2019-08-23 07:56:05,351 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 95
-2019-08-23 07:56:05,351 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 66
-2019-08-23 07:56:05,351 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 8
-2019-08-23 07:56:05,360 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,381 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 113
-2019-08-23 07:56:05,382 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 114
-2019-08-23 07:56:05,382 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 115
-2019-08-23 07:56:05,382 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 116
-2019-08-23 07:56:05,382 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 117
-2019-08-23 07:56:05,383 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 118
-2019-08-23 07:56:05,383 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 119
-2019-08-23 07:56:05,383 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,383 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,384 - movable.py: 236 -     update() - INFO -  New pos = 300, 90
-2019-08-23 07:56:05,384 - movable.py: 237 -     update() - INFO -  Current speed = 0, 0
-2019-08-23 07:56:05,384 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 96
-2019-08-23 07:56:05,384 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 97
-2019-08-23 07:56:05,384 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 98
-2019-08-23 07:56:05,385 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 99
-2019-08-23 07:56:05,385 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 100
-2019-08-23 07:56:05,385 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 101
-2019-08-23 07:56:05,385 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 102
-2019-08-23 07:56:05,386 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 103
-2019-08-23 07:56:05,386 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 104
-2019-08-23 07:56:05,386 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 75
-2019-08-23 07:56:05,386 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 9
-2019-08-23 07:56:05,397 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,415 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,415 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,415 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 105
-2019-08-23 07:56:05,415 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 106
-2019-08-23 07:56:05,416 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 107
-2019-08-23 07:56:05,416 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 108
-2019-08-23 07:56:05,416 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 109
-2019-08-23 07:56:05,416 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 110
-2019-08-23 07:56:05,417 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 111
-2019-08-23 07:56:05,417 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 112
-2019-08-23 07:56:05,417 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 113
-2019-08-23 07:56:05,417 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 114
-2019-08-23 07:56:05,418 - movable.py: 236 -     update() - INFO - BOX New pos = 330, 85
-2019-08-23 07:56:05,418 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 10
-2019-08-23 07:56:05,427 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,449 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,449 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,449 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 115
-2019-08-23 07:56:05,450 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 116
-2019-08-23 07:56:05,450 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 117
-2019-08-23 07:56:05,450 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 118
-2019-08-23 07:56:05,450 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 119
-2019-08-23 07:56:05,451 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,451 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 3
-2019-08-23 07:56:05,451 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 121
-2019-08-23 07:56:05,451 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 5
-2019-08-23 07:56:05,451 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 122
-2019-08-23 07:56:05,452 - movable.py: 236 -     update() - INFO - BOX New pos = 338, 92
-2019-08-23 07:56:05,452 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 0
-2019-08-23 07:56:05,460 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,483 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,483 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,483 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 122
-2019-08-23 07:56:05,484 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 4
-2019-08-23 07:56:05,484 - movable.py: 236 -     update() - INFO - BOX New pos = 342, 93
-2019-08-23 07:56:05,484 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 1
-2019-08-23 07:56:05,491 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,518 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,518 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,518 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 123
-2019-08-23 07:56:05,519 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 3
-2019-08-23 07:56:05,519 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 124
-2019-08-23 07:56:05,519 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 2
-2019-08-23 07:56:05,519 - movable.py: 236 -     update() - INFO - BOX New pos = 347, 95
-2019-08-23 07:56:05,519 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 2
-2019-08-23 07:56:05,539 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,553 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,554 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,554 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 125
-2019-08-23 07:56:05,555 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 2
-2019-08-23 07:56:05,555 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 126
-2019-08-23 07:56:05,556 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,556 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 127
-2019-08-23 07:56:05,557 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 2
-2019-08-23 07:56:05,557 - movable.py: 236 -     update() - INFO - BOX New pos = 352, 98
-2019-08-23 07:56:05,558 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 3
-2019-08-23 07:56:05,575 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,587 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,587 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,588 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 128
-2019-08-23 07:56:05,588 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,588 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 129
-2019-08-23 07:56:05,588 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,589 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 130
-2019-08-23 07:56:05,589 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,589 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 131
-2019-08-23 07:56:05,590 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,590 - movable.py: 236 -     update() - INFO - BOX New pos = 356, 102
-2019-08-23 07:56:05,590 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 4
-2019-08-23 07:56:05,600 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,621 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,622 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,623 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 132
-2019-08-23 07:56:05,624 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,625 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 133
-2019-08-23 07:56:05,626 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 134
-2019-08-23 07:56:05,627 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,627 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 135
-2019-08-23 07:56:05,628 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 136
-2019-08-23 07:56:05,629 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,630 - movable.py: 236 -     update() - INFO - BOX New pos = 359, 107
-2019-08-23 07:56:05,630 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 5
-2019-08-23 07:56:05,651 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,656 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,656 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,657 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 137
-2019-08-23 07:56:05,657 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 138
-2019-08-23 07:56:05,658 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 139
-2019-08-23 07:56:05,658 - movable.py: 219 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> slipped 1
-2019-08-23 07:56:05,658 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 140
-2019-08-23 07:56:05,659 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 141
-2019-08-23 07:56:05,659 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 142
-2019-08-23 07:56:05,660 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 113
-2019-08-23 07:56:05,660 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 6
-2019-08-23 07:56:05,674 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,688 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,688 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,688 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 143
-2019-08-23 07:56:05,688 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 144
-2019-08-23 07:56:05,688 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 145
-2019-08-23 07:56:05,688 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 146
-2019-08-23 07:56:05,688 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 147
-2019-08-23 07:56:05,689 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 148
-2019-08-23 07:56:05,689 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 149
-2019-08-23 07:56:05,689 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 120
-2019-08-23 07:56:05,689 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 7
-2019-08-23 07:56:05,698 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,722 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,722 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,722 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 150
-2019-08-23 07:56:05,722 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 151
-2019-08-23 07:56:05,722 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 152
-2019-08-23 07:56:05,722 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 153
-2019-08-23 07:56:05,722 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 154
-2019-08-23 07:56:05,723 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 155
-2019-08-23 07:56:05,723 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 156
-2019-08-23 07:56:05,723 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 157
-2019-08-23 07:56:05,723 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 128
-2019-08-23 07:56:05,723 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 8
-2019-08-23 07:56:05,732 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,755 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,755 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,755 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 158
-2019-08-23 07:56:05,756 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 159
-2019-08-23 07:56:05,756 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 160
-2019-08-23 07:56:05,756 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 161
-2019-08-23 07:56:05,757 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 162
-2019-08-23 07:56:05,757 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 163
-2019-08-23 07:56:05,757 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 164
-2019-08-23 07:56:05,757 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 165
-2019-08-23 07:56:05,757 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 166
-2019-08-23 07:56:05,758 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 137
-2019-08-23 07:56:05,758 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 9
-2019-08-23 07:56:05,766 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,789 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,789 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,789 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 167
-2019-08-23 07:56:05,790 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 168
-2019-08-23 07:56:05,790 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 169
-2019-08-23 07:56:05,790 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 170
-2019-08-23 07:56:05,790 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 171
-2019-08-23 07:56:05,791 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 172
-2019-08-23 07:56:05,791 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 173
-2019-08-23 07:56:05,791 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 174
-2019-08-23 07:56:05,791 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 175
-2019-08-23 07:56:05,792 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 176
-2019-08-23 07:56:05,792 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 147
-2019-08-23 07:56:05,792 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 10
-2019-08-23 07:56:05,800 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,823 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,823 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,824 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 177
-2019-08-23 07:56:05,824 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 178
-2019-08-23 07:56:05,824 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 179
-2019-08-23 07:56:05,824 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 180
-2019-08-23 07:56:05,825 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 181
-2019-08-23 07:56:05,825 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 182
-2019-08-23 07:56:05,825 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 183
-2019-08-23 07:56:05,825 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 184
-2019-08-23 07:56:05,826 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 185
-2019-08-23 07:56:05,826 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 186
-2019-08-23 07:56:05,826 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 187
-2019-08-23 07:56:05,827 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 158
-2019-08-23 07:56:05,827 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 11
-2019-08-23 07:56:05,835 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,857 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,857 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,857 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 188
-2019-08-23 07:56:05,858 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 189
-2019-08-23 07:56:05,858 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 190
-2019-08-23 07:56:05,858 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 191
-2019-08-23 07:56:05,858 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 192
-2019-08-23 07:56:05,859 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 193
-2019-08-23 07:56:05,859 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 194
-2019-08-23 07:56:05,859 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 195
-2019-08-23 07:56:05,859 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 196
-2019-08-23 07:56:05,860 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 197
-2019-08-23 07:56:05,860 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 198
-2019-08-23 07:56:05,860 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 199
-2019-08-23 07:56:05,861 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 170
-2019-08-23 07:56:05,861 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 12
-2019-08-23 07:56:05,868 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,891 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,891 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,891 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 200
-2019-08-23 07:56:05,892 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 201
-2019-08-23 07:56:05,892 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 202
-2019-08-23 07:56:05,892 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 203
-2019-08-23 07:56:05,892 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 204
-2019-08-23 07:56:05,893 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 205
-2019-08-23 07:56:05,893 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 206
-2019-08-23 07:56:05,893 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 207
-2019-08-23 07:56:05,893 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 208
-2019-08-23 07:56:05,894 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 209
-2019-08-23 07:56:05,894 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 210
-2019-08-23 07:56:05,894 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 211
-2019-08-23 07:56:05,894 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 212
-2019-08-23 07:56:05,894 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 183
-2019-08-23 07:56:05,895 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 13
-2019-08-23 07:56:05,902 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,925 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,925 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,925 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 213
-2019-08-23 07:56:05,926 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 214
-2019-08-23 07:56:05,926 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 215
-2019-08-23 07:56:05,927 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 216
-2019-08-23 07:56:05,927 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 217
-2019-08-23 07:56:05,927 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 218
-2019-08-23 07:56:05,928 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 219
-2019-08-23 07:56:05,928 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 220
-2019-08-23 07:56:05,928 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 221
-2019-08-23 07:56:05,928 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 222
-2019-08-23 07:56:05,928 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 223
-2019-08-23 07:56:05,929 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 224
-2019-08-23 07:56:05,929 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 225
-2019-08-23 07:56:05,929 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 226
-2019-08-23 07:56:05,929 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 197
-2019-08-23 07:56:05,929 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 14
-2019-08-23 07:56:05,937 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:05,960 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 120
-2019-08-23 07:56:05,960 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:05,960 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 227
-2019-08-23 07:56:05,961 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 228
-2019-08-23 07:56:05,961 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 229
-2019-08-23 07:56:05,961 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 230
-2019-08-23 07:56:05,961 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 231
-2019-08-23 07:56:05,962 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 232
-2019-08-23 07:56:05,962 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 233
-2019-08-23 07:56:05,962 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 234
-2019-08-23 07:56:05,962 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 235
-2019-08-23 07:56:05,963 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 236
-2019-08-23 07:56:05,963 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 237
-2019-08-23 07:56:05,963 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 238
-2019-08-23 07:56:05,963 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 239
-2019-08-23 07:56:05,964 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 240
-2019-08-23 07:56:05,964 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 241
-2019-08-23 07:56:05,964 - movable.py: 236 -     update() - INFO - BOX New pos = 360, 212
-2019-08-23 07:56:05,964 - movable.py: 237 -     update() - INFO - BOX Current speed = 0, 15
-2019-08-23 07:56:05,972 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,723 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,723 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,723 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,732 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,732 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,732 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,733 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,741 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,766 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,766 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,766 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,774 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,800 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,800 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,800 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,808 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,834 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,834 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,834 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,842 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,868 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,868 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,869 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,876 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,902 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,902 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,902 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,910 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,935 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,935 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,935 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,943 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:07,969 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,969 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:07,969 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:07,977 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,003 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,003 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,004 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,028 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,037 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,037 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,038 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,051 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,071 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,071 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,071 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,082 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,105 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,105 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,106 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,117 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,140 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,140 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,140 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,152 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,174 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,174 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,174 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,186 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,209 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,209 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,209 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,219 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,243 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,243 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,243 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,252 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,277 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,277 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,277 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,285 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,310 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,310 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,310 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,318 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,345 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,345 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,345 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,354 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,379 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,379 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,380 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,388 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,413 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,413 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,414 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,424 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,447 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,447 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,447 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,458 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,481 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,481 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,482 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,498 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,515 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,515 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,516 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,540 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,549 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,550 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,551 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,581 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,583 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,583 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,584 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,600 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,615 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,615 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,616 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,631 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,649 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,649 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,650 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,665 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,683 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,683 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,684 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,699 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,717 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,717 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,718 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,733 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,751 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,751 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,752 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,795 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,796 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,796 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,797 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,810 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,830 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,830 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,831 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,844 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,864 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,865 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,866 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,878 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,898 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,898 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,899 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,911 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,932 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,932 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,933 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,944 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:08,966 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,966 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:08,966 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:08,973 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,000 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,000 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,000 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,008 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,034 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,034 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,034 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,041 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,068 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,068 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,068 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,076 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,102 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,102 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,102 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,110 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,136 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,136 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,136 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,143 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,170 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,170 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,170 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,177 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,202 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,202 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,202 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,211 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,236 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,236 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,236 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,244 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,271 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,271 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,271 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,279 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,304 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,304 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,304 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,314 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,338 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,338 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,338 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,348 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,372 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,372 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,372 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,382 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,406 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,406 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,406 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,416 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,441 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,441 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,442 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,450 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,475 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,475 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,475 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,484 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,509 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,509 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,509 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,518 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,543 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,543 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,543 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,552 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,577 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,577 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,577 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,597 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,611 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,611 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,611 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,624 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,645 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,645 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,645 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,655 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,679 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,679 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,679 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,688 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,713 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,713 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,713 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,721 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,748 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,748 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,748 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,756 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,782 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,782 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,783 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,790 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,815 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,815 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,815 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,823 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,849 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,849 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,849 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,859 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,883 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,883 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,884 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,893 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,917 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,917 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,917 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,926 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,951 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,951 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,951 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,960 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:09,985 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,985 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:09,985 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:09,994 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,019 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,019 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,019 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,027 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,053 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,053 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,053 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,061 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,088 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,088 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,088 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,096 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,122 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,122 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,122 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,130 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,155 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,155 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,156 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,176 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,188 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,188 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,189 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,203 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,222 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,222 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,222 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,230 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,256 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,256 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,256 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,265 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,289 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,289 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,289 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,297 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,322 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,322 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,322 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,344 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,357 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,357 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,358 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,369 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,392 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,392 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,393 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,405 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,426 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,426 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,427 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,449 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,460 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,461 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,461 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,484 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,494 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,495 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,495 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,516 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,528 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,528 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,528 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,551 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,562 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,562 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,562 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,576 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,595 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,595 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,596 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,610 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,629 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,630 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,631 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,656 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,663 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,663 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,664 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,678 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,697 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,697 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,698 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,712 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,732 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,732 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,733 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,748 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,766 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,766 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,767 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,781 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,800 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,800 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,801 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,815 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,834 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,834 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,835 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,849 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,868 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,868 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,869 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,883 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,902 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,902 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,902 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,916 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,935 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,935 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,936 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,950 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:10,969 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,969 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:10,969 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:10,977 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,003 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,003 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,003 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,011 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,037 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,037 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,037 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,045 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,071 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,071 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,071 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,079 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,106 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,106 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,107 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,114 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,141 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,141 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,141 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,149 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,175 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,175 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,175 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,183 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,209 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,209 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,209 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,217 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,242 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,242 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,243 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,252 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,276 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,276 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,276 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,284 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,310 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,310 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,310 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,317 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,344 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,344 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,345 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,352 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,378 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,378 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,378 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,386 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,412 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,412 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,412 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,420 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,446 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,446 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,447 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,455 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,481 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,482 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,483 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,511 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,515 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,516 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,517 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,536 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,549 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,549 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,550 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,576 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,583 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,583 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,584 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,597 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,617 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,617 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,618 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,631 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,650 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,650 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,651 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,664 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,684 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,684 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,685 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,698 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,718 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,718 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,719 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,732 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,752 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,752 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,753 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,765 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,786 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,786 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,786 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,794 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,820 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,820 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,820 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,828 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,854 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,854 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,854 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,862 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,889 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,889 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,889 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,897 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,924 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,925 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,925 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,944 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,958 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,958 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,959 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,970 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:11,992 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:11,992 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:11,993 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:12,003 - myplatform: 107 -   <module>() - DEBUG - Main game loop
-2019-08-23 07:56:12,025 - movable.py: 193 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
-2019-08-23 07:56:12,025 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
-2019-08-23 07:56:12,026 - movable.py: 193 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,455 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,489 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,490 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,490 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,490 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,491 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,498 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,523 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,523 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,524 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,524 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,532 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,558 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,558 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,558 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,558 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,565 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,592 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,592 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,592 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,592 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,606 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,626 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,626 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,626 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,626 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,640 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,660 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,660 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,660 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,660 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,668 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,694 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,694 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,694 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,694 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,702 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,728 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,728 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,728 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,729 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,739 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,763 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,763 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,763 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,764 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,771 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,797 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,797 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,797 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,797 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,804 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,830 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,830 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,830 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,831 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,838 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,864 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,864 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,865 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,866 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,886 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,898 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,898 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,899 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,900 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,919 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,932 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,932 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,933 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,934 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,954 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:16,966 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:16,967 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:16,967 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,968 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:16,988 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,000 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,001 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,003 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,003 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,024 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,034 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,035 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,036 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,036 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,063 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,068 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,069 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,070 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,070 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,083 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,103 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,104 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,105 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,106 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,134 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,137 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,137 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,138 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,139 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,156 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,171 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,171 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,171 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,171 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,181 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,204 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,204 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,204 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,205 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,215 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,238 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,238 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,238 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,239 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,249 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,272 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,272 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,273 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,273 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,283 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,306 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,306 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,307 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,307 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,317 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,339 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,339 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,340 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,340 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,350 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,373 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,373 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,373 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,374 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,384 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,407 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,407 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,408 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,408 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,419 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,441 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,441 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,441 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,442 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,452 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,475 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,476 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,477 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,477 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,497 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,509 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,509 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,509 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,510 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,521 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,542 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,542 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,543 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,543 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,554 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,576 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,576 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,576 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,576 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,587 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,612 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,614 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,616 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,617 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,632 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,644 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,644 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,644 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,644 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,657 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,678 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,678 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,678 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,678 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,689 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,712 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,712 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,712 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,712 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,723 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,746 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,746 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,746 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,746 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,756 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,780 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,780 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,781 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,781 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,791 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,814 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,814 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,814 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,815 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,823 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,848 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,848 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,848 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,849 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,857 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,882 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,882 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,882 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,883 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,893 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,915 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,915 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,916 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,916 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,929 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,949 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,950 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,950 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,951 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,958 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:17,983 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:17,984 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:17,984 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,984 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:17,992 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,017 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,017 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,017 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,018 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,025 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,051 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,051 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,052 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,052 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,068 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,085 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,085 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,086 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,086 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,110 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,119 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,120 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,121 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,121 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,150 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,153 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,153 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,153 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,154 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,165 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,187 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,187 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,187 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,187 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,197 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,221 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,221 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,221 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,221 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,229 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,255 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,255 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,256 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,256 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,268 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,289 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,289 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,289 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,289 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,307 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,323 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,323 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,324 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,325 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,370 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,373 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,373 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,374 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,374 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,387 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,406 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,406 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,406 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,407 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,414 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,440 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,440 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,440 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,440 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,448 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,474 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,474 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,474 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,474 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,482 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,508 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,508 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,508 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,509 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,516 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,542 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,542 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,542 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,543 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,550 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,577 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,577 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,577 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,578 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,586 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,612 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,613 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,614 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,615 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,639 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,648 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,650 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,652 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,653 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,666 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,682 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,682 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,682 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,682 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,690 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,715 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,715 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,715 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,715 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,724 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,749 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,749 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,749 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,750 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,759 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,783 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,783 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,784 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,784 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,793 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,817 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,818 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,819 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,820 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,848 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,851 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,852 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,853 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,853 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,883 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,884 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,885 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,886 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,886 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,915 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,918 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,919 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,920 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,921 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,941 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,952 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,952 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,953 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,953 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,967 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:18,987 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:18,987 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:18,988 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:18,988 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,005 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,020 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,020 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,021 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,021 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,040 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,054 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,054 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,055 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,056 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,074 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,088 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,088 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,088 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,089 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,099 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,122 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,122 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,123 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,123 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,133 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,156 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,156 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,156 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,157 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,167 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,191 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,191 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,191 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,192 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,202 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,225 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,225 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,225 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,226 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,236 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,259 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,259 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,260 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,260 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,270 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,293 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,293 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,293 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,294 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,304 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,327 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,328 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,329 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,330 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,354 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,360 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,360 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,361 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,361 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,375 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,394 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,394 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,394 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,395 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,403 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,428 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,428 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,428 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,429 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,437 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,462 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,462 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,463 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,463 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,470 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,497 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,498 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,499 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,500 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,528 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,532 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,532 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,533 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,533 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,545 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,565 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,565 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,565 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,565 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,573 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,600 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,600 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,600 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,600 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,607 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,634 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,634 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,635 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,635 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,644 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,668 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,668 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,668 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,669 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,676 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,702 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,702 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,703 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,703 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,716 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-23 14:13:19,736 - movable.py: 197 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-23 14:13:19,737 - character.:  99 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-23 14:13:19,738 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600
+2019-08-23 14:13:19,739 - movable.py: 197 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 600

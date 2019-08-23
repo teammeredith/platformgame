@@ -75,6 +75,9 @@ class Movable(pygame.sprite.Sprite):
     
         if not already_moved:
             already_moved = []
+            top_level_move = True
+        else:
+            top_level_move = False
 
         if self in already_moved:
             # We're trying to move a sprite that has already been moved.  Return.
@@ -93,7 +96,7 @@ class Movable(pygame.sprite.Sprite):
                 return MovableRC.HIT_EDGE_OF_SCREEN, None
         else:
             self.rect.top += y_speed
-            
+        
         collided = self.collide_with_any_tile() 
         if collided:
             log.debug("{} hit {} {}".format(self.tile_id, collided.tile_id, collided))
@@ -109,8 +112,9 @@ class Movable(pygame.sprite.Sprite):
                 # The thing we hit moved.  Check whether we're now collision free.
                 collided = self.collide_with_any_tile()
                 if not collided:
-                    # We are now collision free.  Undo the move anyway in order to slow us down when we're pushing things.
-                    self.rect.center = initial_center
+                    # We are now collision free.  If we're the one actually initiating the move then undo it anyway in order to slow us down when we're pushing things.
+                    if top_level_move: 
+                        self.rect.center = initial_center
                     return MovableRC.CONTINUE, None
 
             log.debug("{} didn't move {}".format(self.tile_id, collided.tile_id))
@@ -235,5 +239,8 @@ class Movable(pygame.sprite.Sprite):
         if old_center != self.rect.center:
             log.info("{} New pos = {}, {}".format(self.tile_id, self.rect.left, self.rect.top))
             log.info("{} Current speed = {}, {}".format(self.tile_id, self.x_speed, self.y_speed))
+        
+        # Add this in if we want to be able to push stuff UP slopes / over objects etc.
+        # self.step_height_remaining = self.max_step_height
 
         return None
