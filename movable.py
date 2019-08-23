@@ -33,6 +33,7 @@ class Movable(pygame.sprite.Sprite):
         self.last_collided = None
         self.gravity_effect = config.GRAVITY_EFFECT
         self.step_height_remaining = 0
+        self.slip_remaining = 0
 
     def start_scene(self, scene, initial_left, initial_top): 
         self.scene = scene
@@ -70,9 +71,17 @@ class Movable(pygame.sprite.Sprite):
         self.x_speed = 0
         self.rotating = True
 
+    # Tries to move us either +/- 1 in the x_direction or +/- 1 in the y_direction.
+    # Returns one of:
+    # - STOP.  We've hit something. Will have called act_on_collision and will have undone the move.  The caller shouldn't
+    #          try to move this sprite again this frame.
+    # - HIT_EDGE_OF_SCREEN.  Will have undone the move.
+    # - FELL_OFF_SCREEN.  We fell off the bottom of the screen.
+    # - CONTINUE.  We've moved successfully (or pushed something that will allow us to move successfully if called again)
     def try_to_move(self, x_speed = 0, y_speed = 0, already_moved=None):
         log.debug("Try to move {} {}. x_s = {} y_s = {} pos = {}".format(self.tile_id, self, x_speed, y_speed, self.rect.center))
-    
+
+        # We call ourselves recursively, recording the list of objects that have been moved as a result.      
         if not already_moved:
             already_moved = []
             top_level_move = True
@@ -80,78 +89,113 @@ class Movable(pygame.sprite.Sprite):
             top_level_move = False
 
         if self in already_moved:
-            # We're trying to move a sprite that has already been moved.  Return.
-            log.debug("We've already moved this sprite")
-            return MovableRC.STOP, None
+            # Avoid perpetual motion where we push something that pushes us which we push etc.  That's bad.
+            return MovableRC.STOP
+
         already_moved.append(self)
 
         initial_center = self.rect.center
+
+        # Update our position based on the direction we're trying to move
         if x_speed:
             self.rect.left += x_speed
             if self.rect.left < 0:
                 self.rect.left = 0
-                return MovableRC.HIT_EDGE_OF_SCREEN, None
+                self.on_stopped_x()
+                return MovableRC.HIT_EDGE_OF_SCREEN
             if self.rect.right > config.SCREEN_WIDTH_PX:
                 self.rect.right = config.SCREEN_WIDTH_PX
-                return MovableRC.HIT_EDGE_OF_SCREEN, None
+                self.on_stopped_x()
+                return MovableRC.HIT_EDGE_OF_SCREEN
         else:
             self.rect.top += y_speed
+            if self.rect.top > config.SCREEN_HEIGHT_PX:
+                return MovableRC.FELL_OFF_SCREEN
         
+        # Did we collide with anything?
         collided = self.collide_with_any_tile() 
-        if collided:
-            log.debug("{} hit {} {}".format(self.tile_id, collided.tile_id, collided))
-            if self.act_on_collision(collided) == MovableRC.STOP:
-                # Immediate stop.  Undo the move and return.  Don't try and move any further.
-                log.debug("act_on_collision -> stop")
-                self.rect.center = initial_center
-                return MovableRC.STOP, collided
+        if not collided:
+            if self.y_speed:
+                self.falling = True
+            return MovableRC.CONTINUE
 
-            #  Hit something.  Check whether we can move whatever we've hit too.
-            if isinstance(collided, Movable) and collided.try_to_move(x_speed = x_speed, y_speed = y_speed, already_moved = already_moved)[0] == MovableRC.CONTINUE:
+        # We've hit something.  
+        # - Call act_on_collision.  This determines whether we should continue trying to move, or whether we should stop.
+        log.debug("{} hit {} {}".format(self.tile_id, collided.tile_id, collided))
+        pre_action_center = self.rect.center
+        if self.act_on_collision(collided) == MovableRC.STOP:
+            # Immediate stop.  Return.  Don't try and move any further.
+            log.debug("act_on_collision -> stop")
+            if pre_action_center == self.rect.center:
+                # Act on action didn't move us -- undo the move 
+                self.rect.center = initial_center
+            return MovableRC.STOP
+
+        #  Hit something.  Check whether we can move whatever we've hit too.
+        while collided:
+            if isinstance(collided, Movable) and collided.try_to_move(x_speed = x_speed, y_speed = y_speed, already_moved = already_moved) == MovableRC.CONTINUE:
                 log.debug("{} moved {}".format(self.tile_id, collided.tile_id))
                 # The thing we hit moved.  Check whether we're now collision free.
                 collided = self.collide_with_any_tile()
-                if not collided:
-                    # We are now collision free.  If we're the one actually initiating the move then undo it anyway in order to slow us down when we're pushing things.
-                    if top_level_move: 
-                        self.rect.center = initial_center
-                    return MovableRC.CONTINUE, None
+            else:
+                log.debug("{} couldn't move {}".format(self.tile_id, collided.tile_id))
+                # We hit something that we couldn't move.
+                break
 
-            log.debug("{} didn't move {}".format(self.tile_id, collided.tile_id))
-            if x_speed:
-                # We didn't manage to move the thing that we hit.  Is it something that we can go over?
-                over = False
-                for step in range(self.step_height_remaining):
-                    log.debug("Step up")
-                    self.rect.top -= 1
-                    collided_on_step = self.collide_with_any_tile() 
-                    if not collided_on_step:
-                        log.info("Made it over")
-                        over = True
-                        break
-                    elif collided_on_step != collided:
-                        log.debug("Now colliding with {}".format(collided_on_step.tile_id))
+        if not collided:
+            # We are now collision free.  If we're the one actually initiating the move then undo it anyway in order to slow us down when we're pushing things.
+            if top_level_move: 
+                self.rect.center = initial_center
+            return MovableRC.CONTINUE
 
-                        # We're now colliding with something different.  Maybe we can push that?
-                        # ToDo: really ought to iterate through everything that we are colliding with and try to push it
-                        if isinstance(collided_on_step, Movable) and collided_on_step.try_to_move(x_speed = x_speed, already_moved = already_moved)[0] == MovableRC.CONTINUE:
-                            log.debug("Moved tile")
-                            # Has that solved the issue?
-                            if not self.collide_with_any_tile():
-                                log.info("Made it over")
-                                over = True
-                                break
+        # We've hit something that we can't move.  If we're trying to go sideways, see if we can step over it.
+        if x_speed:
+            over = False
+            for step in range(self.step_height_remaining):
+                log.debug("Step up")
+                self.rect.top -= 1
+                collided_on_step = self.collide_with_any_tile() 
+                if not collided_on_step:
+                    log.info("Made it over")
+                    over = True
+                    break
+                elif collided_on_step != collided:
+                    log.debug("Now colliding with {}".format(collided_on_step.tile_id))
 
-                if over:
-                    self.step_height_remaining -= (step+1)
-                    return MovableRC.CONTINUE, None
+                    # We're now colliding with something different.  Maybe we can push that?
+                    # ToDo: really ought to iterate through everything that we are colliding with and try to push it
+                    if isinstance(collided_on_step, Movable) and collided_on_step.try_to_move(x_speed = x_speed, already_moved = already_moved) == MovableRC.CONTINUE:
+                        log.debug("Moved tile")
+                        # Has that solved the issue?
+                        if not self.collide_with_any_tile():
+                            log.info("Made it over")
+                            over = True
+                            break
 
-            # If we get here we must have hit something that we couldn't move or go over.  Undo the move and stop trying to 
-            # change our x position.
+            if over:
+                self.step_height_remaining -= (step+1)
+                return MovableRC.CONTINUE
+            
+            # We've hit something that we can't move and we can't go over.  We're out of options.
             self.rect.center = initial_center
-            return MovableRC.STOP, collided
+            return MovableRC.STOP
 
-        return MovableRC.CONTINUE, None
+        if y_speed:
+            if getattr(self, "x_speed", 0) == 0:
+                # See if we should slip past whatever we've hit
+                slip_distance = utils.try_to_slip_sprite(self, self.slip_remaining, self.collide_with_any_tile)
+                if slip_distance:
+                    log.debug("{} {} slipped {}".format(self.tile_id, self, slip_distance))
+                    # We successfully slipped off
+                    self.slip_remaining -= slip_distance
+                    return MovableRC.CONTINUE 
+
+            # We've hit something and not slipped past it                
+            self.rect.center = initial_center
+            if self.y_speed > 0:
+                self.falling = False
+            self.y_speed = 0
+            return MovableRC.STOP
 
     def update(self):
 
@@ -160,11 +204,6 @@ class Movable(pygame.sprite.Sprite):
 
         old_center = self.rect.center
 
-        # Logic here is:
-        # - Try to move in the x-direction.  If we hit something, can we go over it?
-        # - Apply gravity
-        # - Try to move in the y-direction.  If we hit something, should we slip off it?
-        # - Animate the character image
         if self.x_speed != 0:
             move_dir = (1 if self.x_speed > 0 else -1)
             self.step_height_remaining = self.max_step_height
@@ -173,17 +212,13 @@ class Movable(pygame.sprite.Sprite):
             for i in range(abs(self.x_speed)):
                 log.debug("Current pos = {}, {}".format(self.rect.left, self.rect.top))
 
-                # Try to update our X position.  This will try to push anything that we hit.
-                rc, collided = self.try_to_move(x_speed = move_dir)
-                if rc == MovableRC.HIT_EDGE_OF_SCREEN:
-                    # We hit the edge of the screen
-                    self.on_stopped_x()
-                    break
-
+                # Try to update our X position.  
+                rc = self.try_to_move(x_speed = move_dir)
                 if rc == MovableRC.CONTINUE:
                     # We're good.  Try to move again.
                     continue
 
+                # We couldn't move any further
                 self.on_stopped_x()
                 break
 
@@ -192,49 +227,19 @@ class Movable(pygame.sprite.Sprite):
 
         # Try to move in the y-direction.
         move_dir = (1 if self.y_speed > 0 else -1)
-        slip_remaining = self.slip_distance
+        self.slip_remaining = self.slip_distance
         for i in range(abs(self.y_speed)):
             log.debug("{} {} Move Y.  Bottom = {}".format(self.tile_id, self, self.rect.bottom))
-            self.rect.bottom += move_dir
 
-            # Check if we fall off the screen
-            if self.rect.top > config.SCREEN_HEIGHT_PX:
-                return MovableRC.FELL_OFF_SCREEN
-            
-            """elif self.rect.top < 0:
-                self.rect.top = 0                    
-                self.y_speed = 0
-                break"""
-
-            collided = self.collide_with_any_tile()
-            if collided:
-                if self.act_on_collision(collided) == MovableRC.STOP:
-                    # Don't try and move any further.
-                    self.rect.bottom -= move_dir
-                    return MovableRC.STOP
-                elif isinstance(collided, Movable) and collided.try_to_move(y_speed = move_dir)[0] == MovableRC.CONTINUE:
-                    log.debug("{} {} Moved {}".format(self.tile_id, self, collided.tile_id))
-                    self.rect.bottom -= move_dir
-                    continue
-                elif self.x_speed == 0:
-                    # See if we should slip past whatever we've hit
-                    slip_distance = utils.try_to_slip_sprite(self, slip_remaining, self.collide_with_any_tile)
-                    if slip_distance:
-                        log.debug("{} {} slipped {}".format(self.tile_id, self, slip_distance))
-                        # We successfully slipped off
-                        slip_remaining -= slip_distance
-                        continue 
-                
-                #  We've hit something and not slipped past it
-                if move_dir == 1:
-                    self.falling = False
-                    
-                self.y_speed = 0
-                self.rect.bottom -= move_dir
-                break                
-            else:
-                # We didn't hit anything...
+            rc = self.try_to_move(y_speed = move_dir)
+            if rc == MovableRC.CONTINUE:
+                # We're good.  Try to move again.
                 self.falling = True
+                continue
+            elif rc == MovableRC.FELL_OFF_SCREEN:
+                return rc # Let the caller deal with it
+
+            break
 
         if old_center != self.rect.center:
             log.info("{} New pos = {}, {}".format(self.tile_id, self.rect.left, self.rect.top))
