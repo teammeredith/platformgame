@@ -52,7 +52,7 @@ class Character(Movable):
         rc = Movable.update(self)
         if rc == MovableRC.FELL_OFF_SCREEN:
             self.die()
-        elif not rc == MovableRC.STOP:
+        elif not rc == MovableRC.STOP_ALL:
             self.animate()
 
 
@@ -101,12 +101,12 @@ class Player(Character):
         self.rotating = False
         if tile.kill:
             self.die()
-            return MovableRC.STOP
+            return MovableRC.STOP_ALL
         if tile.tile_id == "EXIT":
             print("Posting exit event")
             self.scene = None
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
-            return MovableRC.STOP
+            return MovableRC.STOP_ALL
         if tile.tile_id == "SPIN":
             self.y_speed = 0
             self.last_collided = None # Make sure we don't hit spin again after it's been deleted
@@ -133,6 +133,7 @@ class Player(Character):
         return MovableRC.CONTINUE
 
     def die(self):
+        log.info("Dead")
         self.dead = True
         self.image = self.dead_image
         pygame.event.post(pygame.event.Event(config.PLAYER_DEAD))

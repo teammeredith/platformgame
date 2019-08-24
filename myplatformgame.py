@@ -35,7 +35,7 @@ import frame_timer
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 # logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 log = logging.getLogger()
-log.setLevel(logging.DEBUG)
+log.setLevel(logging.INFO)
 handler = RotatingFileHandler("platform.log", maxBytes=200000, backupCount=10)
 handler.doRollover()
 formatter = logging.Formatter('%(asctime)s - %(filename)10.10s:%(lineno)4.4s - %(funcName)10.10s() - %(levelname)s - %(message)s')
@@ -107,7 +107,6 @@ while running:
     log.debug("Main game loop")
     # Keep loop running at the right speed
     clock.tick(config.FPS)
-    frame_timer.frame_timer_tick()
     
     # Check whether we have any exit events and deal with them first
     if pygame.event.get(eventtype=config.REACHED_EXIT_EVENT_ID):
@@ -116,6 +115,7 @@ while running:
 
     # Check whether we have any dead events and deal with them first
     if pygame.event.get(eventtype=config.PLAYER_DEAD):
+        log.info("Player dead event received")
         pygame.time.wait(1000)
         utils.screen_spin(screen, angle=1440, time=1000, steps=135, shrink=True)
         next_scene(current_scene)
@@ -135,19 +135,20 @@ while running:
             if event.key == pygame.K_q:
                 exit()
             scenes[current_scene].key_down(event)
-        elif event.type == config.LOCK_TIMER_EVENT_ID:
-            scenes[current_scene].timer_pop()
         elif event.type == config.ROTATE_BOARD_EVENT_ID:
             scenes[current_scene].rotate()
 
+    frame_timer.frame_timer_tick()
 
     # Update
+    log.info("Update")
     player_group.update()
     scenes[current_scene].update()
 
     # Draw / render
     #screen.blit(background_image, (0,0))
     screen.fill((0,0,0))
+    log.info("Draw")
     scenes[current_scene].draw(screen)
     player_group.draw(screen)
 

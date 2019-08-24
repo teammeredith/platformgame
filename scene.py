@@ -198,6 +198,7 @@ class Scene():
     def timer_pop(self):
         log.info("Timer pop")
         for sprite in self.open_locks:
+            log.info("Redraw lock")
             self.platform_sprites.add(sprite)
             if pygame.sprite.collide_mask(sprite, self.player):
                 self.player.die()

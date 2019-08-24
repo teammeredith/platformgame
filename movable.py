@@ -12,9 +12,10 @@ log = logging.getLogger()
 
 class MovableRC(Enum):
     CONTINUE = 1
-    STOP = 2 
-    FELL_OFF_SCREEN = 3
-    HIT_EDGE_OF_SCREEN = 4
+    STOP = 2
+    STOP_ALL = 3 
+    FELL_OFF_SCREEN = 4
+    HIT_EDGE_OF_SCREEN = 5
 
 class Movable(pygame.sprite.Sprite):
     def __init__(self, image):
@@ -159,13 +160,13 @@ class Movable(pygame.sprite.Sprite):
         # - Call act_on_collision.  This determines whether we should continue trying to move, or whether we should stop.
         log.debug("{} hit {} {}".format(self.tile_id, collided.tile_id, collided))
         pre_action_center = self.rect.center
-        if self.act_on_collision(collided) == MovableRC.STOP:
+        if self.act_on_collision(collided) == MovableRC.STOP_ALL:
             # Immediate stop.  Return.  Don't try and move any further.
             log.debug("act_on_collision -> stop")
             if pre_action_center == self.rect.center:
                 # Act on action didn't move us -- undo the move.  Could maybe never undo the move?
                 self.rect.center = initial_center
-            return MovableRC.STOP
+            return MovableRC.STOP_ALL
 
         #  Hit something.  Check whether we can move whatever we've hit too.
         while collided:
@@ -258,6 +259,8 @@ class Movable(pygame.sprite.Sprite):
                 if rc == MovableRC.CONTINUE:
                     # We're good.  Try to move again.
                     continue
+                elif rc == MovableRC.STOP_ALL:
+                    return MovableRC.STOP_ALL
 
                 # We couldn't move any further
                 self.on_stopped_x()
@@ -277,14 +280,16 @@ class Movable(pygame.sprite.Sprite):
                 # We're good.  Try to move again.
                 self.falling = True
                 continue
+            elif rc == MovableRC.STOP_ALL:
+                return MovableRC.STOP_ALL
             elif rc == MovableRC.FELL_OFF_SCREEN:
                 return rc # Let the caller deal with it
 
             break
 
         if old_center != self.rect.center:
-            log.info("{} New pos = {}, {}".format(self.tile_id, self.rect.left, self.rect.top))
-            log.info("{} Current speed = {}, {}".format(self.tile_id, self.x_speed, self.y_speed))
+            log.debug("{} New pos = {}, {}".format(self.tile_id, self.rect.left, self.rect.top))
+            log.debug("{} Current speed = {}, {}".format(self.tile_id, self.x_speed, self.y_speed))
         
         # Add this in if we want to be able to push stuff UP slopes / over objects etc.
         # self.step_height_remaining = self.max_step_height
