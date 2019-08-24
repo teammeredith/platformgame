@@ -24,11 +24,27 @@ class Lift(movable.Movable):
         self.move_speed = 0
         self.jump_speed = 0
         self.gravity_effect = 0
+        self.can_be_pushed = False
 
     def start_scene(self, scene, initial_left, initial_top): 
         movable.Movable.start_scene(self, scene, initial_left, initial_top)
-        self.y_speed = -config.LIFT_SPEED
     
+    def off_bottom_of_screen(self):
+        return movable.MovableRC.CONTINUE
+
+    def being_pushed(self, x_speed, y_speed):
+        if y_speed > 0:
+            self.y_speed = -config.LIFT_SPEED
+        return movable.MovableRC.STOP
+
+    def update(self):
+        movable.Movable.update(self)
+        self.y_speed = 0
+
+    def off_top_of_screen(self):
+        # We're off the top of the screen.  Start again at the bottom, but far enough off the bottom 
+        # that we're not about to move it on top of something that's just falling off the screen... 
+        return movable.MovableRC.STOP
 
 class Scene():
     def __init__(self, scene_file_path, screen):
@@ -137,23 +153,17 @@ class Scene():
                 sprite.image = sprite.images[sprite.state]
                 sprite.mask = pygame.mask.from_surface(sprite.image)
 
-    def unconditional_move_any_collisions(self, initial_sprite, y_move = 0):
-        next_sprite = self.test_collision(initial_sprite)
-        while next_sprite != None:
-            if next_sprite.tile_id == "PLAIN":
-                return False
-            next_sprite.rect.bottom += y_move
-            if hasattr(next_sprite, "y_speed"):
-                next_sprite.y_speed = y_move
-            if not self.unconditional_move_any_collisions(next_sprite, y_move):
-                next_sprite.rect.bottom -= y_move
-                return False
-            next_sprite = self.test_collision(initial_sprite)
-        return True
-
     def update(self):
         self.frame_counter = (self.frame_counter+1) % config.FPS
-        self.platform_sprites.update()
+        sprites_to_delete = []
+        for sprite in self.platform_sprites:
+            rc = sprite.update()
+            if rc == movable.MovableRC.FELL_OFF_SCREEN:
+                sprites_to_delete.append(sprite)
+        for sprite in sprites_to_delete:
+            log.info("Delete sprite {}".format(sprite.tile_id))
+            self.platform_sprites.remove(sprite)
+            del sprite
         self.animate_tiles()
 
     def add_player(self, player):

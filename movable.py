@@ -34,6 +34,8 @@ class Movable(pygame.sprite.Sprite):
         self.gravity_effect = config.GRAVITY_EFFECT
         self.step_height_remaining = 0
         self.slip_remaining = 0
+        self.can_be_pushed = True
+        self.reorient_on_rotation = True
 
     def start_scene(self, scene, initial_left, initial_top): 
         self.scene = scene
@@ -70,6 +72,24 @@ class Movable(pygame.sprite.Sprite):
         self.rect.right, self.rect.bottom = config.SCREEN_WIDTH_PX - self.rect.left, config.SCREEN_HEIGHT_PX - self.rect.top 
         self.x_speed = 0
         self.rotating = True
+        if self.reorient_on_rotation:
+            self.image = pygame.transform.rotate(self.image, -180)
+            self.mask = pygame.mask.from_surface(self.image)
+            for i in range(len(self.images)):
+                self.images[i] = pygame.transform.rotate(self.images[i], -180)
+        
+
+    def being_pushed(self, x_speed, y_speed):
+        # By default movable objects are happy to be pushed
+        return MovableRC.CONTINUE
+
+    def off_bottom_of_screen(self):
+        #  Default behaviour is that this is terminal in some way.  We stop moving and return to the caller
+        return MovableRC.FELL_OFF_SCREEN
+
+    def off_top_of_screen(self):
+        #  Default behaviour is that we ignore this
+        return MovableRC.CONTINUE
 
     # Tries to move us either +/- 1 in the x_direction or +/- 1 in the y_direction.
     # Returns one of:
@@ -79,7 +99,8 @@ class Movable(pygame.sprite.Sprite):
     # - FELL_OFF_SCREEN.  We fell off the bottom of the screen.
     # - CONTINUE.  We've moved successfully (or pushed something that will allow us to move successfully if called again)
     def try_to_move(self, x_speed = 0, y_speed = 0, already_moved=None):
-        log.debug("Try to move {} {}. x_s = {} y_s = {} pos = {}".format(self.tile_id, self, x_speed, y_speed, self.rect.center))
+        log.debug("Try to move {} {}. x_s = {} y_s = {}".format(self.tile_id, self, x_speed, y_speed))
+        log.debug("Top = {}, Bottom = {}".format(self.rect.top, self.rect.bottom))
 
         # We call ourselves recursively, recording the list of objects that have been moved as a result.      
         if not already_moved:
@@ -87,6 +108,9 @@ class Movable(pygame.sprite.Sprite):
             top_level_move = True
         else:
             top_level_move = False
+            rc = self.being_pushed(x_speed, y_speed)
+            if rc != MovableRC.CONTINUE:
+                return rc
 
         if self in already_moved:
             # Avoid perpetual motion where we push something that pushes us which we push etc.  That's bad.
@@ -109,12 +133,24 @@ class Movable(pygame.sprite.Sprite):
                 return MovableRC.HIT_EDGE_OF_SCREEN
         else:
             self.rect.top += y_speed
+            if self.rect.top < 0:
+                log.debug("Off top of screen")
+                rc = self.off_top_of_screen()
+                if not rc == MovableRC.CONTINUE:
+                    self.y_speed = 0
+                    self.rect.top = 0 
+                    return rc # Pass the code back to the caller
+                
             if self.rect.top > config.SCREEN_HEIGHT_PX:
-                return MovableRC.FELL_OFF_SCREEN
+                log.debug("Feel off bottom of screen")
+                rc = self.off_bottom_of_screen()
+                if not rc == MovableRC.CONTINUE:
+                    return rc # Pass the code back to the caller
         
         # Did we collide with anything?
         collided = self.collide_with_any_tile() 
         if not collided:
+            log.debug("Didn't collide with anything -- move OK")
             if self.y_speed:
                 self.falling = True
             return MovableRC.CONTINUE
@@ -127,7 +163,7 @@ class Movable(pygame.sprite.Sprite):
             # Immediate stop.  Return.  Don't try and move any further.
             log.debug("act_on_collision -> stop")
             if pre_action_center == self.rect.center:
-                # Act on action didn't move us -- undo the move 
+                # Act on action didn't move us -- undo the move.  Could maybe never undo the move?
                 self.rect.center = initial_center
             return MovableRC.STOP
 
@@ -144,7 +180,9 @@ class Movable(pygame.sprite.Sprite):
 
         if not collided:
             # We are now collision free.  If we're the one actually initiating the move then undo it anyway in order to slow us down when we're pushing things.
-            if top_level_move: 
+            # Although if we're something that can't be pushed (like a lift don't do that).
+            log.debug("Pushed stuff out of the way -- now collision free")
+            if top_level_move and self.can_be_pushed: 
                 self.rect.center = initial_center
             return MovableRC.CONTINUE
 
@@ -177,11 +215,13 @@ class Movable(pygame.sprite.Sprite):
                 return MovableRC.CONTINUE
             
             # We've hit something that we can't move and we can't go over.  We're out of options.
+            log.debug("Hit something we can't go over")
             self.rect.center = initial_center
             return MovableRC.STOP
 
         if y_speed:
             if getattr(self, "x_speed", 0) == 0:
+                log.debug("Try to slip")
                 # See if we should slip past whatever we've hit
                 slip_distance = utils.try_to_slip_sprite(self, self.slip_remaining, self.collide_with_any_tile)
                 if slip_distance:
@@ -190,6 +230,7 @@ class Movable(pygame.sprite.Sprite):
                     self.slip_remaining -= slip_distance
                     return MovableRC.CONTINUE 
 
+            log.debug("Hit something we can't slip past")
             # We've hit something and not slipped past it                
             self.rect.center = initial_center
             if self.y_speed > 0:

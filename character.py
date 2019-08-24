@@ -71,6 +71,7 @@ class Player(Character):
         Character.__init__(self, standing_image, walk_left_images, walk_right_images)
         self.is_player = True
         self.tile_id = ""
+        self.reorient_on_rotation = False
 
         self.dead_image = utils.load_image(player_data.image_path, player_data.dead_image)
 
@@ -108,6 +109,7 @@ class Player(Character):
             return MovableRC.STOP
         if tile.tile_id == "SPIN":
             self.y_speed = 0
+            self.last_collided = None # Make sure we don't hit spin again after it's been deleted
             self.scene.spin_activated(tile)
             return MovableRC.STOP
         if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 0 and tile.rotation_enabled:

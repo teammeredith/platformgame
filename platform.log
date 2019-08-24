@@ -1,0 +1,641 @@
+2019-08-24 12:34:04,272 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,359 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,360 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,361 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,361 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,362 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,362 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,365 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,365 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,366 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,367 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,367 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,367 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,368 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,368 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,369 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,369 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,376 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,394 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,394 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,395 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,395 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,395 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,396 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,396 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,397 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,397 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,398 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,398 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,399 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,399 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,399 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,400 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,406 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,427 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,427 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,428 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,429 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,429 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,430 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,431 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,432 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,432 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,433 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,434 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,434 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,435 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,436 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,436 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,446 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,461 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,462 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,463 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,464 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,464 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,465 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,465 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,466 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,467 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,468 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,468 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,469 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,469 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,470 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,471 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,480 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,495 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,496 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,496 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,497 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,498 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,498 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,499 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,500 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,500 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,501 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,502 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,502 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,503 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,503 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,504 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,514 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,529 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,530 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,531 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,531 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,532 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,533 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,533 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,534 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,535 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,535 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,536 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,537 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,538 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,539 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,540 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,551 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,562 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,562 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,565 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,565 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,566 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,567 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,567 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,568 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,569 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,570 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,571 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,571 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,572 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,572 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,574 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,583 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,596 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,597 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,597 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,599 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,599 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,600 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,601 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,602 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,603 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,604 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,605 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,606 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,607 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,607 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,608 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,619 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,628 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,629 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,630 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,631 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,631 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,632 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,632 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,633 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,635 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,635 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,636 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,636 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,637 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,638 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,638 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,648 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,662 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,663 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,663 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,664 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,665 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,665 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,666 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,667 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,668 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,668 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,669 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,669 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,670 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,671 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,671 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,681 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,696 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,697 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,698 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,698 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,699 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,700 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,700 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,701 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,702 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,702 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,703 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,703 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,704 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,705 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,705 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,715 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,730 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,731 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,732 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,732 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,734 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,734 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,735 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,735 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,736 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,737 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,738 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,738 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,739 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,740 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,741 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,751 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,764 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,765 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,766 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,766 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,767 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,768 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,768 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,769 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,769 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,770 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,770 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,770 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,770 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,771 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,771 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,778 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,798 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,798 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,798 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,799 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,799 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,799 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,799 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,800 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,800 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,800 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,800 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,801 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,801 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,801 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,801 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,806 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,836 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,836 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,836 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,837 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,837 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,837 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,837 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,838 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,838 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,838 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,838 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,839 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,839 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,839 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,840 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,844 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,866 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,868 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,868 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,868 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,869 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,870 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,870 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,872 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,872 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,872 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,873 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,874 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,874 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,875 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,875 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,884 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,900 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,900 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,901 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,901 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,901 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,902 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,902 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,902 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,903 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,903 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,904 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,904 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,904 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,905 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,905 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,911 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,934 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,934 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,934 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,935 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,935 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,935 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,935 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,936 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,937 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,937 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,937 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,938 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,938 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,938 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,938 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,942 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:04,968 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,968 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,968 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,969 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,969 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:04,969 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:04,969 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,969 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,970 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:04,970 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:04,970 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:04,970 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:04,970 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:04,971 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:04,971 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:04,973 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,001 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,001 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,001 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,002 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,002 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,002 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,002 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,002 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,003 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,003 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,003 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,003 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,003 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,003 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,004 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,007 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,035 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,035 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,035 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,036 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,036 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,036 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,036 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,037 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,037 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,037 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,037 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,037 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,038 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,038 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,038 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,041 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,069 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,069 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,070 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,070 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,070 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,070 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,070 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,071 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,071 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,071 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,071 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,072 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,072 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,072 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,072 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,075 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,103 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,103 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,104 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,104 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,104 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,104 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,104 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,105 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,105 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,105 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,105 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,106 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,106 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,106 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,106 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,109 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,137 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,138 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,138 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,139 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,139 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,140 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,140 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,141 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,141 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,142 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,142 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,142 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,143 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,143 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,144 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,151 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,172 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,172 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,172 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,172 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,172 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,173 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,173 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,173 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,174 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,174 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,174 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,174 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,175 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,175 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,176 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,179 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,205 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,206 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,206 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,206 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,207 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,207 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,207 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,207 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,208 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,208 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,208 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,209 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,209 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,209 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,209 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,213 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,239 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,239 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,240 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,241 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,241 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,242 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,242 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,244 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,244 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,245 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,246 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,246 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,248 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,248 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,248 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,255 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,272 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,273 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,273 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,273 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,274 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,274 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,275 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,275 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,276 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,276 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,276 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,277 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,277 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,278 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,278 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,282 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,306 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,306 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,306 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,307 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,307 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,307 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,307 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,308 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,308 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,308 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,308 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,308 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,309 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,309 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,309 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,312 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,339 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,339 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,339 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,339 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,339 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,340 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,340 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,340 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,340 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,340 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,341 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,341 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,341 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,341 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,341 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,345 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,374 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,374 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,374 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,374 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,374 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,374 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,374 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,375 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,375 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,376 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,376 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,376 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,376 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,376 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,376 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,380 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,407 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,408 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,409 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,409 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,410 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,410 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,411 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,411 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,412 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,412 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,413 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,413 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,414 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,414 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,415 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,423 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,441 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,441 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,442 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,443 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,443 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,444 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,444 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,446 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,446 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,446 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,447 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,448 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,448 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,449 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,450 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,460 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,475 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,476 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,477 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,478 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,478 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,479 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,479 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,480 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,481 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,482 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,482 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,483 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,483 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,484 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,484 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,494 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,509 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,510 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,510 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,511 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,512 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,512 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,514 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,514 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,515 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,516 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,516 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,517 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,518 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,519 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,519 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,530 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,543 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,544 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,544 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,546 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,546 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,546 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,547 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,548 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,548 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,549 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,550 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,550 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,551 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,551 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,552 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,562 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,577 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,578 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,579 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,580 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,580 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,581 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,582 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,582 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,583 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,583 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,584 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,584 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,585 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,586 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,587 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,597 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,610 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,611 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,612 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,613 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,613 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,614 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,615 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,615 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,616 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,617 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,617 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,618 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,619 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,619 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,620 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,630 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,644 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,645 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,646 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,647 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,647 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,648 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,649 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,649 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,650 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,651 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,651 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,652 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,653 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,654 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,655 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,664 - myplatform: 107 -   <module>() - DEBUG - Main game loop
+2019-08-24 12:34:05,793 - movable.py: 273 -     update() - DEBUG -  <Player sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,794 - movable.py: 102 - try_to_mov() - DEBUG - Try to move  <Player sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,794 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,794 - movable.py: 160 - try_to_mov() - DEBUG -  hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,794 - character.: 100 - act_on_col() - DEBUG - Collided with PLAIN
+2019-08-24 12:34:05,794 - movable.py: 177 - try_to_mov() - DEBUG -  couldn't move PLAIN
+2019-08-24 12:34:05,795 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,795 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
+2019-08-24 12:34:05,795 - movable.py: 273 -     update() - DEBUG - BOX <Movable sprite(in 1 groups)> Move Y.  Bottom = 720
+2019-08-24 12:34:05,795 - movable.py: 102 - try_to_mov() - DEBUG - Try to move BOX <Movable sprite(in 1 groups)>. x_s = 0 y_s = 1
+2019-08-24 12:34:05,795 - movable.py: 103 - try_to_mov() - DEBUG - Top = 690, Bottom = 720
+2019-08-24 12:34:05,796 - movable.py: 160 - try_to_mov() - DEBUG - BOX hit PLAIN <Sprite sprite(in 1 groups)>
+2019-08-24 12:34:05,796 - movable.py: 177 - try_to_mov() - DEBUG - BOX couldn't move PLAIN
+2019-08-24 12:34:05,796 - movable.py: 224 - try_to_mov() - DEBUG - Try to slip
+2019-08-24 12:34:05,796 - movable.py: 233 - try_to_mov() - DEBUG - Hit something we can't slip past
