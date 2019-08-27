@@ -66,11 +66,6 @@ pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
 # Load the tile data.  This doesn't feel like the right place, but hey...
-for tile_id, tile in config.tiles.items():
-    tile.image = utils.load_image(tile.path, tile.filename, tile.rotate)
-    tile.animate_images = []
-    for image_file in tile.animate_image_files:
-        tile.animate_images.append(utils.load_image(tile.path, image_file, tile.rotate))
 config.tiles["PLAIN"] = config.Tile("")
 config.tiles["PLAIN"].animate_images = []
 

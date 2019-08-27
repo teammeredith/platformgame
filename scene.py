@@ -102,9 +102,11 @@ class Scene():
                     tile.button = config.tiles[tile_id].button
                     tile.frames_per_transition = config.tiles[tile_id].frames_per_transition
                     tile.last_collided = None
-                    if config.tiles[tile_id].animate_images:
-                        tile.images = [tile.image] + config.tiles[tile_id].animate_images
-                        tile.state = 0
+                    if config.tiles[tile_id].animate_image_files:
+                        tile.images = [tile.image.copy()]
+                        for image_file in config.tiles[tile_id].animate_image_files:
+                            tile.images.append(utils.load_image(tile_data["path"], image_file, tile_data.get("rotate", 0)))
+                            tile.state = 0
                     self.platform_sprites.add(tile)
 
     """
@@ -132,7 +134,7 @@ class Scene():
 
     def test_collision(self, sprite):
         # Perf optimization.  In general the thing we're goiong to hit is the last thing we hit.  Test against that first.
-        if sprite.last_collided and sprite.last_collided in self.platform_sprites and pygame.sprite.collide_mask(sprite, sprite.last_collided):
+        if sprite.last_collided and not getattr(sprite.last_collided, "inactive", False) and pygame.sprite.collide_mask(sprite, sprite.last_collided):
             return sprite.last_collided
         for test_sprite in itertools.chain(self.platform_sprites, [self.player]):
             if sprite != test_sprite and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
@@ -190,6 +192,7 @@ class Scene():
             for sprite in self.platform_sprites:
                 if sprite.tile_id == "LOCK_YELLOW":
                     sprite.remove(self.platform_sprites)
+                    sprite.inactive = True
                     self.open_locks.append(sprite)
 
     def draw(self, screen):
@@ -200,6 +203,7 @@ class Scene():
         for sprite in self.open_locks:
             log.info("Redraw lock")
             self.platform_sprites.add(sprite)
+            sprite.inactive = False
             if pygame.sprite.collide_mask(sprite, self.player):
                 self.player.die()
         self.open_locks = []
