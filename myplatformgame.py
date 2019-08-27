@@ -31,6 +31,7 @@ import utils
 import argparse
 import time
 import frame_timer
+import platform
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 # logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -54,7 +55,13 @@ print("Start on scene {}".format(args.initial_scene))
 # Initialize pygame and create window
 pygame.init()
 pygame.mixer.init()
-screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.DOUBLEBUF) 
+# Check if we're running on mac
+print("Running on {}".format(platform.system()))
+if platform.system() == "Darwin":
+    screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), pygame.FULLSCREEN) 
+else:
+    screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX), flags=pygame.DOUBLEBUF) 
+    
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
