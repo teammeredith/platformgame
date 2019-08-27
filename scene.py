@@ -132,7 +132,8 @@ class Scene():
 
     def test_collision(self, sprite):
         # Perf optimization.  In general the thing we're goiong to hit is the last thing we hit.  Test against that first.
-        if sprite.last_collided and pygame.sprite.collide_mask(sprite, sprite.last_collided):
+        if sprite.last_collided and sprite.last_collided in self.platform_sprites and pygame.sprite.collide_mask(sprite, sprite.last_collided):
+            print("Quick test")
             return sprite.last_collided
         for test_sprite in itertools.chain(self.platform_sprites, [self.player]):
             if sprite != test_sprite and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
