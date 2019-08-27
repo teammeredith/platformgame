@@ -12,8 +12,8 @@ def load_image(path, filename, rotation=0, size=(config.TILE_SIZE_PX, config.TIL
                 ),
                 rotation)
 
-def load_tile_image(tile_data):
-    return load_image(tile_data.path, tile_data.filename, tile_data.rotate)
+def load_tile_image(tile_data, size=(config.TILE_SIZE_PX, config.TILE_SIZE_PX)):
+    return load_image(tile_data.path, tile_data.filename, tile_data.rotate, size)
 
 def screen_spin(screen, angle=90, time=1000, steps=45, shrink=False):
     screen_image = pygame.display.get_surface().copy()

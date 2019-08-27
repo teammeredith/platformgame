@@ -31,22 +31,32 @@ parser.add_argument('scene_file',
 args = parser.parse_args()
 print("Scene file = {}".format(args.scene_file))
 
-TILE_OPTIONS_X_OFFSET = (config.SCREEN_WIDTH_TILES+2)*config.TILE_SIZE_PX
-TILE_OPTIONS_Y_OFFSET = 20
-TILE_OPTIONS_PER_ROW = 22
-TILE_OPTIONS_SIZE = config.TILE_SIZE_PX + 20
+# Load the tile options so that we know how many there are going to be!
+utils.load_default_tiles()
+number_of_tile_options = len(config.tiles)
 
-#config.SCREEN_WIDTH_PX = TILE_OPTIONS_X_OFFSET + TILE_OPTIONS_PER_ROW*TILE_OPTIONS_SIZE
-#config.SCREEN_HEIGHT_PX = config.SCREEN_HEIGHT_TILES*config.TILE_SIZE_PX
+TILE_OPTIONS_X_OFFSET = (config.SCREEN_WIDTH_TILES+1)*config.TILE_SIZE_PX
+TILE_OPTIONS_Y_OFFSET = 0
+TILE_OPTIONS_PER_ROW = 18
+TILE_OPTIONS_PADDING = 20
+TILE_OPTIONS_SIZE = int(config.TILE_SIZE_PX*0.9) 
+TEXT_SIZE = 50
 
-# initialize pygame and create window
-os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0,50)
+# Get the screen resolution and consider scaling everything?
 pygame.init()
 pygame.mixer.init()
-config.SCREEN_WIDTH_PX = pygame.display.Info().current_w
-config.SCREEN_HEIGHT_PX = pygame.display.Info().current_h - 100
+displayInfo = pygame.display.Info()
 
-screen = pygame.display.set_mode((config.SCREEN_WIDTH_PX, config.SCREEN_HEIGHT_PX))
+width = TILE_OPTIONS_X_OFFSET + TILE_OPTIONS_PER_ROW*(TILE_OPTIONS_SIZE+TILE_OPTIONS_PADDING)
+height = max(config.SCREEN_HEIGHT_TILES*config.TILE_SIZE_PX, number_of_tile_options/TILE_OPTIONS_PER_ROW*(TILE_OPTIONS_SIZE+TILE_OPTIONS_PADDING)+TEXT_SIZE)
+
+scale_factor = min(displayInfo.current_w / width, displayInfo.current_h / height)
+config.TILE_SIZE_PX = int(config.TILE_SIZE_PX * scale_factor)
+TILE_OPTIONS_SIZE = int(config.TILE_SIZE_PX*0.75*scale_factor)
+TILE_OPTIONS_PADDING = int(TILE_OPTIONS_PADDING*scale_factor)
+TILE_OPTIONS_X_OFFSET = (config.SCREEN_WIDTH_TILES+1)*config.TILE_SIZE_PX
+
+screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
 pygame.display.set_caption("Scene designer")
 clock = pygame.time.Clock()
 
@@ -56,22 +66,21 @@ player = None
 tile_options = pygame.sprite.Group()
 current_option = None
 
-utils.load_default_tiles()
 idx = 0
 for tile_id, tile_data in config.tiles.items():
     tile = pygame.sprite.Sprite()
     
-    tile_data.image = utils.load_tile_image(tile_data)
-    tile.unselected_image = utils.load_tile_image(tile_data)
+    tile_data.image = utils.load_tile_image(tile_data, (config.TILE_SIZE_PX, config.TILE_SIZE_PX))
+    tile.unselected_image = utils.load_tile_image(tile_data, (TILE_OPTIONS_SIZE, TILE_OPTIONS_SIZE))
     tile.tile_data = tile_data
-    selected_image = utils.load_tile_image(tile_data)
+    selected_image = utils.load_tile_image(tile_data, (TILE_OPTIONS_SIZE, TILE_OPTIONS_SIZE))
     pygame.draw.rect(selected_image, (255, 0, 0), (0,0,config.TILE_SIZE_PX,config.TILE_SIZE_PX), 2)
     tile.selected_image = selected_image
     tile.image = tile.unselected_image
     tile.tile_id = tile_id
     tile.rect = tile.image.get_rect()
-    tile.rect.top = TILE_OPTIONS_Y_OFFSET + int(idx / TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
-    tile.rect.left = TILE_OPTIONS_X_OFFSET + (idx % TILE_OPTIONS_PER_ROW) * TILE_OPTIONS_SIZE
+    tile.rect.top = TILE_OPTIONS_Y_OFFSET + int(idx / TILE_OPTIONS_PER_ROW) * (TILE_OPTIONS_SIZE + TILE_OPTIONS_PADDING)
+    tile.rect.left = TILE_OPTIONS_X_OFFSET + (idx % TILE_OPTIONS_PER_ROW) * (TILE_OPTIONS_SIZE + TILE_OPTIONS_PADDING)
     tile_options.add(tile)
     idx += 1
 
