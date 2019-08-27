@@ -43,7 +43,9 @@ class Tile():
                  lift=False,
                  button=False,
                  rotate=0, 
-                 rotation_enabled=True, 
+                 rotation_enabled=True,
+                 breakable=False, 
+                 heavy=False,
                  kill=False):
         self.filename = filename
         self.path = path
@@ -53,6 +55,8 @@ class Tile():
         self.kill = kill
         self.spring = spring
         self.button = button
+        self.breakable = breakable
+        self.heavy = heavy
         self.animate_image_files = animate_image_files
         self.frames_per_transition = frames_per_transition
         self.rotation_enabled = rotation_enabled
@@ -65,12 +69,13 @@ tiles = {
     "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW"),
     "BUTTON_YELLOW_ROTATED": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW", rotate=180),
     "LOCK_YELLOW": Tile("lock_yellow.png"),
-    "BOX": Tile("box.png", movable=True),
+    "BOX": Tile("box.png", movable=True, heavy=True),
     "SPIN": Tile("fireball.png", path=["Items"]),
     "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
     "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
     "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6),
     "LIFT": Tile("bridge.png", lift=True),
+    "BRIDGE": Tile("bridgeLogs.png", breakable=True),
     "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer
 }        
 

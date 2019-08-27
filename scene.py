@@ -97,6 +97,8 @@ class Scene():
                     tile.movable = config.tiles[tile_id].movable
                     tile.lift = config.tiles[tile_id].lift
                     tile.kill = config.tiles[tile_id].kill
+                    tile.breakable = config.tiles[tile_id].breakable
+                    tile.heavy = config.tiles[tile_id].heavy
                     tile.spring = config.tiles[tile_id].spring
                     tile.rotation_enabled = config.tiles[tile_id].rotation_enabled
                     tile.button = config.tiles[tile_id].button
@@ -194,6 +196,10 @@ class Scene():
                     sprite.remove(self.platform_sprites)
                     sprite.inactive = True
                     self.open_locks.append(sprite)
+
+    def remove_tile(self, tile):
+        tile.remove(self.platform_sprites)
+        tile.inactive = True
 
     def draw(self, screen):
         self.platform_sprites.draw(screen)

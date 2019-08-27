@@ -130,7 +130,7 @@ class Player(Character):
             self.scene.hit_button(tile)
             self.y_speed = min(self.y_speed, 10)
             return MovableRC.CONTINUE
-        return MovableRC.CONTINUE
+        return Movable.act_on_collision(self, tile)
 
     def die(self):
         log.info("Dead")
