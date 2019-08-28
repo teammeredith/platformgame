@@ -163,6 +163,10 @@ while running:
         # check for closing window
         if event.type == pygame.QUIT:
             running = False
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_q:
+                running = False
+                continue
 
     if pygame.mouse.get_focused():
         buttons = pygame.mouse.get_pressed()
@@ -176,8 +180,16 @@ while running:
                 option_selected.image = option_selected.selected_image
                     
             scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
-            if scene_tile_selected and buttons[0] and current_option != None:
-                keys_pressed=pygame.key.get_pressed()  #checking pressed keys
+            keys_pressed=pygame.key.get_pressed()  #checking pressed keys
+            if scene_tile_selected and buttons[0] and keys_pressed[pygame.K_c]:
+                print ("selected tile ID = {}".format(scene_tile_selected.tile_id))
+                option_selected = next(option for option in tile_options if option.tile_id == scene_tile_selected.tile_id)
+                if current_option:
+                    current_option.image = current_option.unselected_image
+                current_option = option_selected
+                option_selected.image = option_selected.selected_image
+
+            elif scene_tile_selected and buttons[0] and current_option != None:
                 update_screen_tile(scene_tile_selected, current_option.tile_id, rotate=180 if keys_pressed[pygame.K_LSHIFT] else 0)
             elif scene_tile_selected and buttons[2] == 1:
                 update_screen_tile(scene_tile_selected, "BLANK")
