@@ -5,6 +5,7 @@ import sys
 import os
 import utils
 from enum import Enum
+from config import TileAttr
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 #logging.basicConfig(level=logging.DEBUG, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
@@ -37,7 +38,7 @@ class Movable(pygame.sprite.Sprite):
         self.slip_remaining = 0
         self.can_be_pushed = True
         self.reorient_on_rotation = True
-        self.heavy = False
+        self.attrs = TileAttr.NONE
 
     def start_scene(self, scene, initial_left, initial_top): 
         self.scene = scene
@@ -68,7 +69,7 @@ class Movable(pygame.sprite.Sprite):
     #             updated as a result of the collision, such as self.rotating, self.falling, or self.y_speed.  
     def act_on_collision(self, tile):
         self.rotating = False
-        if (self.y_speed > 5 or self.y_speed < -5 or self.heavy) and tile.breakable:
+        if (self.y_speed > 5 or self.y_speed < -5 or self.attrs & TileAttr.HEAVY) and tile.attrs & TileAttr.BREAKABLE:
             self.scene.remove_tile(tile)
         return MovableRC.CONTINUE
 

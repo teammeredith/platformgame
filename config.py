@@ -1,5 +1,6 @@
 import pygame
 import os
+from enum import Flag, auto
 
 SCREEN_WIDTH_TILES = 25
 SCREEN_HEIGHT_TILES = 25
@@ -32,50 +33,49 @@ game_folder = os.path.dirname(__file__)
 img_folder = os.path.join(game_folder, "images")
 scene_folder = os.path.join(game_folder, "scenes")
 
+class TileAttr(Flag):
+    NONE = 0
+    MOVABLE = auto()
+    KILL = auto()
+    LIFT = auto()
+    SPRING = auto()    
+    BUTTON = auto()
+    BREAKABLE = auto()
+    HEAVY = auto()
+
 class Tile():
     def __init__(self, 
                  filename, 
                  path=["Tiles"], 
                  animate_image_files=[],
                  frames_per_transition=0,
-                 movable=False,     
-                 spring=False,
-                 lift=False,
-                 button=False,
                  rotate=0, 
                  rotation_enabled=True,
-                 breakable=False, 
-                 heavy=False,
-                 kill=False):
+                 kill=False,
+                 attrs=TileAttr.NONE):
         self.filename = filename
         self.path = path
-        self.movable = movable
-        self.lift = lift
         self.rotate = rotate
-        self.kill = kill
-        self.spring = spring
-        self.button = button
-        self.breakable = breakable
-        self.heavy = heavy
+        self.attrs = attrs
         self.animate_image_files = animate_image_files
         self.frames_per_transition = frames_per_transition
         self.rotation_enabled = rotation_enabled
 
 tiles = {
     "EXIT": Tile("signExit.png"),
-    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotation_enabled=True),
-    "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], spring=True, rotate=180, rotation_enabled=False),
+    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], attrs=TileAttr.SPRING, rotation_enabled=True),
+    "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], attrs=TileAttr.SPRING, rotate=180, rotation_enabled=False),
     "SPRING_DN_ROTATED":  Tile("springboardDown.png", rotate=180),
-    "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW"),
-    "BUTTON_YELLOW_ROTATED": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], button="YELLOW", rotate=180),
+    "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], attrs=TileAttr.BUTTON),
+    "BUTTON_YELLOW_ROTATED": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], attrs=TileAttr.BUTTON, rotate=180),
     "LOCK_YELLOW": Tile("lock_yellow.png"),
-    "BOX": Tile("box.png", movable=True, heavy=True),
+    "BOX": Tile("box.png", attrs=TileAttr.MOVABLE|TileAttr.HEAVY),
     "SPIN": Tile("fireball.png", path=["Items"]),
-    "SPIKES": Tile("spikes.png", path=["Items"], kill=True),
-    "SPIKES_DN": Tile("spikes.png", path=["Items"], kill=True, rotate=180),
+    "SPIKES": Tile("spikes.png", path=["Items"], attrs=TileAttr.KILL),
+    "SPIKES_DN": Tile("spikes.png", path=["Items"], attrs=TileAttr.KILL, rotate=180),
     "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6),
-    "LIFT": Tile("bridge.png", lift=True),
-    "BRIDGE": Tile("bridgeLogs.png", breakable=True),
+    "LIFT": Tile("bridge.png", attrs=TileAttr.LIFT),
+    "BRIDGE": Tile("bridgeLogs.png", attrs=TileAttr.BREAKABLE),
     "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer
 }        
 

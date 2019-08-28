@@ -13,6 +13,7 @@ import itertools
 import utils
 import frame_timer
 import movable
+from config import TileAttr
 
 log = logging.getLogger()
 
@@ -79,10 +80,10 @@ class Scene():
 
                 if tile_id != "BLANK":
                     image = utils.load_image(tile_data["path"], tile_data["filename"], tile_data.get("rotate", 0))
-                    if config.tiles[tile_id].movable:
+                    if config.tiles[tile_id].attrs & TileAttr.MOVABLE:
                         tile = movable.Movable(image)
                         tile.start_scene(self, x * config.TILE_SIZE_PX, y * config.TILE_SIZE_PX)
-                    elif config.tiles[tile_id].lift:
+                    elif config.tiles[tile_id].attrs & TileAttr.LIFT:
                         tile = Lift(image)
                         tile.start_scene(self, x * config.TILE_SIZE_PX, y * config.TILE_SIZE_PX)
                     else:
@@ -94,14 +95,10 @@ class Scene():
                         tile.rect.left = config.TILE_SIZE_PX*x                
                     tile.images = []
                     tile.tile_id = tile_id
-                    tile.movable = config.tiles[tile_id].movable
-                    tile.lift = config.tiles[tile_id].lift
-                    tile.kill = config.tiles[tile_id].kill
-                    tile.breakable = config.tiles[tile_id].breakable
-                    tile.heavy = config.tiles[tile_id].heavy
-                    tile.spring = config.tiles[tile_id].spring
+
+                    tile.attrs = config.tiles[tile_id].attrs
+
                     tile.rotation_enabled = config.tiles[tile_id].rotation_enabled
-                    tile.button = config.tiles[tile_id].button
                     tile.frames_per_transition = config.tiles[tile_id].frames_per_transition
                     tile.last_collided = None
                     if config.tiles[tile_id].animate_image_files:
@@ -184,7 +181,7 @@ class Scene():
         tile.mask = pygame.mask.from_surface(tile.image)
 
     def hit_button(self, tile):
-        if tile.button == "YELLOW":
+        if tile.attrs & TileAttr.BUTTON:
             # If the button is up, then change it to down
             if tile.state == 0:
                 tile.image = tile.images[1]
@@ -215,7 +212,7 @@ class Scene():
         self.open_locks = []
 
         for tile in self.platform_sprites:
-            if tile.button == "YELLOW":
+            if tile.attrs & TileAttr.BUTTON:
                 if tile.state == 1:
                     tile.image = tile.images[0]
                     tile.mask = pygame.mask.from_surface(tile.image)

@@ -6,6 +6,7 @@ import os
 import utils
 from enum import Enum
 from movable import Movable, MovableRC
+from config import TileAttr
 
 log = logging.getLogger()
 
@@ -99,7 +100,7 @@ class Player(Character):
     def act_on_collision(self, tile):
         log.debug("Collided with {}".format(tile.tile_id))
         self.rotating = False
-        if tile.kill:
+        if tile.attrs & TileAttr.KILL:
             self.die()
             return MovableRC.STOP_ALL
         if tile.tile_id == "EXIT":
@@ -112,20 +113,20 @@ class Player(Character):
             self.last_collided = None # Make sure we don't hit spin again after it's been deleted
             self.scene.spin_activated(tile)
             return MovableRC.STOP
-        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 0 and tile.rotation_enabled:
+        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 0 and tile.rotation_enabled:
             log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
             self.scene.animate_spring(tile)
             self.y_speed = min(self.y_speed, 10)
             self.falling = True 
             return MovableRC.STOP
-        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.spring and tile.state == 1 and tile.rotation_enabled:
+        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 1 and tile.rotation_enabled:
             log.info("Hit SPRING_DOWN")
             self.scene.animate_spring(tile)
             # ToDo.  This is a nasty hack to avoid the tile springing back and overlapping the sprite.
             self.rect.top -= int(config.TILE_SIZE_PX)/2
             self.y_speed = -1 * config.SPRING_JUMP_SPEED
             return MovableRC.STOP
-        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.button:
+        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.BUTTON:
             log.info("Hit button.  y_speed = {}".format(self.y_speed))
             self.scene.hit_button(tile)
             self.y_speed = min(self.y_speed, 10)
