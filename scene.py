@@ -98,7 +98,8 @@ class Scene():
 
                     tile.attrs = config.tiles[tile_id].attrs
 
-                    tile.rotation_enabled = config.tiles[tile_id].rotation_enabled
+                    tile.rotation_enabled = (config.tiles[tile_id].attrs & TileAttr.DISABLE_ON_ROTATE) and (tile_data.get("rotate", 0) == 0)
+                    
                     tile.frames_per_transition = config.tiles[tile_id].frames_per_transition
                     tile.last_collided = None
                     if config.tiles[tile_id].animate_image_files:

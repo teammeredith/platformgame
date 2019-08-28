@@ -182,7 +182,7 @@
                 "id": "BLANK"
             },
             {
-                "id": "SPRING_ROTATED",
+                "id": "SPRING",
                 "filename": "springboardUp.png",
                 "path": [
                     "Tiles"

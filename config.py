@@ -42,6 +42,7 @@ class TileAttr(Flag):
     BUTTON = auto()
     BREAKABLE = auto()
     HEAVY = auto()
+    DISABLE_ON_ROTATE = auto()
 
 class Tile():
     def __init__(self, 
@@ -50,7 +51,6 @@ class Tile():
                  animate_image_files=[],
                  frames_per_transition=0,
                  rotate=0, 
-                 rotation_enabled=True,
                  kill=False,
                  attrs=TileAttr.NONE):
         self.filename = filename
@@ -59,15 +59,11 @@ class Tile():
         self.attrs = attrs
         self.animate_image_files = animate_image_files
         self.frames_per_transition = frames_per_transition
-        self.rotation_enabled = rotation_enabled
 
 tiles = {
     "EXIT": Tile("signExit.png"),
-    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], attrs=TileAttr.SPRING, rotation_enabled=True),
-    "SPRING_ROTATED": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], attrs=TileAttr.SPRING, rotate=180, rotation_enabled=False),
-    "SPRING_DN_ROTATED":  Tile("springboardDown.png", rotate=180),
-    "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], attrs=TileAttr.BUTTON),
-    "BUTTON_YELLOW_ROTATED": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], attrs=TileAttr.BUTTON, rotate=180),
+    "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], attrs=TileAttr.SPRING | TileAttr.DISABLE_ON_ROTATE),
+    "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], attrs=TileAttr.BUTTON | TileAttr.DISABLE_ON_ROTATE),
     "LOCK_YELLOW": Tile("lock_yellow.png"),
     "BOX": Tile("box.png", attrs=TileAttr.MOVABLE|TileAttr.HEAVY),
     "SPIN": Tile("fireball.png", path=["Items"]),

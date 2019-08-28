@@ -100,6 +100,8 @@ class Player(Character):
     def act_on_collision(self, tile):
         log.debug("Collided with {}.  y_speed = {}.  Tile attributes = {}".format(tile.tile_id, self.y_speed, tile.attrs))
         self.rotating = False
+        if tile.attrs & TileAttr.DISABLE_ON_ROTATE and not tile.rotation_enabled:
+            return Movable.act_on_collision(self, tile)
         if tile.attrs & TileAttr.KILL:
             self.die()
             return MovableRC.STOP_ALL
@@ -113,13 +115,13 @@ class Player(Character):
             self.last_collided = None # Make sure we don't hit spin again after it's been deleted
             self.scene.spin_activated(tile)
             return MovableRC.STOP
-        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 0 and tile.rotation_enabled:
+        if self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 0:
             log.info("Hit SPRING_UP.  y_speed = {}".format(self.y_speed))
             self.scene.animate_spring(tile)
             self.y_speed = min(self.y_speed, 10)
             self.falling = True 
             return MovableRC.STOP_ALL
-        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 1 and tile.rotation_enabled:
+        elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 1:
             log.info("Hit SPRING_DOWN")
             self.scene.animate_spring(tile)
             # ToDo.  This is a nasty hack to avoid the tile springing back and overlapping the sprite.

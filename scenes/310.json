@@ -163,7 +163,7 @@
                     "Tiles"
                 ],
                 "rotate": 180,
-                "id": "BUTTON_YELLOW_ROTATED"
+                "id": "BUTTON_YELLOW"
             },
             {
                 "id": "BLANK"
@@ -231,7 +231,7 @@
                     "Tiles"
                 ],
                 "rotate": 180,
-                "id": "SPRING_ROTATED"
+                "id": "SPRING"
             },
             {
                 "id": "BLANK"
@@ -559,7 +559,7 @@
                     "Tiles"
                 ],
                 "rotate": 180,
-                "id": "SPRING_ROTATED"
+                "id": "SPRING"
             }
         ],
         [
@@ -817,7 +817,7 @@
                     "Tiles"
                 ],
                 "rotate": 180,
-                "id": "SPRING_ROTATED"
+                "id": "SPRING"
             },
             {
                 "id": "BLANK"
@@ -1249,7 +1249,7 @@
                     "Tiles"
                 ],
                 "rotate": 180,
-                "id": "SPRING_ROTATED"
+                "id": "SPRING"
             },
             {
                 "id": "BLANK"
