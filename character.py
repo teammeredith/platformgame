@@ -98,7 +98,7 @@ class Player(Character):
 
     # See comment on parent class
     def act_on_collision(self, tile):
-        log.debug("Collided with {}".format(tile.tile_id))
+        log.debug("Collided with {}.  y_speed = {}.  Tile attributes = {}".format(tile.tile_id, self.y_speed, tile.attrs))
         self.rotating = False
         if tile.attrs & TileAttr.KILL:
             self.die()
@@ -118,14 +118,14 @@ class Player(Character):
             self.scene.animate_spring(tile)
             self.y_speed = min(self.y_speed, 10)
             self.falling = True 
-            return MovableRC.STOP
+            return MovableRC.STOP_ALL
         elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.SPRING and tile.state == 1 and tile.rotation_enabled:
             log.info("Hit SPRING_DOWN")
             self.scene.animate_spring(tile)
             # ToDo.  This is a nasty hack to avoid the tile springing back and overlapping the sprite.
             self.rect.top -= int(config.TILE_SIZE_PX)/2
             self.y_speed = -1 * config.SPRING_JUMP_SPEED
-            return MovableRC.STOP
+            return MovableRC.STOP_ALL
         elif self.y_speed > config.SPRING_ACTIVE_SPEED and tile.attrs & TileAttr.BUTTON:
             log.info("Hit button.  y_speed = {}".format(self.y_speed))
             self.scene.hit_button(tile)

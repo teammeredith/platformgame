@@ -36,7 +36,7 @@ import platform
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
 # logging.basicConfig(level=logging.ERROR, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 log = logging.getLogger()
-log.setLevel(logging.INFO)
+log.setLevel(logging.DEBUG)
 handler = RotatingFileHandler("platform.log", maxBytes=200000, backupCount=10)
 handler.doRollover()
 formatter = logging.Formatter('%(asctime)s - %(filename)10.10s:%(lineno)4.4s - %(funcName)10.10s() - %(levelname)s - %(message)s')
