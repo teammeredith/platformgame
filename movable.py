@@ -71,6 +71,7 @@ class Movable(pygame.sprite.Sprite):
         self.rotating = False
         if (self.y_speed > 5 or self.y_speed < -5 or self.attrs & TileAttr.HEAVY) and tile.attrs & TileAttr.BREAKABLE:
             self.scene.remove_tile(tile)
+            return MovableRC.STOP_ALL
         return MovableRC.CONTINUE
 
     def board_rotate(self):

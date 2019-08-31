@@ -21,7 +21,7 @@ Within this program scene_data["tile"] entries are either
 """
 
 #logging.basicConfig(filename='platform.log', filemode='w', level=logging.DEBUG)
-logging.basicConfig(level=logging.INFO, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s')
 module = sys.modules['__main__'].__file__
 log = logging.getLogger(module)
 
@@ -134,7 +134,7 @@ for x in range(config.SCREEN_WIDTH_TILES):
         tile.y = y
         rotate = 0
         if "rotate" in scene_data["tiles"][y][x]:
-            rotate = scene_data["tiles"][y][x]["rotate"]
+            rotate = scene_data["tiles"][y][x]["rotate"]    
         if "id" in scene_data["tiles"][y][x]:
             update_screen_tile(tile, scene_data["tiles"][y][x]["id"], rotate=rotate)
         else:
@@ -174,6 +174,7 @@ while running:
             point = Point(pygame.mouse.get_pos())
             option_selected = pygame.sprite.spritecollideany(point, tile_options, False)
             if option_selected:
+                log.debug("Option selected")
                 if current_option:
                     current_option.image = current_option.unselected_image
                 current_option = option_selected
@@ -181,8 +182,9 @@ while running:
                     
             scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
             keys_pressed=pygame.key.get_pressed()  #checking pressed keys
-            if scene_tile_selected and buttons[0] and keys_pressed[pygame.K_c]:
-                print ("selected tile ID = {}".format(scene_tile_selected.tile_id))
+            log.debug("Mouse click.  scene_tile_selected = {}.  Buttons {}.  Key c = {}.  Key shift = {}".format(scene_tile_selected, buttons, keys_pressed[pygame.K_c], keys_pressed[pygame.K_LSHIFT]))
+            if scene_tile_selected and buttons[0] and keys_pressed[pygame.K_c] and scene_tile_selected.tile_id != "BLANK":
+                log.info("selected tile ID = {}".format(scene_tile_selected.tile_id))
                 option_selected = next(option for option in tile_options if option.tile_id == scene_tile_selected.tile_id)
                 if current_option:
                     current_option.image = current_option.unselected_image

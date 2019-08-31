@@ -220,3 +220,10 @@ class Scene():
                     tile.state = 0
                 if pygame.sprite.collide_mask(tile, self.player):
                     self.hit_button(tile)
+
+    def add_torch_lights(self, mask, spotlight_mask):
+        for sprite in filter(lambda x: x.attrs & TileAttr.LIGHT, self.platform_sprites):
+            mask.blit(spotlight_mask, (sprite.rect.centerx - config.SPOTLIGHT_RADIUS, sprite.rect.centery - config.SPOTLIGHT_RADIUS), special_flags=pygame.BLEND_RGBA_MIN)
+        
+        
+                    

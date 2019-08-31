@@ -15,7 +15,7 @@ SLIP_DISTANCE = 9
 MOVE_SPEED = 5
 JUMP_SPEED = 12
 SPRING_JUMP_SPEED = 18
-SPRING_ACTIVE_SPEED = 5
+SPRING_ACTIVE_SPEED = 4
 GRAVITY_EFFECT = 1
 TERMINAL_VELOCITY = 30
 LIFT_SPEED = 3
@@ -43,6 +43,7 @@ class TileAttr(Flag):
     BREAKABLE = auto()
     HEAVY = auto()
     DISABLE_ON_ROTATE = auto()
+    LIGHT = auto()
 
 class Tile():
     def __init__(self, 
@@ -69,7 +70,7 @@ tiles = {
     "SPIN": Tile("fireball.png", path=["Items"]),
     "SPIKES": Tile("spikes.png", path=["Items"], attrs=TileAttr.KILL),
     "SPIKES_DN": Tile("spikes.png", path=["Items"], attrs=TileAttr.KILL, rotate=180),
-    "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6),
+    "TORCH": Tile("tochLit.png", animate_image_files=["tochLit2.png"], frames_per_transition=6, attrs=TileAttr.LIGHT),
     "LIFT": Tile("bridge.png", attrs=TileAttr.LIFT),
     "BRIDGE": Tile("bridgeLogs.png", attrs=TileAttr.BREAKABLE),
     "PLAYER": Tile("p3_front.png", path=["Player"]) # This is just here for the scene designer

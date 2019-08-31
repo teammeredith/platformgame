@@ -59,11 +59,7 @@
                 "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -129,6 +125,683 @@
             },
             {
                 "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "filename": "sandLeft.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandRight.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "filename": "fireball.png",
+                "path": [
+                    "Items"
+                ],
+                "rotate": 0,
+                "id": "SPIN"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "ladder_top.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "ladder_mid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "filename": "p3_front.png",
+                "path": [
+                    "Player"
+                ],
+                "rotate": 0,
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "box.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0,
+                "id": "BOX"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "ladder_mid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
                 "id": "BLANK"
@@ -145,13 +818,6 @@
                 "id": "EXIT"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
                 "id": "BLANK"
             },
             {
@@ -159,119 +825,6 @@
             },
             {
                 "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "tochLit.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0,
-                "id": "TORCH"
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
             },
             {
                 "id": "BLANK"
@@ -291,141 +844,121 @@
         ],
         [
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
+                "filename": "sandCliffLeft.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "filename": "tochLit.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0,
-                "id": "TORCH"
-            },
-            {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
+                "filename": "bridgeLogs.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 180,
+                "id": "BRIDGE"
             },
             {
-                "id": "BLANK"
+                "filename": "bridgeLogs.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 180,
+                "id": "BRIDGE"
             },
             {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "filename": "tochLit.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0,
-                "id": "TORCH"
-            },
-            {
-                "filename": "castleMid.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
-                "id": "BLANK"
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
-                "id": "BLANK"
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
-                "id": "BLANK"
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
-                "id": "BLANK"
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
+                "filename": "sandCliffRight.png",
                 "path": [
                     "Tiles"
                 ],
@@ -435,98 +968,16 @@
                 "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
                 "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "tochLit.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0,
-                "id": "TORCH"
-            },
-            {
                 "id": "BLANK"
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
             },
             {
                 "id": "BLANK"
@@ -632,317 +1083,61 @@
                 "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
                 "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
             },
             {
                 "id": "BLANK"
             },
             {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 180,
-                "id": "SPIKES_DN"
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -980,18 +1175,99 @@
                 "id": "BLANK"
             },
             {
-                "filename": "spikes.png",
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "filename": "fireball.png",
                 "path": [
                     "Items"
                 ],
                 "rotate": 0,
-                "id": "SPIKES"
+                "id": "SPIN"
             },
             {
                 "id": "BLANK"
             },
             {
-                "id": "BLANK"
+                "filename": "mushroom_brown.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
             },
             {
                 "id": "BLANK"
@@ -1032,7 +1308,42 @@
         ],
         [
             {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandCliffLeft.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
+                "path": [
+                    "Tiles"
+                ],
+                "rotate": 0
+            },
+            {
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
@@ -1042,119 +1353,49 @@
                 "id": "BLANK"
             },
             {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandCliffLeft.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandMid.png",
                 "path": [
                     "Tiles"
                 ],
                 "rotate": 0
             },
             {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
+                "filename": "sandCliffRight.png",
                 "path": [
                     "Tiles"
                 ],
@@ -1177,1179 +1418,6 @@
             },
             {
                 "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "spikes.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0,
-                "id": "SPIKES"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "castleCliffLeftAlt.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
             },
             {
                 "id": "BLANK"
@@ -2438,11 +1506,6 @@
                 "id": "BLANK"
             },
             {
-                "filename": "p3_front.png",
-                "path": [
-                    "Player"
-                ],
-                "rotate": 0,
                 "id": "BLANK"
             },
             {
@@ -2451,186 +1514,624 @@
         ],
         [
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "castleMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
             }
         ]
     ],
     "player_start": [
-        23,
-        23
+        0,
+        9
     ],
-    "lock_time": 8000,
-    "dark": true
+    "lock_time": 8000
 }
