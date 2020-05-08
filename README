@@ -1,0 +1,55 @@
+Introduction
+------------
+
+It's a platform game.  The first 10 levels or so introduce the mechanics and 
+concepts: buttons, lifts, springs etc.  They aren't intended to very challenging.
+After that it gets more interesting and the idea is that the levels require some 
+thought to solve.   
+
+There's also a level designer to make it easy to create new levels.  One of the 
+reasons I wrote the game was so that the kids could design new levels.  
+A number of the levels were designed by them :-)
+
+Dependencies
+------------
+
+The game requires Python 3 and is dependent upon pygame.  `pip install pygame`
+It's only been tested on Windows, and briefly on a MacBook.  It's written in 
+Python so requires a reasonably fast laptop to run smoothly.
+
+Running the game
+----------------
+
+To run the game:
+- `python myplatformgame.py`
+
+To start at a later level add a level number.  E.g. to start at level 4 (bearing 
+in mind the first level is level 0 of course)
+- `python myplatformgame.py 4`
+
+Controls
+--------
+
+- Left arrow: move Left
+- Right arrow: move Right
+- Space bar: jump
+- Escape: restart the level
+- n: skip to the next level
+- q: quit
+
+Scene designer
+--------------
+
+`python scenedesigner.py <scene file name>`
+
+This will edit or create a new scene in the scenes directory.  Running
+`python scenedesigner.py 0.json` will create a new scene file "scenes\0.json".
+The game runs scenes in alphabetical order from the scenes directory, so "0.json" 
+is a good scene name for testing.
+
+In the scene designer...
+- Select a tile from the right hand side and left click in the grid to place it.
+- Hold shift and left click in the grid to place it rotated
+- Right click in the grid to clear a tile
+- Optionally place the little man somewhere to specify where the player should start
+- Click "Done" when you're done to save your changes.  (or "q" to quit without saving)
