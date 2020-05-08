@@ -55,10 +55,7 @@ displayInfo = pygame.display.Info()
 width = TILE_OPTIONS_X_OFFSET + TILE_OPTIONS_PER_ROW*(TILE_OPTIONS_SIZE+TILE_OPTIONS_PADDING)
 height = max(config.SCREEN_HEIGHT_TILES*config.TILE_SIZE_PX, (int(number_of_tile_options/TILE_OPTIONS_PER_ROW)+1)*(TILE_OPTIONS_SIZE+TILE_OPTIONS_PADDING)+TEXT_SIZE)
 
-print ("default width, height {}, {}.  Screen width, height {},{}".format(width, height, displayInfo.current_w, displayInfo.current_h))
-
 scale_factor = min(displayInfo.current_w / width, displayInfo.current_h / height)
-print("Scale by {}".format(scale_factor))
 config.TILE_SIZE_PX = int(config.TILE_SIZE_PX * scale_factor)
 TILE_OPTIONS_SIZE = int(TILE_OPTIONS_SIZE*scale_factor)
 TILE_OPTIONS_PADDING = int(TILE_OPTIONS_PADDING*scale_factor)
@@ -66,7 +63,6 @@ TILE_OPTIONS_X_OFFSET = (config.SCREEN_WIDTH_TILES+1)*config.TILE_SIZE_PX
 
 
 screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
-print("Window width = {}, height = {}".format(screen.get_rect().width, screen.get_rect().height))
 
 pygame.display.set_caption("Scene designer")
 clock = pygame.time.Clock()
@@ -155,8 +151,6 @@ done_tile = pygame.sprite.Sprite()
 done_tile.image = textsurface
 done_tile.rect = done_tile.image.get_rect()
 done_tile.rect.top = screen.get_rect().height - 50
-print("Window width = {}, height = {}".format(screen.get_rect().width, screen.get_rect().height))
-print("done tile top = {}".format(done_tile.rect.top))
 done_tile.rect.left = TILE_OPTIONS_X_OFFSET
 done_group = pygame.sprite.Group()
 done_group.add(done_tile)

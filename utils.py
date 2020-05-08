@@ -51,10 +51,8 @@ def try_to_slip_sprite(sprite, slip_remaining, collision_fn):
 def load_default_tiles():
     # Add more tiles without any special properties
     used_files = [tile.filename for tile in config.tiles.values()]
-    print("Used files = {}".format(used_files))    
     with os.scandir(os.path.join(config.img_folder, "Tiles")) as it:
         for tile_file in it:
-            print("Consider loading {}".format(tile_file.name))
             if tile_file.is_file() and not tile_file.name in used_files: 
                 filename, file_extension = os.path.splitext(tile_file)
                 if file_extension == ".png":

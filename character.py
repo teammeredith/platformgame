@@ -106,7 +106,6 @@ class Player(Character):
             self.die()
             return MovableRC.STOP_ALL
         if tile.tile_id == "EXIT":
-            print("Posting exit event")
             self.scene = None
             pygame.event.post(pygame.event.Event(config.REACHED_EXIT_EVENT_ID))
             return MovableRC.STOP_ALL
