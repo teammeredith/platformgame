@@ -8,8 +8,13 @@ import sys
 import argparse
 import config
 import utils 
-import tkinter as tk
-from tkinter import simpledialog
+import ctypes
+
+# If we're on Windows do this thing to deal with display scaling issues...
+try:
+    ctypes.windll.user32.SetProcessDPIAware()
+except:
+    pass
 
 """
 We have config.tiles and extend it to include non-special tiles as well.  These have their filename as the index into config.tiles.
@@ -61,6 +66,8 @@ TILE_OPTIONS_X_OFFSET = (config.SCREEN_WIDTH_TILES+1)*config.TILE_SIZE_PX
 
 
 screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+print("Window width = {}, height = {}".format(screen.get_rect().width, screen.get_rect().height))
+
 pygame.display.set_caption("Scene designer")
 clock = pygame.time.Clock()
 
@@ -148,6 +155,7 @@ done_tile = pygame.sprite.Sprite()
 done_tile.image = textsurface
 done_tile.rect = done_tile.image.get_rect()
 done_tile.rect.top = screen.get_rect().height - 50
+print("Window width = {}, height = {}".format(screen.get_rect().width, screen.get_rect().height))
 print("done tile top = {}".format(done_tile.rect.top))
 done_tile.rect.left = TILE_OPTIONS_X_OFFSET
 done_group = pygame.sprite.Group()
@@ -206,20 +214,7 @@ while running:
                 with open(scene_file_path, "w") as scene_file:
                     json.dump(scene_data, scene_file, indent=4)
                 exit()
-
-                
-                """
-                    print("Open dialog")
-                    app_window = tk.Tk()
-                    #Tk().wm_withdraw() #to hide the main window
-                    answer = simpledialog.askinteger("Input", "What is your age?",
-                                        parent=app_window,
-                                        minvalue=0, maxvalue=100)
-                    app_window.destroy()
-                    print("Answer is {}".format(answer))
-                """
-            
-
+    
     # Update
     tile_options.update()
 
