@@ -66,6 +66,8 @@ tiles = {
     "SPRING": Tile("springboardUp.png", animate_image_files=["springboardDown.png"], attrs=TileAttr.SPRING | TileAttr.DISABLE_ON_ROTATE),
     "BUTTON_YELLOW": Tile("buttonYellow.png", animate_image_files=["buttonYellow_pressed.png"], attrs=TileAttr.BUTTON | TileAttr.DISABLE_ON_ROTATE),
     "LOCK_YELLOW": Tile("lock_yellow.png"),
+    "BUTTON_RED": Tile("buttonRed.png", animate_image_files=["buttonRed_pressed.png"], attrs=TileAttr.BUTTON | TileAttr.DISABLE_ON_ROTATE),
+    "LOCK_RED": Tile("lock_red.png"),
     "BOX": Tile("box.png", attrs=TileAttr.MOVABLE|TileAttr.HEAVY),
     "SPIN": Tile("fireball.png", path=["Items"]),
     "SPIKES": Tile("spikes.png", path=["Items"], attrs=TileAttr.KILL),

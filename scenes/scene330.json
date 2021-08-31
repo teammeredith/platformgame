@@ -2,196 +2,6 @@
     "tiles": [
         [
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
                 "id": "BLANK"
             },
             {
@@ -199,83 +9,6 @@
             },
             {
                 "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "SPRING",
-                "filename": "springboardUp.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 180
             },
             {
                 "id": "BLANK"
@@ -361,11 +94,7 @@
                 "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -442,1746 +171,10 @@
                 "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "SPIN",
-                "filename": "fireball.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "ladder_top.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "ladder_top.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "EXIT",
-                "filename": "signExit.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "LOCK_YELLOW",
-                "filename": "lock_yellow.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "LOCK_YELLOW",
-                "filename": "lock_yellow.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassHillLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BUTTON_YELLOW",
-                "filename": "buttonYellow.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BOX",
-                "filename": "box.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "SPRING",
-                "filename": "springboardUp.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BOX",
-                "filename": "box.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassHillRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            }
-        ],
-        [
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
                 "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "bush.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "SPRING",
-                "filename": "springboardUp.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassCliffLeft.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
                 "id": "BLANK"
-            }
-        ],
-        [
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "filename": "grassCliffRight.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -2209,16 +202,6 @@
             },
             {
                 "id": "BLANK"
-            },
-            {
-                "id": "BLANK"
-            },
-            {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
             },
             {
                 "id": "BLANK"
@@ -2295,12 +278,7 @@
                 "id": "BLANK"
             },
             {
-                "id": "LOCK_YELLOW",
-                "filename": "lock_yellow.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -2374,19 +352,10 @@
                 "id": "BLANK"
             },
             {
-                "id": "SPIN",
-                "filename": "fireball.png",
-                "path": [
-                    "Items"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
                 "id": "BLANK"
@@ -2413,196 +382,1553 @@
                 "id": "BLANK"
             },
             {
-                "id": "SPRING",
-                "filename": "springboardUp.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             }
         ],
         [
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
             },
             {
-                "filename": "grassMid.png",
-                "path": [
-                    "Tiles"
-                ],
-                "rotate": 0
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            }
+        ],
+        [
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
+            },
+            {
+                "id": "BLANK"
             }
         ]
     ],
     "player_start": [
-        17,
-        23
+        0,
+        0
     ],
-    "lock_time": 18000,
-    "dark": false
+    "lock_time": 8000
 }

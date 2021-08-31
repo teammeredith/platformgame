@@ -121,7 +121,7 @@ class Movable(pygame.sprite.Sprite):
         if self in already_moved:
             # Avoid perpetual motion where we push something that pushes us which we push etc.  That's bad.
             return MovableRC.STOP
-
+        
         already_moved.append(self)
 
         initial_center = self.rect.center
@@ -159,6 +159,7 @@ class Movable(pygame.sprite.Sprite):
             log.debug("Didn't collide with anything -- move OK")
             if self.y_speed:
                 self.falling = True
+            self.on_successful_move(x_speed, y_speed, top_level_move, already_moved)
             return MovableRC.CONTINUE
 
         # We've hit something.  
@@ -186,10 +187,14 @@ class Movable(pygame.sprite.Sprite):
 
         if not collided:
             # We are now collision free.  If we're the one actually initiating the move then undo it anyway in order to slow us down when we're pushing things.
-            # Although if we're something that can't be pushed (like a lift don't do that).
+            # Although if we're something that can't be pushed (like a lift) don't do that.
             log.debug("Pushed stuff out of the way -- now collision free")
+
             if top_level_move and self.can_be_pushed: 
                 self.rect.center = initial_center
+            else:
+                self.on_successful_move(x_speed, y_speed, top_level_move, already_moved)
+                
             return MovableRC.CONTINUE
 
         # We've hit something that we can't move.  If we're trying to go sideways, see if we can step over it.
@@ -243,7 +248,25 @@ class Movable(pygame.sprite.Sprite):
                 self.falling = False
             self.y_speed = 0
             return MovableRC.STOP
+    
+    def on_successful_move(self, x_speed, y_speed, top_level_move, already_moved):
+        # We've actually moved.  See if anything was resting on top of us that should move.
 
+        if self.is_player:
+            # Don't allow the player to carry things around on his head.
+            return
+
+        if x_speed == 0:
+            return
+
+        new_center = self.rect.center
+        #self.rect.center = initial_center 
+        self.rect.top -= 1
+        collided = self.scene.collided_movable_tiles(self)
+        self.rect.center = new_center 
+        for resting_tile in collided:
+            resting_tile.try_to_move(x_speed = x_speed, already_moved=already_moved)
+        
     def update(self):
 
         if not self.scene:
@@ -259,7 +282,7 @@ class Movable(pygame.sprite.Sprite):
             for i in range(abs(self.x_speed)):
                 log.debug("Current pos = {}, {}".format(self.rect.left, self.rect.top))
 
-                # Try to update our X position.  
+                # Try to update our X position  
                 rc = self.try_to_move(x_speed = move_dir)
                 if rc == MovableRC.CONTINUE:
                     # We're good.  Try to move again.

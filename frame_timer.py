@@ -1,4 +1,5 @@
 FRAME_TIMER_ID_YELLOW_BUTTON= 1
+FRAME_TIMER_ID_RED_BUTTON= 2
 
 frame_timers = []
 
@@ -28,5 +29,5 @@ class FrameTimer():
         self.frames_left -= 1
         if self.frames_left <= 0:
             frame_timers.remove(self)
-            self.callback_fn()
+            self.callback_fn(self.id)
 

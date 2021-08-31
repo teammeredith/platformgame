@@ -14,6 +14,7 @@ import utils
 import frame_timer
 import movable
 from config import TileAttr
+from movable import Movable
 
 log = logging.getLogger()
 
@@ -142,6 +143,13 @@ class Scene():
                 return test_sprite
         return None
 
+    def collided_movable_tiles(self, sprite):
+        collided = []
+        for test_sprite in itertools.chain(itertools.filterfalse(lambda x: not isinstance(x, Movable), self.platform_sprites), [self.player]):
+            if sprite != test_sprite and isinstance(test_sprite, Movable) and pygame.sprite.collide_rect(sprite, test_sprite) and pygame.sprite.collide_mask(sprite, test_sprite):
+                collided.append(test_sprite)
+        return collided
+
     def key_down(self, event):
         return    
         if event.key == pygame.K_r:
@@ -183,17 +191,24 @@ class Scene():
 
     def hit_button(self, tile):
         if tile.attrs & TileAttr.BUTTON:
-            # If the button is up, then change it to down
-            if tile.state == 0:
-                tile.image = tile.images[1]
+            if tile.tile_id == "BUTTON_YELLOW":
+                # If the button is up, then change it to down
+                if tile.state == 0:
+                    tile.image = tile.images[1]
+                    tile.mask = pygame.mask.from_surface(tile.image)
+                    tile.state = 1
+                frame_timer.FrameTimer(int(self.scene_data["lock_time"]*config.FPS/1000), self.timer_pop, frame_timer.FRAME_TIMER_ID_YELLOW_BUTTON, unique=True)
+                for sprite in self.platform_sprites:
+                    if sprite.tile_id == "LOCK_YELLOW":
+                        sprite.remove(self.platform_sprites)
+                        sprite.inactive = True
+                        self.open_locks.append(sprite)
+            else:
+                # Toggle the button state
+                tile.state = (tile.state+1)%2
+                tile.image = tile.images[tile.state]
                 tile.mask = pygame.mask.from_surface(tile.image)
-                tile.state = 1
-            frame_timer.FrameTimer(int(self.scene_data["lock_time"]*config.FPS/1000), self.timer_pop, frame_timer.FRAME_TIMER_ID_YELLOW_BUTTON, unique=True)
-            for sprite in self.platform_sprites:
-                if sprite.tile_id == "LOCK_YELLOW":
-                    sprite.remove(self.platform_sprites)
-                    sprite.inactive = True
-                    self.open_locks.append(sprite)
+
 
     def remove_tile(self, tile):
         tile.remove(self.platform_sprites)
@@ -202,8 +217,9 @@ class Scene():
     def draw(self, screen):
         self.platform_sprites.draw(screen)
 
-    def timer_pop(self):
+    def timer_pop(self, id=None):
         log.info("Timer pop")
+        print("timer pop {}".format(id))
         for sprite in self.open_locks:
             log.info("Redraw lock")
             self.platform_sprites.add(sprite)

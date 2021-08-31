@@ -174,7 +174,7 @@ while running:
         buttons = pygame.mouse.get_pressed()
         if buttons != (0,0,0):
             point = Point(pygame.mouse.get_pos())
-            option_selected = pygame.sprite.spritecollideany(point, tile_options, False)
+            option_selected = pygame.sprite.spritecollideany(point, tile_options)
             if option_selected:
                 log.debug("Option selected")
                 if current_option:
@@ -182,7 +182,7 @@ while running:
                 current_option = option_selected
                 option_selected.image = option_selected.selected_image
                     
-            scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles, False)
+            scene_tile_selected = pygame.sprite.spritecollideany(point, scene_tiles)
             keys_pressed=pygame.key.get_pressed()  #checking pressed keys
             log.debug("Mouse click.  scene_tile_selected = {}.  Buttons {}.  Key c = {}.  Key shift = {}".format(scene_tile_selected, buttons, keys_pressed[pygame.K_c], keys_pressed[pygame.K_LSHIFT]))
             if scene_tile_selected and buttons[0] and keys_pressed[pygame.K_c] and scene_tile_selected.tile_id != "BLANK":

@@ -135,7 +135,7 @@ while running:
                 next_scene(current_scene)
                 break
             if event.key == pygame.K_q:
-                exit()
+                exit(0)
             scenes[current_scene].key_down(event)
         elif event.type == config.ROTATE_BOARD_EVENT_ID:
             scenes[current_scene].rotate()
